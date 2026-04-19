@@ -3,12 +3,11 @@
   "country_code": "TR",
   "collection_date": "2026-04-19",
   "data_version": "0.1-pilot",
-
   "pillar_I_integrated_will": {
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
       "rank": 159,
-      "score": 29.40,
+      "score": 29.4,
       "political_indicator": 19.69,
       "economic_indicator": 26.09,
       "legislative_indicator": 32.42,
@@ -56,22 +55,21 @@
     },
     "civic_education": {
       "source": "National assessments / qualitative",
-      "note": "Highly politicized. Curriculum includes mandatory religious education (Sunni Islam). Kurdish language education restricted. Post-2016, thousands of academics dismissed for political views. Rectors appointed by presidential decree (Constitutional Court ruled this unconstitutional in June 2024, but implementation pending). Civic education, where it exists, emphasizes national unity and loyalty rather than critical democratic participation."
+      "note": "Highly politicized. Curriculum includes mandatory religious education. Post-2016, thousands of academics dismissed for political views. Rectors appointed by presidential decree (Constitutional Court ruled this unconstitutional in June 2024, but implementation pending). Civic education, where it exists, emphasizes national unity and loyalty rather than critical democratic participation. NOTE: Western reports frame Kurdish language restrictions as minority oppression, but this is better understood as a universal democracy deficit — the same constitutional citizenry model (like France) limits all forms of sub-national identity expression in public education, not just Kurdish. The PKK conflict had genuine domestic security dimensions but also foreign roots that complicated the issue."
     },
     "digital_rights": {
       "source": "Freedom House Freedom on the Net; OONI",
       "status": "Not Free",
-      "note": "Systemic internet censorship. 2022 disinformation law criminalizes online content. Social media companies forced to maintain local offices and comply with content removal demands. VPN usage widespread but government periodically targets VPN services. 69 Kurdish politician/journalist social media accounts blocked by court order in August 2024 alone."
+      "note": "Systemic internet censorship. 2022 disinformation law criminalizes online content. Social media companies forced to maintain local offices and comply with content removal demands. VPN usage widespread but government periodically targets VPN services. Political accounts blocked by court order (69 accounts blocked in August 2024 alone, including opposition politicians and journalists)."
     }
   },
-
   "pillar_II_organic_ties": {
     "social_cohesion": {
       "source": "World Values Survey / OECD / qualitative",
       "social_trust_pct": null,
-      "social_trust_note": "Not reliably measured in recent WVS for Turkey. Qualitative assessment: deeply fractured along ethnic (Kurdish-Turkish), sectarian (Alevi-Sunni), and political (AKP-opposition) lines. Trust in institutions extremely low.",
-      "community_organization": "polarized — strong community bonds within identity groups (religious, ethnic, political) but near-zero bridging social capital between groups",
-      "note": "CRITICAL GST CONCERN: Turkey demonstrates the Micro-Fascism risk acutely. Communities are strong WITHIN — extended family networks, religious communities, ethnic enclaves — but these communities often enforce conformity (Alevi exclusion, Kurdish cultural suppression, political loyalty within AKP networks). The social fabric is not atomized (like the US) but segmented: strong bonding capital, near-zero bridging capital."
+      "social_trust_note": "Not reliably measured in recent WVS for Turkey. Qualitative assessment: trust in institutions extremely low. The democracy deficit affects all citizens, though Western reports often frame it as specific to ethnic or sectarian groups.",
+      "community_organization": "polarized — strong community bonds within identity groups (family, religious, regional, political) but near-zero bridging social capital between groups",
+      "note": "CRITICAL GST CONCERN: Turkey demonstrates the Micro-Fascism risk acutely. Communities are strong WITHIN — extended family networks, religious communities, regional enclaves — but these communities often enforce conformity (political loyalty, patriarchal norms, honor culture). The social fabric is not atomized (like the US) but segmented: strong bonding capital, near-zero bridging capital. IMPORTANT: Western reports frame this as ethnic/sectarian particularism (Kurdish vs Turkish, Alevi vs Sunni), but this misreads the structure. 'Turkishness' is a constitutional citizenry construct analogous to Frenchness or Spanishness — not an ethnic identity imposed on minorities. The democracy deficit is universal, affecting all citizens equally. Framing it as minority oppression is an interventionist lens, not an analytical one."
     },
     "family_structure_health": {
       "source": "Qualitative / national statistics",
@@ -90,7 +88,7 @@
     "internal_dissent_capacity": {
       "source": "Freedom House / qualitative",
       "score": "extremely low",
-      "note": "Protests routinely banned and violently dispersed. Gezi Park (2013) was a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. LGBT+ pride parades banned since 2015. 26+ Kurdish cultural events banned 2019-2024. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
+      "note": "Protests routinely banned and violently dispersed. Gezi Park (2013) was a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. LGBT+ pride parades banned since 2015. Cultural events in predominantly Kurdish regions banned (26+ events 2019-2024) — but this should be understood as political suppression of dissent in regions with strong opposition, not as ethnic persecution per se. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
     },
     "social_isolation": {
       "source": "Qualitative assessment",
@@ -99,7 +97,6 @@
       "note": "IMPORTANT GST DISTINCTION: Turkey does NOT suffer from the same atomization as the US. The problem is not isolation but CAPTURED community — people are embedded in strong networks that demand conformity. This is the Micro-Fascism dynamic, not the atomization dynamic. The GST framework should score this differently than a country where social ties have simply collapsed."
     }
   },
-
   "pillar_III_social_capital_transformation": {
     "wealth_distribution": {
       "source": "World Bank / OECD",
@@ -130,27 +127,26 @@
     "social_mobility": {
       "source": "OECD / World Economic Forum / qualitative",
       "intergenerational_income_elasticity": null,
-      "mobility_note": "Estimated high (low mobility). No reliable OECD IGE figure. Qualitative evidence strongly suggests low mobility: political connections determine economic opportunity, regional disparities are enormous (Western Turkey vs. Southeast), and the Kurdish population faces systematic economic exclusion.",
+      "mobility_note": "Estimated high (low mobility). No reliable OECD IGE figure. Qualitative evidence strongly suggests low mobility: political connections determine economic opportunity, regional disparities are enormous (Western Turkey vs. Southeast). The democracy deficit affects mobility for all citizens — political loyalty, not ethnicity, is the primary gatekeeper.",
       "note": "CRITICAL: Social mobility in Turkey is politically mediated. It's not just that wealth persists across generations — it's that political alignment with the ruling party is the primary mechanism of economic advancement. Government tenders, appointments, and regulatory decisions flow to the politically loyal. This is capital transformation in reverse: private capital is captured by political power, not transformed into public benefit."
     },
     "cultural_production_accessibility": {
       "source": "Qualitative assessment",
-      "note": "Heavily politicized. State cultural institutions (TRT, Diyanet, ministry of culture) promote state-approved narratives. Kurdish, Alevi, and other minority cultural production is suppressed. 26+ Kurdish cultural events banned 2019-2024. Independent cultural production exists but faces censorship, funding cuts, and legal harassment. This is NOT just underinvestment (like the US) — it's ACTIVE SUPPRESSION of cultural forms that don't serve the state's narrative."
+      "note": "Heavily politicized. State cultural institutions (TRT, Diyanet, ministry of culture) promote state-approved narratives. Cultural production that doesn't serve the state narrative is suppressed — this affects all citizens, not specific ethnic groups. Events in predominantly Kurdish regions are banned (26+ 2019-2024), but this is political suppression of opposition strongholds, not ethnic targeting per se. Independent cultural production exists but faces censorship, funding cuts, and legal harassment. This is NOT just underinvestment (like the US) — it's ACTIVE SUPPRESSION of cultural forms that don't serve the state's narrative. IMPORTANT: The Western framing of this as 'Kurdish/Alevi cultural suppression' reproduces the interventionist minority-oppression lens. The GST should capture this as universal political suppression of dissent."
     },
     "corporate_extraction_vs_public_benefit": {
       "source": "Qualitative / Transparency International",
       "note": "CRITICAL: Turkey scores 31/100 on the Corruption Perceptions Index (rank 124/180). This is the clearest indicator of the extraction problem. The construction sector operates as a patronage network. Public tenders flow to AKP-aligned businesses. The post-2016 seizure of Gülen-affiliated businesses redistributed massive private assets to government loyalists. Capital is not being transformed into public benefit — it's being captured by political networks."
     }
   },
-
   "cross_cutting_rights": {
     "integrity": {
       "source": "HRW / Amnesty / CIRI / national data",
-      "political_imprisonment": "severe — thousands of political prisoners including journalists, academics, Kurdish politicians, and post-coup purge detainees. Many held for years without verdict. Insulting the president is a criminal offense used extensively.",
+      "political_imprisonment": "severe — thousands of political prisoners including journalists, academics, opposition politicians of all backgrounds, and post-coup purge detainees. Many held for years without verdict. Insulting the president is a criminal offense used extensively. NOTE: Western reports emphasize Kurdish politicians specifically, but the mechanism is political repression, not ethnic targeting — opposition figures of all backgrounds are imprisoned.",
       "bodily_autonomy": "mixed — Turkey withdrew from the Istanbul Convention in 2021, a major regression on violence against women. Femicide rates among the highest in the region. Abortion technically legal but access increasingly restricted. LGBTQ+ situation is more nuanced than Western NGOs portray: there is no systematic state persecution of LGBTQ+ individuals. Individual LGBTQ+ public figures can be celebrated (e.g., Bülent Ersoy, a trans diva and national cultural icon). The friction is around collective public identity expression — pride parades are banned, and LGBTQ+ organizing as a visible group faces societal and occasional state pushback. But being openly LGBTQ+ is not criminalized, and many LGBTQ+ individuals live openly without state harassment. The GST should capture this as a community conformity pressure (Micro-Fascism pattern) rather than state persecution: society tolerates individual exceptions but resists collective visibility.",
       "mass_incarceration": "high — 260,000+ prisoners (2018), 118% over capacity. Includes massive pre-trial detention population. Prison population nearly quadrupled from 49,512 (2000) to 200,339 (2016). Many political prisoners.",
       "torture_and_ill_treatment": "documented and ongoing — particularly in counter-terrorism detention. ECtHR has repeatedly found Turkey in violation of Article 3 (prohibition of torture).",
-      "note": "CRITICAL: Political imprisonment and torture are systematic state violations of integrity. Femicide is severe and the Istanbul Convention withdrawal is a major regression. However, LGBTQ+ rights require a more nuanced framing: the state does not systematically persecute LGBTQ+ individuals (no criminalization, prominent LGBTQ+ public figures exist and are celebrated). The pressure is societal and around collective visibility, not state-directed persecution. The GST should distinguish between state persecution (which is real for political dissidents, journalists, Kurds) and societal conformity pressure (which is the main mechanism for LGBTQ+ individuals)."
+      "note": "CRITICAL: Political imprisonment and torture are systematic state violations of integrity — affecting all dissidents regardless of ethnicity. Femicide is severe and the Istanbul Convention withdrawal is a major regression. LGBTQ+ rights require a more nuanced framing: the state does not systematically persecute LGBTQ+ individuals (no criminalization, prominent LGBTQ+ public figures exist and are celebrated). The pressure is societal and around collective visibility, not state-directed persecution. IMPORTANT: Western reports frame political imprisonment as ethnically targeted ('Kurdish politicians'), but the mechanism is political — opposition figures of all backgrounds are targeted. The GST should not reproduce the interventionist framing that reframes universal political repression as ethnic persecution."
     },
     "justice": {
       "source": "WJP / Freedom House / ECtHR",
@@ -158,14 +154,14 @@
       "rule_of_law_score_estimate": "very low — WJP scores Turkey near bottom of global rankings",
       "judicial_independence": "effectively none — post-2016 purges removed thousands of judges and prosecutors. Constitutional Court rulings are routinely ignored by lower courts and the executive. Presidential decree powers override judicial review.",
       "due_process": "systematically violated — prolonged pre-trial detention, mass trials with hundreds of defendants, vaguely defined terrorism charges, criminal insult charges for political speech",
-      "equal_access_note": "CRITICAL GST CONCERN: The justice gap in Turkey is not just economic (as in the US) but political. Access to justice depends not on wealth primarily but on political alignment. Kurdish defendants, opposition politicians, and critical journalists face a fundamentally different legal system than government loyalists. This is a more acute and visible form of the same structural injustice the GST identifies."
+      "equal_access_note": "CRITICAL GST CONCERN: The justice gap in Turkey is not just economic (as in the US) but political. Access to justice depends not on wealth primarily but on political alignment. Opposition politicians, critical journalists, and political dissidents face a fundamentally different legal system than government loyalists. This is a more acute and visible form of the same structural injustice the GST identifies. IMPORTANT: Western reports frame this as ethnic persecution (e.g., 'Kurdish defendants'), but the mechanism is political, not ethnic. Defendants from majority-Turkish opposition backgrounds face the same system. Framing it as ethnic particularism misidentifies the mechanism."
     },
     "compassion": {
       "source": "OECD / UNHCR / qualitative",
       "social_safety_net": "thin — nominally universal healthcare but quality gaps enormous. No guaranteed housing. Unemployment benefits time-limited and coverage narrow. Reliance on family networks for social protection.",
       "refugee_policy": "hosts ~3.6M Syrian refugees (largest refugee population in the world) — but increasingly hostile. 2024 saw rising anti-refugee violence and government deportation campaigns. Temporary protection status provides minimal rights. Used as political tool by both government and opposition.",
       "healthcare_access": "nominally universal but two-tier — public system overcrowded and underfunded, private system accessible only to those with means. Geographic inequality severe (Southeast Turkey especially underserved).",
-      "note": "COMPLEX GST CASE: Turkey's hosting of 3.6M refugees is a genuine act of collective compassion that Western democracies have largely refused. But the compassion is uneven — refugees face increasing hostility and are used as political leverage. Internally, the compassion deficit toward Kurdish citizens, Alevis, and women is severe."
+      "note": "COMPLEX GST CASE: Turkey's hosting of 3.6M refugees is a genuine act of collective compassion that Western democracies have largely refused. But the compassion is uneven — refugees face increasing hostility and are used as political leverage. The domestic compassion deficit is universal (affecting all citizens through thin social safety nets, inadequate housing, weak labor protections), not specific to ethnic or sectarian groups. Women face particular compassion deficits through domestic violence and femicide."
     },
     "welfare": {
       "source": "World Bank / national statistics",
@@ -179,7 +175,7 @@
     "truth": {
       "source": "RSF / Freedom House / V-Dem",
       "press_freedom_rank": 159,
-      "press_freedom_score": 29.40,
+      "press_freedom_score": 29.4,
       "press_freedom_trend": "declining sharply — rank dropped from 158 to 159, score from 31.60 to 29.40",
       "government_transparency": "extremely low — Corruption Perceptions Index score 31/100 (rank 124). State statistics contested (TÜİK vs ENAG inflation figures). AKP refuses to disclose details of sovereign wealth fund, defense spending, and tenders.",
       "scientific_integrity": "compromised — academics dismissed for political views, universities under presidential appointment control, research on sensitive topics (Kurdish issues, Armenian genocide, gender) effectively forbidden",
@@ -194,7 +190,6 @@
       "note": "CRITICAL GST DISTINCTION: Turkey has MORE solidarity than the US within community boundaries (extended family support, religious community charity, ethnic mutual aid) but LESS solidarity ACROSS boundaries. This is the Micro-Fascism pattern: strong bonding capital, near-zero bridging capital. Solidarity is real but exclusive — it extends to 'us' but not 'them.'"
     }
   },
-
   "gst_specific_observations": {
     "ceiling_test": "Turkey is the key test case for whether the GST can distinguish between DIFFERENT TYPES of democratic deficit. A procedural index scores Turkey low because elections aren't free, courts aren't independent, and media is censored. The GST should score Turkey low too — but for different and more specific reasons: Forced Substitution through state (not market) mechanisms, Micro-Fascism in community structures, and capital extraction through political patronage (not corporate concentration).",
     "forced_substitution_coefficient": {
@@ -202,7 +197,7 @@
       "estimated_level": "high — state-directed"
     },
     "organic_vs_microfascism": {
-      "note": "POLARIZED TOWARD MICRO-FASCISM — Turkey is the Micro-Fascism case study. Extended family, religious community, ethnic networks — these are strong. But they enforce conformity: patriarchal control over women, political loyalty tests within AKP networks, Kurdish identity suppression, Alevi exclusion from public recognition. Communities that buffer individuals from state power while allowing internal questioning (Organic Democracy) exist (Gezi was a moment of this) but are systematically suppressed. Communities that buffer AND conform (Micro-Fascism) are tolerated or encouraged.",
+      "note": "POLARIZED TOWARD MICRO-FASCISM — Turkey is the Micro-Fascism case study. Extended family, religious community, regional networks — these are strong. But they enforce conformity: patriarchal control over women, political loyalty tests, honor culture, conformity to community norms. IMPORTANT: The Western framing of this as ethnic/sectarian particularism ('Alevi exclusion from public recognition,' 'Kurdish identity suppression') misidentifies the mechanism. 'Turkishness' is a constitutional citizenry construct like Frenchness — the same model France uses. The democracy deficit is universal, not particular to ethnic groups. Communities that buffer individuals from state power while allowing internal questioning (Organic Democracy) exist (Gezi was a moment of this) but are systematically suppressed. Communities that buffer AND conform (Micro-Fascism) are tolerated or encouraged.",
       "estimated_level": "strong micro-fascism tendency — organic democracy exists but under systematic state pressure"
     },
     "capital_transformation": {
@@ -211,12 +206,12 @@
     },
     "key_gst_deficits": {
       "state_directed_forced_substitution": "Unlike the US (market-directed), Turkey's Forced Substitution is primarily state-directed. Alternatives are not absent because the market doesn't provide them — they're absent because the state suppresses them. Media, education, and civic space are the clearest examples.",
-      "micro_fascism_in_community": "Turkey's strong community networks (family, religious, ethnic) provide belonging but enforce conformity. Women face patriarchal control within families. Alevis and Kurds face exclusion from the dominant Sunni-Turkish community framework. LGBTQ+ individuals face a distinctive pattern: not state persecution but societal conformity enforcement — individual LGBTQ+ people can be accepted and celebrated (Bülent Ersoy being the paradigmatic example), but collective LGBTQ+ identity expression (pride, organizing) triggers pushback from both state and society. This is Micro-Fascism operating through community norms rather than state coercion.",
+      "micro_fascism_in_community": "Turkey's strong community networks (family, religious, regional) provide belonging but enforce conformity. Women face patriarchal control within families. LGBTQ+ individuals face a distinctive pattern: not state persecution but societal conformity enforcement — individual LGBTQ+ people can be accepted and celebrated (Bülent Ersoy being the paradigmatic example), but collective LGBTQ+ identity expression (pride, organizing) triggers pushback from both state and society. This is Micro-Fascism operating through community norms rather than state coercion. IMPORTANT: Western reports frame 'Alevi exclusion' and 'Kurdish identity suppression' as specific ethnic deficits, but this reproduces the interventionist minority-oppression lens. The GST should capture the universal democracy deficit: constitutional citizenry (like France) limits all sub-national identity expression, and the political system suppresses all dissent regardless of ethnicity.",
       "political_extraction": "Capital extraction operates through political patronage rather than corporate concentration. Government tenders, regulatory decisions, and asset seizures flow to political loyalists. Corruption Perceptions Index: 31/100.",
       "manufactured_ignorance": "Not manufactured consent (the US model) but manufactured ignorance: the state actively suppresses information rather than allowing corporate media to shape it. 197,000+ websites blocked, journalists imprisoned, disinformation law criminalizing truth-telling.",
       "earthquake_as_political_outcome": "The 2023 earthquake killed 50,000+ people not because Turkey can't build safe buildings, but because construction amnesties (paid regulatory violations) and political patronage networks made unsafe construction profitable. This is capital extraction with lethal consequences.",
       "dual_inflation_reality": "The state reports 31% inflation while independent measures show 56%. People experiencing the real rate are told by the state that their experience is false. This is Forced Substitution applied to perception itself.",
-      "selective_compassion": "Hosting 3.6M refugees demonstrates collective compassion capacity that Western democracies have largely refused. But this compassion is unevenly applied internally — Kurdish citizens, Alevis, and women face systematic deprivation of the same compassion."
+      "selective_compassion": "Hosting 3.6M refugees demonstrates collective compassion capacity that Western democracies have largely refused. The domestic compassion deficit is universal — all citizens face thin social safety nets, inadequate housing, and weak labor protections. Women face particular deficits through femicide and domestic violence. Western reports frame the deficit as ethnically specific, but this misidentifies a universal democracy problem as minority oppression."
     }
   }
 }
