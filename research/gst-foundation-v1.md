@@ -48,7 +48,7 @@ Every individual possesses both rights and corresponding duties:
 
 4. **Welfare** — The right to material sufficiency — shelter, food, healthcare, education — as a baseline condition for democratic participation. The duty to contribute to collective welfare.
 
-5. **Truth** — The right to not be lied to by institutions; to accurate information about decisions affecting one's life. The duty to not participate in disseminating falsehood.
+5. **Truth** — The right to perceive one's condition authentically, free from substituted perception; to accurate information about decisions affecting one's life. The duty to not participate in substituting others' perception of reality.
 
 6. **Solidarity** — The right to collective support when individual capacity is insufficient. The duty to contribute to the collective sustenance that makes individual freedom possible.
 
@@ -68,7 +68,7 @@ Assesses the degree of intellectual autonomy from biopolitical control and cultu
 
 **Key metric:** The Forced Substitution Coefficient — tracking the abandonment of public services due to manufactured insecurity. When people "choose" private alternatives because public options were deliberately degraded, that is not preference — it is forced substitution masked as choice.
 
-**Related measures:** Propaganda penetration, information environment health, economic precarity as cognitive coercion.
+**Related measures:** Information substitution coefficient (state, capital, or structural mechanisms that replace authentic perception with substituted perception), economic precarity as cognitive coercion.
 
 A society where Integrated Will is compromised may have formal freedoms but no genuine autonomy. People who are surviving rather than thriving, or who are absorbing state- or capital-produced narratives without critical engagement, cannot meaningfully exercise democratic power regardless of what institutions exist.
 
@@ -186,12 +186,12 @@ The following dimensions are derived from the three pillars and six rights. They
 
 | Dimension | What it measures | Existing data sources |
 |---|---|---|
-| Press freedom / media pluralism | Whether the information environment allows genuine preference formation | RSF Press Freedom Index, V-Dem media indicators |
-| Information environment health | Propaganda penetration, state media capture, disinformation prevalence | V-Dem digital society index, Freedom on the Net |
+| Perception authenticity | Whether the public can perceive its condition authentically, or whether that perception is substituted (by state, capital, or structural mechanisms) | Multi-source: RSF, V-Dem, media ownership analysis, digital ecosystem mapping |
+| Information substitution mechanism | Identifies WHO substitutes perception and HOW: state coercion (Turkey), capital capture (US), structural conditions making substitution unnecessary (Norway), external geopolitical framing (Latvia) | Media ownership data, state censorship records, advertising revenue concentration, geopolitical alignment analysis |
+| Full-spectrum information environment | Not just mainstream press but digital media, social platforms, independent podcasts, community media — the entire ecosystem through which citizens form perception | Digital platform usage data, independent media audience metrics, social media discourse analysis |
 | Forced Substitution Coefficient | Abandonment of public services due to manufactured insecurity (not genuine preference) | National statistics on privatization, public service usage, out-of-pocket spending |
 | Economic precarity as cognitive coercion | Poverty rates, housing insecurity, healthcare access — conditions that make free preference impossible | World Bank poverty data, OECD social indicators, national census data |
 | Civic education levels | Whether citizens understand their rights and governance structures | OECD education data, national surveys, literacy assessments |
-| Digital rights / internet freedom | Whether digital spaces allow autonomous information seeking | Freedom on the Net, OONI data, national internet regulation databases |
 
 ### Pillar II — Organic Ties
 
@@ -222,7 +222,7 @@ The following dimensions are derived from the three pillars and six rights. They
 | Justice | Rule of law, due process, equitable court access, administrative justice effectiveness | WJP Rule of Law Index, V-Dem judicial independence, national court statistics |
 | Compassion | Social safety net quality, refugee/asylum treatment, healthcare access | OECD social indicators, UNHCR data, WHO health access data |
 | Welfare | Poverty rates, housing security, food security, education access | World Bank, FAO, OECD well-being data |
-| Truth | Press freedom, government transparency, scientific integrity, censorship | RSF, V-Dem transparency index, national FOI statistics |
+| Truth | Perception authenticity, information substitution mechanisms, government transparency, scientific integrity | Media ecosystem analysis, RSF, V-Dem transparency index, national FOI statistics, digital platform analysis |
 | Solidarity | Mutual aid networks, labor protections, community support systems | ILO labor data, national civic organization registries, survey data |
 
 ### Important Notes
@@ -241,7 +241,7 @@ The following dimensions are derived from the three pillars and six rights. They
 - How to measure the quality of civic education campaigns during system transitions
 - How to verify that merit-based selection for governance positions remains genuinely meritocratic over time
 - How the GST applies to transnational governance structures (EU, UN, trade agreements)
-- Whether the theory needs a fourth pillar addressing information ecosystems specifically, or whether this is fully captured under Integrated Will
+- RESOLVED: Information ecosystems are fully captured under Integrated Will through the Perception Authenticity dimension. The question is not "how free is the press?" but "can the public perceive its condition authentically, or is that perception substituted?" Press freedom indices measure the 20th-century question. The GST measures the 21st-century one. Different countries have different substitution mechanisms: state coercion (Turkey), capital capture (US), structural conditions making substitution unnecessary (Norway), external geopolitical framing (small NATO-adjacent states). The Forced Substitution coefficient applies to information as much as to economics.
 - Pilot country selection confirmed: Norway, USA, Turkey, India, China (5 countries)
 
 ---
