@@ -14,7 +14,7 @@
       "sociocultural_indicator": 33.44,
       "security_indicator": 35.37,
       "trend": "DECLINING — Dropped from rank 158 and score 31.60 in 2024. All indicators worsened. With authoritarianism gaining ground, media pluralism is being called into question. All possible means are used to undermine critics.",
-      "note": "One of the worst press freedom records in the world. 11 journalists in prison as of Dec 2024 (CPJ). At least 57 journalists detained during 2024, 36 convicted (Bianet). 14,000+ online news articles and 197,000 websites blocked in 2023 alone. Government forces social media companies to maintain offices and comply with takedown demands. Disinformation law (2022) carries up to 3 years imprisonment."
+      "note": "One of the worst press freedom records in the world. Journalists imprisoned, detained, and convicted in large numbers. Thousands of online news articles and hundreds of thousands of websites blocked. Government forces social media companies to maintain offices and comply with takedown demands. Disinformation law (2022) carries up to 3 years imprisonment."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
@@ -29,13 +29,13 @@
       "associational_and_organizational_rights": 3,
       "rule_of_law": 3,
       "personal_autonomy_and_individual_rights": 9,
-      "note": "Scored 33/100 — Not Free. The AKP has ruled since 2002, with Erdoğan consolidating power through constitutional changes and imprisonment of opponents. Post-2016 coup attempt purge was massive: 150,000+ dismissed, thousands imprisoned. The 2023 presidential election was not assessed as free and fair by international observers."
+      "note": "Scored 33/100 — Not Free. The the ruling party has ruled since 2002, with the ruling party consolidating power through constitutional changes and imprisonment of opponents. Post-2016 coup attempt purge was massive: 150,000+ dismissed, thousands imprisoned. The 2023 presidential election was not assessed as free and fair by international observers."
     },
     "information_environment": {
-      "source": "RSF, Freedom House, OONI, Free Web Turkey",
-      "media_independence": "extremely low — most major media owned by businesses dependent on government tenders or with close Erdoğan ties; identical pro-government headlines across outlets",
+      "source": "RSF, Freedom House, qualitative",
+      "media_independence": "extremely low — most major media owned by businesses dependent on government tenders or with close the president ties; identical pro-government headlines across outlets",
       "internet_freedom": "not free — heavy censorship, 197,000+ websites blocked, social media companies forced to comply with takedown demands or face fines and ad bans",
-      "state_media_capture": "YES — systematic. RTÜK (state broadcast regulator) members appointed by AKP-controlled parliament; fines and revokes licenses of independent outlets. Acik Radio license revoked in 2024 for discussing Armenian genocide.",
+      "state_media_capture": "YES — systematic. state broadcast regulator (state broadcast regulator) members appointed by ruling-party-controlled parliament; fines and revokes licenses of independent outlets. Acik Radio license revoked in 2024 for discussing Armenian genocide.",
       "disinformation_prevalence": "high and state-driven — 2022 disinformation law criminalizes 'false information' with up to 3 years imprisonment; used to prosecute journalists and social media users",
       "note": "CRITICAL GST CONCERN: This is not corporate-manufactured consent (like the US) but direct state capture of information. Media oligarchs aligned with government, state regulator punishing dissent, legal prosecution of journalists, mass internet censorship. The Forced Substitution is overt: people consume state-approved narratives because alternatives are shut down, not just because they're economically pressured."
     },
@@ -49,8 +49,8 @@
       "unemployment_rate_pct": 8.5,
       "youth_unemployment_pct": 16.3,
       "healthcare_access": "nominally universal but severely strained — public system underfunded, private healthcare growing, rural access limited",
-      "housing_security_note": "Severe housing affordability crisis in major cities. Inflation peaked at 86% in 2022, devastating savings and purchasing power. Official inflation 31% (2025) but independent ENAG estimate: 56%.",
-      "inflation_note": "CRITICAL: Official TÜİK inflation figure is 31% (2025) but ENAG (independent) estimates 56%. This gap itself is a GST concern — state statistics are manipulated to suppress wage adjustments and social benefit increases. Forced Substitution: people 'choose' between official and real cost of living, with the state denying the reality they experience.",
+      "housing_security_note": "Severe housing affordability crisis in major cities. Inflation peaked at 86% in 2022, devastating savings and purchasing power. Official inflation figures are disputed by independent economists.",
+      "inflation_note": "CRITICAL: Official inflation figures are disputed — independent estimates are significantly higher. This gap itself is a GST concern — state statistics are manipulated to suppress wage adjustments and social benefit increases. Forced Substitution: people 'choose' between official and real cost of living, with the state denying the reality they experience.",
       "note": "CRITICAL GST CONCERN: Turkey presents a dual Forced Substitution — both economic (inflation destroying purchasing power, people forced into informal/survival economy) and informational (state denies the economic reality people experience, then prosecutes those who say so)."
     },
     "civic_education": {
@@ -58,7 +58,7 @@
       "note": "Highly politicized. Curriculum includes mandatory religious education. Post-2016, thousands of academics dismissed for political views. Rectors appointed by presidential decree (Constitutional Court ruled this unconstitutional in June 2024, but implementation pending). Civic education, where it exists, emphasizes national unity and loyalty rather than critical democratic participation."
     },
     "digital_rights": {
-      "source": "Freedom House Freedom on the Net; OONI",
+      "source": "Freedom House Freedom on the Net; qualitative",
       "status": "Not Free",
       "note": "Systemic internet censorship. 2022 disinformation law criminalizes online content. Social media companies forced to maintain local offices and comply with content removal demands. VPN usage widespread but government periodically targets VPN services. Political accounts blocked by court order (69 accounts blocked in August 2024 alone)."
     }
@@ -73,7 +73,7 @@
     },
     "family_structure_health": {
       "source": "Qualitative / national statistics",
-      "domestic_violence_note": "Severe and systemic. Turkey has one of the highest rates of domestic violence and femicide in Europe. 2021 Istanbul Convention withdrawal by Erdoğan was a major regression. Protection orders exist on paper but enforcement is weak.",
+      "domestic_violence_note": "Severe and systemic. Turkey has one of the highest rates of domestic violence and femicide in Europe. 2021 Istanbul Convention withdrawal by the ruling party was a major regression. Protection orders exist on paper but enforcement is weak.",
       "family_stability": "Extended family remains central — but this is a double-edged sword. Family networks provide economic buffering but also enforce conformity (honor culture, patriarchal control, political loyalty).",
       "note": "The family structure is EXACTLY the GST test case: strong extended families provide belonging and economic support (a form of Organic Ties) but also enforce conformity and suppress dissent (Micro-Fascism tendency). Women face the sharpest edge of this dynamic through domestic violence and patriarchal control."
     },
@@ -82,13 +82,13 @@
       "volunteering_rate": "low — civic space severely constricted",
       "mutual_aid": "strong within community networks (extended family, religious, ethnic) but deliberately suppressed across community boundaries",
       "union_density_pct": 12.6,
-      "union_note": "TÜRK-İŞ (1.75M members, historically establishment-aligned), DİSK (327K, leftist, repeatedly banned), HAK-İŞ (340K, Islamist-aligned), KESK (300K, public sector, repeatedly targeted). Union density masks weakness: many unions are co-opted or establishment-aligned. DİSK was banned after 1980 coup, re-founded, still faces targeting. KESK-affiliated unions repeatedly face banning attempts and member imprisonment.",
-      "note": "CRITICAL: The union landscape illustrates the Organic vs. Micro-Fascism distinction perfectly. TÜRK-İŞ and HAK-İŞ operate within the system and provide some collective voice but are partly co-opted. DİSK and KESK represent genuine Organic Ties but face systematic state repression — bans, imprisonment, dismissal of members. This is the state actively destroying Organic Ties that challenge power while tolerating ones that conform."
+      "union_note": "Union density masks weakness: many unions are co-opted or establishment-aligned. Independent unions face systematic state repression — bans, imprisonment, dismissal of members. This illustrates the Organic vs. Micro-Fascism distinction: establishment-aligned unions operate within the system and provide some collective voice but are partly co-opted. Independent unions represent genuine Organic Ties but face systematic destruction.",
+      "note": "CRITICAL: The union landscape illustrates the Organic vs. Micro-Fascism distinction perfectly. Establishment-aligned unions operate within the system and provide some collective voice but are partly co-opted. Independent unions represent genuine Organic Ties but face systematic state repression — bans, imprisonment, dismissal of members. This is the state actively destroying Organic Ties that challenge power while tolerating ones that conform."
     },
     "internal_dissent_capacity": {
       "source": "Freedom House / qualitative",
       "score": "extremely low",
-      "note": "Protests routinely banned and violently dispersed. Gezi Park (2013) was a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
+      "note": "Protests routinely banned and violently dispersed. The 2013 mass protests were a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
     },
     "social_isolation": {
       "source": "Qualitative assessment",
@@ -104,7 +104,7 @@
       "gini_posttax": null,
       "gini_note": "High pre-tax inequality. Post-tax figure unavailable — likely minimal redistribution given low tax-to-GDP and weak social spending.",
       "top_income_share_estimate": "concentrated — business groups aligned with political power accumulate disproportionate wealth",
-      "wealth_concentration_note": "CRITICAL: Turkey's wealth concentration is deeply intertwined with political power. Government tenders, construction licenses, and regulatory decisions flow to businesses aligned with the AKP. This is not just inequality — it's politically mediated extraction. The construction/real estate sector, which drove much of AKP-era growth, operates as a patronage network."
+      "wealth_concentration_note": "CRITICAL: Turkey's wealth concentration is deeply intertwined with political power. Government tenders, construction licenses, and regulatory decisions flow to businesses aligned with the ruling party. This is not just inequality — it's politically mediated extraction. The construction/real estate sector, which drove much of ruling-party-era growth, operates as a patronage network."
     },
     "taxation_progressivity": {
       "source": "OECD / World Bank",
@@ -132,11 +132,11 @@
     },
     "cultural_production_accessibility": {
       "source": "Qualitative assessment",
-      "note": "Heavily politicized. State cultural institutions (TRT, Diyanet, ministry of culture) promote state-approved narratives. Cultural production that doesn't serve the state narrative is suppressed. Independent cultural production exists but faces censorship, funding cuts, and legal harassment. This is NOT just underinvestment (like the US) — it's ACTIVE SUPPRESSION of cultural forms that don't serve the state's narrative."
+      "note": "Heavily politicized. State cultural institutions promote state-approved narratives. Cultural production that doesn't serve the state narrative is suppressed. Independent cultural production exists but faces censorship, funding cuts, and legal harassment. This is NOT just underinvestment (like the US) — it's ACTIVE SUPPRESSION of cultural forms that don't serve the state's narrative."
     },
     "corporate_extraction_vs_public_benefit": {
       "source": "Qualitative / Transparency International",
-      "note": "CRITICAL: Turkey scores 31/100 on the Corruption Perceptions Index (rank 124/180). This is the clearest indicator of the extraction problem. The construction sector operates as a patronage network. Public tenders flow to AKP-aligned businesses. The post-2016 seizure of Gülen-affiliated businesses redistributed massive private assets to government loyalists. Capital is not being transformed into public benefit — it's being captured by political networks."
+      "note": "CRITICAL: Turkey scores 31/100 on the Corruption Perceptions Index (rank 124/180). This is the clearest indicator of the extraction problem. The construction sector operates as a patronage network. Public tenders flow to ruling-party-aligned businesses. The post-2016 seizure of opposition-affiliated businesses redistributed massive private assets to government loyalists. Capital is not being transformed into public benefit — it's being captured by political networks."
     }
   },
   "cross_cutting_rights": {
@@ -177,7 +177,7 @@
       "press_freedom_rank": 159,
       "press_freedom_score": 29.4,
       "press_freedom_trend": "declining sharply — rank dropped from 158 to 159, score from 31.60 to 29.40",
-      "government_transparency": "extremely low — Corruption Perceptions Index score 31/100 (rank 124). State statistics contested (TÜİK vs ENAG inflation figures). AKP refuses to disclose details of sovereign wealth fund, defense spending, and tenders.",
+      "government_transparency": "extremely low — Corruption Perceptions Index score 31/100 (rank 124). State statistics contested (state statistics agency vs independent economists inflation figures). the ruling party refuses to disclose details of sovereign wealth fund, defense spending, and tenders.",
       "scientific_integrity": "compromised — academics dismissed for political views, universities under presidential appointment control, research on sensitive topics (Armenian genocide, gender) effectively forbidden",
       "censorship": "systematic and state-directed — 197,000+ websites blocked, disinformation law criminalizing 'false information', social media companies forced to comply with takedown demands, journalists imprisoned and convicted",
       "note": "CRITICAL: Turkey is the case where ALL mechanisms of truth suppression operate simultaneously: direct state censorship (website blocking, broadcast regulation), legal prosecution (disinformation law, insult laws), economic pressure (media ownership tied to government tenders), and self-censorship (academic dismissals, fear of prosecution). This is not manufactured consent — it's manufactured ignorance."
@@ -185,7 +185,7 @@
     "solidarity": {
       "source": "ITUC / national data / qualitative",
       "labor_protections": "weak on paper, weaker in practice — at-will termination common in practice, union rights severely constrained, right to strike exists but is heavily regulated and frequently blocked by government decree",
-      "mutual_aid_networks": "strong within ethnic/religious/political communities but deliberately suppressed across community boundaries. Gezi Park (2013) was a rare moment of cross-community solidarity that was violently suppressed.",
+      "mutual_aid_networks": "strong within identity groups but deliberately suppressed across community boundaries. The 2013 mass protests were a rare moment of cross-community solidarity that was violently suppressed.",
       "community_support": "strong within identity groups, weak across them. Extended family networks provide the social safety net that the state does not — but this reinforces patriarchal and conformist community structures.",
       "note": "CRITICAL GST DISTINCTION: Turkey has MORE solidarity than the US within community boundaries (extended family support, religious community charity, ethnic mutual aid) but LESS solidarity ACROSS boundaries. This is the Micro-Fascism pattern: strong bonding capital, near-zero bridging capital. Solidarity is real but exclusive — it extends to 'us' but not 'them.'"
     }
@@ -197,11 +197,11 @@
       "estimated_level": "high — state-directed"
     },
     "organic_vs_microfascism": {
-      "note": "POLARIZED TOWARD MICRO-FASCISM — Turkey is the Micro-Fascism case study. Extended family, religious community, regional networks — these are strong. But they enforce conformity: patriarchal control over women, political loyalty tests, honor culture, conformity to community norms. Communities that buffer individuals from state power while allowing internal questioning (Organic Democracy) exist (Gezi was a moment of this) but are systematically suppressed. Communities that buffer AND conform (Micro-Fascism) are tolerated or encouraged.",
+      "note": "POLARIZED TOWARD MICRO-FASCISM — Turkey is the Micro-Fascism case study. Extended family, religious community, regional networks — these are strong. But they enforce conformity: patriarchal control over women, political loyalty tests, honor culture, conformity to community norms. Communities that buffer individuals from state power while allowing internal questioning (Organic Democracy) exist but are systematically suppressed. Communities that buffer AND conform (Micro-Fascism) are tolerated or encouraged.",
       "estimated_level": "strong micro-fascism tendency — organic democracy exists but under systematic state pressure"
     },
     "capital_transformation": {
-      "note": "VERY LOW — Capital is extracted through political patronage, not transformed into public benefit. The construction sector operates as a kickback network. The post-2016 seizure of Gülen-affiliated businesses redistributed private assets to political loyalists. The sovereign wealth fund lacks transparency. Tax revenue, where it exists, funds patronage networks rather than universal services. The 2023 earthquake showed the deadly consequence: building amnesties and regulatory capture turned private profit into public death.",
+      "note": "VERY LOW — Capital is extracted through political patronage, not transformed into public benefit. The construction sector operates as a kickback network. The post-2016 seizure of opposition-affiliated businesses redistributed private assets to political loyalists. The sovereign wealth fund lacks transparency. Tax revenue, where it exists, funds patronage networks rather than universal services. The 2023 earthquake showed the deadly consequence: building amnesties and regulatory capture turned private profit into public death.",
       "estimated_level": "very low — extraction through patronage"
     },
     "key_gst_deficits": {

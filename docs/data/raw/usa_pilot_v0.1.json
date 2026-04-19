@@ -3,7 +3,6 @@
   "country_code": "US",
   "collection_date": "2026-04-19",
   "data_version": "0.1-pilot",
-
   "pillar_I_integrated_will": {
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
@@ -24,7 +23,7 @@
       "note": "FH scores the US as Free but documents extensive equality gaps. The 2025 report highlights: persistent wage disparities (Black women earn 69 cents vs White men's dollar; Hispanic women 57 cents), de facto school segregation, housing discrimination, 3.6 million pending immigration cases with 4+ year wait times, rising hate crimes, and Supreme Court rollback of affirmative action."
     },
     "information_environment": {
-      "source": "Multiple (RSF, Freedom House, OONI)",
+      "source": "Multiple (RSF, Freedom House, qualitative assessment)",
       "media_independence": "declining",
       "internet_freedom": "moderately free but eroding",
       "state_media_capture": "not state-captured but corporate-concentrated",
@@ -35,7 +34,7 @@
       "source": "OECD / World Bank / Census",
       "poverty_rate_pct": 11.5,
       "poverty_rate_note": "Official poverty measure; Supplemental measure (accounting for cost of living and transfers) is ~12.9%. Extreme disparities by race.",
-      "gini_coefficient_pretax": 0.510,
+      "gini_coefficient_pretax": 0.51,
       "gini_coefficient_posttax": 0.385,
       "gini_note": "Among highest in developed world. Minimal redistribution compared to peers — pre-tax to post-tax reduction only ~0.125 points (vs Norway's ~0.128).",
       "unemployment_rate_pct": 4.1,
@@ -53,7 +52,6 @@
       "note": "No nationwide internet shutdowns, but increasing surveillance, content moderation debates, and state-level social media restrictions. Net neutrality has been repealed."
     }
   },
-
   "pillar_II_organic_ties": {
     "social_cohesion": {
       "source": "OECD / World Values Survey / Pew",
@@ -88,11 +86,10 @@
       "note": "CRITICAL: An epidemic of isolation means Organic Ties are fundamentally weakened. Atomized individuals are maximally vulnerable to both state and capital power."
     }
   },
-
   "pillar_III_social_capital_transformation": {
     "wealth_distribution": {
       "source": "Federal Reserve / World Inequality Database",
-      "gini_pretax": 0.510,
+      "gini_pretax": 0.51,
       "gini_posttax": 0.385,
       "top_1_pct_wealth_share": 30.5,
       "bottom_50_pct_wealth_share": 2.5,
@@ -137,7 +134,6 @@
       "note": "CRITICAL: The US is the extreme case for GST analysis. Corporate profits are at record levels while public infrastructure decays. Pharmaceutical companies extract massive profits while millions lack medication. Tech monopolies capture value without corresponding public benefit. Private equity strips productive assets. The delta between private extraction and public transformation is enormous."
     }
   },
-
   "cross_cutting_rights": {
     "integrity": {
       "source": "HRW / Amnesty / CIRI",
@@ -185,7 +181,6 @@
       "note": "Solidarity is structurally undermined. The system incentivizes individual competition over collective support. Union collapse (10% density) means the primary mechanism of economic solidarity has been systematically dismantled."
     }
   },
-
   "gst_specific_observations": {
     "ceiling_test": "The US is the key test case for whether the GST can capture democratic deficits in a 'full democracy' that procedural indices score highly.",
     "forced_substitution_coefficient": {
