@@ -5,7 +5,7 @@
   "data_version": "0.1-pilot",
   "pillar_I_integrated_will": {
     "press_freedom": {
-      "source": "RSF Press Freedom Index 2025",
+      "source": "RSF Press Freedom Index 2025 (mainstream press); Trading Economics; qualitative (digital ecosystem)",
       "rank": 159,
       "score": 29.4,
       "political_indicator": 19.69,
@@ -14,7 +14,7 @@
       "sociocultural_indicator": 33.44,
       "security_indicator": 35.37,
       "trend": "DECLINING — Dropped from rank 158 and score 31.60 in 2024. All indicators worsened. With authoritarianism gaining ground, media pluralism is being called into question. All possible means are used to undermine critics.",
-      "note": "One of the worst press freedom records in the world for mainstream media. Journalists imprisoned, detained, and convicted in large numbers. Thousands of online news articles and hundreds of thousands of websites blocked. Government forces social media companies to maintain offices and comply with takedown demands. Disinformation law (2022) carries up to 3 years imprisonment. CRITICAL DISTINCTION: mainstream/broadcast media is heavily captured; online space is contested but remains the primary channel for independent reporting and opposition discourse."
+      "note": "CRITICAL DISTINCTION — mainstream/broadcast media vs. full information environment: Mainstream media is heavily captured by the state (journalists imprisoned, outlets aligned with government). BUT the internet remains the primary space for opposition discourse — social media, YouTube, independent podcasts, and online news are widely used for government criticism. The RSF score measures the 20th-century question (is the press free?). The GST question is: can the public perceive its condition authentically? The answer is mixed — mainstream perception is substituted; digital perception is contested but substantially more authentic."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
@@ -34,24 +34,41 @@
     "information_environment": {
       "source": "RSF, Freedom House, qualitative",
       "media_independence": "extremely low — most major media owned by businesses dependent on government tenders or with close the president ties; identical pro-government headlines across outlets",
-      "internet_freedom": "mixed — the state actively censors (hundreds of thousands of websites blocked, social media companies forced to comply with takedown demands), BUT the internet remains the primary space for opposition discourse. Twitter/X, YouTube, independent news sites, and podcasts are widely used for government criticism. VPN usage is widespread. The state attempts control but has not succeeded in closing off the internet as a space for dissent. This is a critical distinction from mainstream media, which is far more captured.",
+      "internet_freedom": "contested — the state actively censors (websites blocked, social media companies forced to comply with takedown demands), BUT the internet remains the primary space for opposition discourse. Social media, YouTube, independent news sites, and podcasts are widely used for government criticism. VPN usage is widespread. The state attempts control but has not succeeded in closing off the internet as a space for dissent. This is a critical distinction from mainstream media, which is far more captured.",
       "state_media_capture": "YES — systematic. state broadcast regulator (state broadcast regulator) members appointed by ruling-party-controlled parliament; fines and revokes licenses of independent outlets. Acik Radio license revoked in 2024 for discussing Armenian genocide.",
       "disinformation_prevalence": "high and state-driven — 2022 disinformation law criminalizes 'false information' with up to 3 years imprisonment; used to prosecute journalists and social media users",
       "note": "CRITICAL GST CONCERN: This is not corporate-manufactured consent (like the US) but direct state capture of information. Media oligarchs aligned with government, state regulator punishing dissent, legal prosecution of journalists, mass internet censorship. The Forced Substitution is overt: people consume state-approved narratives because alternatives are shut down, not just because they're economically pressured."
     },
     "economic_precarity": {
-      "source": "World Bank, OECD, Wikipedia (citing official sources)",
+      "source": "Trading Economics / TÜİK / World Bank (April 2026)",
       "poverty_rate_pct": 14.4,
       "poverty_rate_note": "At 50% of median equivalised income (2022). AROPE (at risk of poverty or social exclusion): 30.4% (2024). These are official figures; independent estimates are likely higher given inflation measurement disputes.",
       "gini_coefficient_pretax": 0.448,
       "gini_coefficient_posttax": null,
       "gini_note": "44.8 pre-tax (2024) — high inequality. Post-tax figure not reliably available; Turkey's weak redistribution likely means minimal reduction.",
       "unemployment_rate_pct": 8.5,
-      "youth_unemployment_pct": 16.3,
+      "youth_unemployment_pct": 15.8,
       "healthcare_access": "nominally universal but severely strained — public system underfunded, private healthcare growing, rural access limited",
-      "housing_security_note": "Severe housing affordability crisis in major cities. Inflation peaked at 86% in 2022, devastating savings and purchasing power. Official inflation figures are disputed by independent economists.",
-      "inflation_note": "CRITICAL: Official inflation figures are disputed — independent estimates are significantly higher. This gap itself is a GST concern — state statistics are manipulated to suppress wage adjustments and social benefit increases. Forced Substitution: people 'choose' between official and real cost of living, with the state denying the reality they experience.",
-      "note": "CRITICAL GST CONCERN: Turkey presents a dual Forced Substitution — both economic (inflation destroying purchasing power, people forced into informal/survival economy) and informational (state denies the economic reality people experience, then prosecutes those who say so)."
+      "housing_security_note": "Severe housing affordability crisis in major cities. Inflation peaked at ~75%, devastating savings and purchasing power. CPI at 30.87% as of latest data. Over a third of workers earn minimum wage (~$655/month net) — against these rents, housing security is impossible for most.",
+      "inflation_note": "CRITICAL: CPI at 30.87%, food inflation 32.36%. Minimum wage net is ~$655/month — over a third of workers earn this. Average wage roughly $900/month at current rates. Against 30%+ inflation, real purchasing power is severely eroded. This is Forced Substitution: people's wages cannot keep pace with cost of living, and the state denies the full extent of the inflation they experience.",
+      "note": "CRITICAL GST CONCERN: Turkey presents a dual Forced Substitution — economic (inflation at 30.87% eroding real wages, over a third of workers on minimum wage at ~$655/month net, low labor force participation at 52.6% masking real unemployment) and informational (state denies the economic reality people experience). The combination of low wages, high inflation, and low participation creates survival anxiety that makes democratic participation a luxury most cannot afford.",
+      "unemployment_note": "Official TÜİK figure. Low labor force participation rate (52.6%) likely masks real unemployment — people who've stopped looking aren't counted. Over a third of the workforce earns minimum wage.",
+      "labor_force_participation_pct": 52.6,
+      "employment_rate_pct": 48.2,
+      "minimum_wage_gross_try": 33030,
+      "minimum_wage_net_try": 28075,
+      "minimum_wage_net_usd": 655,
+      "minimum_wage_note": "2026 gross minimum wage. Over a third of the 30M+ workforce earns minimum wage — this IS the economic reality for most Turkish workers.",
+      "average_gross_wage_try": 39253,
+      "average_gross_wage_note": "2024 average gross wage (39,253 TRY/month), projected ~50,636 TRY/month for 2026.",
+      "inflation_cpi_pct": 30.87,
+      "food_inflation_pct": 32.36,
+      "core_inflation_pct": 29.68,
+      "producer_price_change_pct": 28.08,
+      "interest_rate_pct": 37.0,
+      "inflation_trend": "Down from peak of ~75% but still far above the central bank's 5% target. Year-end 2025 was ~31%, 2026 target is 16%.",
+      "gdp_per_capita_usd": 15148,
+      "gdp_per_capita_ppp_usd": 35294
     },
     "civic_education": {
       "source": "National assessments / qualitative",
@@ -179,7 +196,7 @@
       "press_freedom_trend": "declining sharply — rank dropped from 158 to 159, score from 31.60 to 29.40",
       "government_transparency": "extremely low — Corruption Perceptions Index score 31/100 (rank 124). State statistics contested (state statistics agency vs independent economists inflation figures). the ruling party refuses to disclose details of sovereign wealth fund, defense spending, and tenders.",
       "scientific_integrity": "compromised — academics dismissed for political views, universities under presidential appointment control, research on sensitive topics (Armenian genocide, gender) effectively forbidden",
-      "censorship": "systematic and state-directed — 197,000+ websites blocked, disinformation law criminalizing 'false information', social media companies forced to comply with takedown demands, journalists imprisoned and convicted",
+      "censorship": "bifurcated — systematic state censorship of mainstream media (journalists imprisoned, outlets captured), but digital space remains substantially more open. Websites blocked, disinformation law criminalizes 'false information', social media companies forced to comply with takedown demands. The censorship is real but incomplete — the information environment is split, not closed.",
       "note": "CRITICAL: Turkey is the case where ALL mechanisms of truth suppression operate simultaneously: direct state censorship (website blocking, broadcast regulation), legal prosecution (disinformation law, insult laws), economic pressure (media ownership tied to government tenders), and self-censorship (academic dismissals, fear of prosecution). This is not manufactured consent — it's manufactured ignorance."
     },
     "solidarity": {
