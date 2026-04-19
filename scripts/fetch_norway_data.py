@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+"""
+Democracy Pulse - Norway Pilot Data Collection
+Collects available data for initial scoring across GST dimensions.
+"""
+import json
+
+norway_data = {
+    "country": "Norway",
+    "country_code": "NO",
+    "collection_date": "2026-04-19",
+    "data_version": "0.1-pilot",
+    
+    "pillar_I_integrated_will": {
+        "press_freedom": {
+            "source": "RSF Press Freedom Index 2025",
+            "rank": 1,
+            "score": 92.31,
+            "political_indicator": 96.22,
+            "economic_indicator": 87.32,
+            "legislative_indicator": 91.96,
+            "sociocultural_indicator": 90.03,
+            "security_indicator": 96.03,
+            "note": "Highest in the world. Strong across all sub-indicators."
+        },
+        "freedom_house_scores": {
+            "source": "Freedom House Freedom in the World 2025",
+            "overall_score": 99,
+            "status": "Free",
+            "political_rights": 39,
+            "civil_liberties": 60,
+            "pr_max": 40,
+            "cl_max": 60,
+            "note": "Near-perfect scores. Only weakness: C2 (safeguards against corruption) scored 3/4 due to recent stock-trading scandals involving politicians including former PM Solberg."
+        },
+        "information_environment": {
+            "source": "Freedom House / V-Dem",
+            "media_independence": "strong",
+            "internet_freedom": "generally free",
+            "state_media_capture": "minimal",
+            "note": "Norway has one of the healthiest information environments globally. NRK (public broadcaster) is independent. Low disinformation prevalence relative to peers."
+        },
+        "economic_precarity": {
+            "source": "OECD / World Bank",
+            "poverty_rate_pct": 0.5,
+            "poverty_rate_note": "One of lowest in world, measured as share below 50% median income",
+            "gini_coefficient_pretax": 0.386,
+            "gini_coefficient_posttax": 0.258,
+            "gini_note": "Dramatic reduction from pre-tax to post-tax shows effective redistribution",
+            "unemployment_rate_pct": 4.2,
+            "healthcare_access": "universal",
+            "housing_security_note": "Strong public housing support but affordability issues in major cities"
+        },
+        "civic_education": {
+            "source": "OECD / national assessments",
+            "note": "High civic knowledge. Norway participates in ICCS (International Civic and Citizenship Education Study). Strong civic education in public schooling."
+        },
+        "digital_rights": {
+            "source": "Freedom on the Net (Freedom House)",
+            "status": "Free",
+            "note": "Strong digital rights framework. Some concerns around surveillance legislation but generally robust privacy protections."
+        }
+    },
+    
+    "pillar_II_organic_ties": {
+        "social_cohesion": {
+            "source": "OECD / World Values Survey",
+            "social_trust_pct": 74,
+            "social_trust_note": "Highest in OECD. 'Most people can be trusted' response.",
+            "community_organization": "strong",
+            "note": "Exceptionally high social trust and community organization. Voluntary sector is large."
+        },
+        "family_structure_health": {
+            "source": "WHO / national statistics",
+            "domestic_violence_note": "Exists but robust legal framework and support systems. Repeated surveys show ~25% of women experience intimate partner violence lifetime — comparable to Nordic average, indicating this is measured and addressed rather than hidden.",
+            "family_stability": "moderate-high",
+            "note": "High divorce rate (Nordic pattern) but this reflects liberal divorce laws and women's economic independence, not necessarily family dysfunction. Children's welfare indicators strong."
+        },
+        "civic_participation_beyond_voting": {
+            "source": "Johns Hopkins / national data",
+            "volunteering_rate": "high",
+            "mutual_aid": "strong institutionalized",
+            "union_density_pct": 50.4,
+            "union_note": "Strong trade union tradition. Collective bargaining coverage ~70%.",
+            "note": "Very high civic participation. Membership in organizations, volunteer work, and mutual aid are culturally embedded."
+        },
+        "internal_dissent_capacity": {
+            "source": "V-Dem deliberation index / qualitative",
+            "score": "high",
+            "note": "Strong tradition of open debate within communities and organizations. The Sámi conflict over Fosen wind turbines shows both the capacity for dissent AND the institutional friction in addressing it. Dissent is permitted but institutional responsiveness to minority dissent is imperfect."
+        },
+        "social_isolation": {
+            "source": "OECD well-being data",
+            "loneliness_rate_pct": 6,
+            "loneliness_note": "Among lowest in OECD but rising among elderly",
+            "note": "Strong social safety nets reduce isolation, but urbanization and digitalization creating new forms of disconnection."
+        }
+    },
+    
+    "pillar_III_social_capital_transformation": {
+        "wealth_distribution": {
+            "source": "World Inequality Database / OECD",
+            "gini_pretax": 0.386,
+            "gini_posttax": 0.258,
+            "top_10_pct_income_share": 24.7,
+            "bottom_50_pct_income_share": 19.4,
+            "wealth_concentration_note": "One of lowest income inequalities globally. Wealth inequality is higher than income inequality but still moderate by international standards."
+        },
+        "taxation_progressivity": {
+            "source": "OECD tax statistics",
+            "tax_to_gdp_pct": 42.6,
+            "tax_to_gdp_note": "High tax burden with significant redistribution",
+            "top_marginal_income_tax_pct": 47.8,
+            "corporate_tax_pct": 22.0,
+            "vat_pct": 25.0,
+            "progressivity_note": "Progressive income tax with wealth tax. Effective redistribution through transfers and public services."
+        },
+        "public_investment": {
+            "source": "OECD / WHO / UNESCO",
+            "healthcare_spending_pct_gdp": 7.9,
+            "education_spending_pct_gdp": 6.6,
+            "social_protection_pct_gdp": 24.2,
+            "social_protection_note": "Among highest in OECD",
+            "infrastructure_note": "Strong public infrastructure investment, particularly from oil revenue fund"
+        },
+        "social_mobility": {
+            "source": "OECD social mobility indices",
+            "intergenerational_income_elasticity": 0.17,
+            "mobility_note": "Among highest social mobility in the world. Low correlation between parent and child income.",
+            "note": "Strong public education, universal healthcare, and robust social safety nets create genuine opportunity for advancement."
+        },
+        "cultural_production_accessibility": {
+            "source": "UNESCO / national budgets",
+            "public_cultural_spending_pct_gdp": 1.3,
+            "note": "Significant public investment in cultural institutions, libraries, museums. Many free or heavily subsidized."
+        },
+        "corporate_extraction_vs_public_benefit": {
+            "source": "National economic accounts",
+            "sovereign_wealth_fund_usd": 1700000000000,
+            "swf_note": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations.",
+            "note": "Textbook case of capital transformation: petroleum profits are taxed heavily and invested in a sovereign wealth fund for public benefit. This is close to the GST ideal of capital continuously transforming into public benefit."
+        }
+    },
+    
+    "cross_cutting_rights": {
+        "integrity": {
+            "source": "HRW / Amnesty / CIRI",
+            "political_imprisonment": "none",
+            "bodily_autonomy": "strong",
+            "sami_rights_note": "Ongoing tensions with Sámi communities over land use and cultural rights (Fosen wind turbine case). Freedom House upgraded Norway's score on equal treatment after the 2024 agreement."
+        },
+        "justice": {
+            "source": "WJP Rule of Law Index",
+            "rule_of_law_rank": 1,
+            "judicial_independence": "very strong",
+            "due_process": "robust",
+            "equal_access_note": "Generally strong but access to justice for marginalized communities (immigrants, Sámi) has documented gaps."
+        },
+        "compassion": {
+            "source": "OECD / UNHCR",
+            "social_safety_net": "comprehensive",
+            "refugee_policy": "generous by international standards",
+            "healthcare_access": "universal",
+            "note": "Strong on institutional compassion but rising anti-immigration sentiment creates tension."
+        },
+        "welfare": {
+            "source": "World Bank / OECD",
+            "poverty_rate": 0.5,
+            "housing_security": "strong public support but affordability crisis in cities",
+            "food_security": "high",
+            "education_access": "universal free education including university"
+        },
+        "truth": {
+            "source": "RSF / V-Dem transparency",
+            "press_freedom_rank": 1,
+            "government_transparency": "very high",
+            "scientific_integrity": "strong",
+            "censorship": "minimal",
+            "note": "One of the most transparent governments globally. Public records access is robust."
+        },
+        "solidarity": {
+            "source": "ILO / national data",
+            "labor_protections": "strong",
+            "mutual_aid_networks": "strong institutionalized",
+            "community_support": "high",
+            "note": "Strong labor movement, high union density, comprehensive welfare state. Solidarity is structurally embedded."
+        }
+    },
+    
+    "gst_specific_observations": {
+        "ceiling_test": "Norway is expected to score highest among pilot countries. If it doesn't, the measurement framework needs adjustment.",
+        "forced_substitution_coefficient": {
+            "note": "LOW — Public services are high quality, so private alternatives are genuine preference, not manufactured necessity. Private schooling exists but is not driven by public school failure. Healthcare is universal and high-quality.",
+            "estimated_level": "low"
+        },
+        "organic_vs_microfascism": {
+            "note": "Mostly ORGANIC — Communities allow internal dissent. Strong tradition of organizational democracy. Some exceptions: certain religious communities may enforce conformity. Sámi communities have legitimate internal governance structures but face external institutional barriers.",
+            "estimated_level": "predominantly organic"
+        },
+        "capital_transformation": {
+            "note": "STRONG — Sovereign wealth fund is textbook GST capital transformation. Oil profits → public investment. High taxation with visible public benefit. Cultural production is publicly funded and accessible.",
+            "estimated_level": "high"
+        },
+        "key_gst_deficits": {
+            "sami_rights": "Fosen case shows that even strong institutions can fail minorities. The 2021 Supreme Court ruling found wind turbines violated Sámi cultural rights; it took 3 years to reach agreement. Institutional responsiveness to minority dissent is imperfect.",
+            "urban_housing": "Housing affordability crisis in Oslo and other cities creates economic precarity for young people and immigrants — a form of forced substitution if people are priced out of adequate housing.",
+            "anti_immigrant_sentiment": "Rising right-wing populism challenges solidarity toward non-Norwegian residents. Institutional compassion exists but social solidarity has boundaries.",
+            "corporate_influence_in_fishing_and_oil": "Resource industries have significant political influence, creating policy congruence questions."
+        }
+    }
+}
+
+with open('/Users/claudius/clawd/democracy-pulse/data/raw/norway_pilot_v0.1.json', 'w') as f:
+    json.dump(norway_data, f, indent=2, ensure_ascii=False)
+
+print("Norway pilot data saved successfully.")
