@@ -11,92 +11,455 @@
             background: #0a0a0a;
             color: #e0e0e0;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
         }
-        .container {
-            max-width: 700px;
+        .header {
             text-align: center;
+            padding: 3rem 1rem 2rem;
+            border-bottom: 1px solid #1a1a1a;
         }
-        h1 {
-            font-size: 2.5rem;
+        .header h1 {
+            font-size: 2.2rem;
             font-weight: 300;
             letter-spacing: 0.15em;
-            margin-bottom: 0.5rem;
             color: #fff;
         }
-        .subtitle {
-            font-size: 1.1rem;
+        .header .subtitle {
+            font-size: 1rem;
             color: #888;
-            margin-bottom: 2.5rem;
+            margin-top: 0.5rem;
             font-style: italic;
+        }
+        .theory-banner {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1.5rem;
+        }
+        .theory-banner h2 {
+            font-size: 1.1rem;
+            color: #4a9;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .theory-banner p {
+            font-size: 0.85rem;
+            color: #999;
+            line-height: 1.6;
         }
         .pillars {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            gap: 1rem;
+            margin: 1.5rem auto;
+            max-width: 800px;
             flex-wrap: wrap;
         }
         .pillar {
             background: #141414;
             border: 1px solid #2a2a2a;
             border-radius: 8px;
-            padding: 1.2rem 1rem;
-            width: 180px;
+            padding: 1rem;
+            flex: 1;
+            min-width: 200px;
             text-align: center;
         }
         .pillar .label {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: #666;
-            margin-bottom: 0.4rem;
+            color: #555;
+            margin-bottom: 0.3rem;
         }
         .pillar .name {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: #ccc;
             line-height: 1.3;
         }
-        .status {
+        .country-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 2rem auto;
+            flex-wrap: wrap;
+            max-width: 600px;
+        }
+        .country-btn {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #ccc;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
             font-size: 0.85rem;
-            color: #555;
-            margin-top: 2rem;
+            transition: all 0.2s;
         }
-        .status span {
+        .country-btn:hover { background: #222; border-color: #4a9; color: #fff; }
+        .country-btn.active { background: #4a9; border-color: #4a9; color: #000; font-weight: 600; }
+        #country-data {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem 3rem;
+            display: none;
+        }
+        .country-header {
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4a9;
+        }
+        .country-header h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: 400;
+        }
+        .country-header .collection-date {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        .section {
+            margin: 1.5rem 0;
+        }
+        .section h3 {
+            font-size: 1rem;
             color: #4a9;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
         }
-        a { color: #4a9; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .dimension {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .dimension .dim-title {
+            font-size: 0.85rem;
+            color: #ddd;
+            font-weight: 500;
+        }
+        .dimension .dim-content {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 0.3rem;
+            line-height: 1.5;
+        }
+        .dimension .dim-content strong { color: #ccc; }
+        .gst-observations {
+            background: #1a1410;
+            border: 1px solid #3a2a1a;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .gst-observations h3 {
+            color: #d4944a;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+        .gst-deficit {
+            margin-bottom: 0.6rem;
+            font-size: 0.8rem;
+            color: #b88;
+        }
+        .gst-deficit strong { color: #daa; }
+        .score-card {
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .score-card .label { font-size: 0.85rem; color: #ccc; }
+        .score-card .value { font-size: 1.1rem; color: #fff; font-weight: 500; }
+        .score-card .source { font-size: 0.7rem; color: #555; }
+        .status-tag {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .tag-low { background: #4a2020; color: #f88; }
+        .tag-moderate { background: #4a3a10; color: #fc8; }
+        .tag-high { background: #1a4a2a; color: #8f8; }
+        .tag-very-high { background: #4a1a1a; color: #f66; }
+        .tag-polarized { background: #3a1a4a; color: #c8f; }
+        .tag-declining { background: #4a2010; color: #fa8; }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #1a1a1a;
+            color: #555;
+            font-size: 0.75rem;
+        }
+        .footer a { color: #4a9; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        .data-note {
+            font-size: 0.7rem;
+            color: #555;
+            font-style: italic;
+            margin-top: 0.3rem;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>DEMOCRACY PULSE</h1>
         <div class="subtitle">Rooted Freedom Index — Grand Social Theory</div>
+    </div>
 
-        <div class="pillars">
-            <div class="pillar">
-                <div class="label">Pillar I</div>
-                <div class="name">Integrated Will</div>
-            </div>
-            <div class="pillar">
-                <div class="label">Pillar II</div>
-                <div class="name">Organic Ties</div>
-            </div>
-            <div class="pillar">
-                <div class="label">Pillar III</div>
-                <div class="name">Social Capital Transformation</div>
-            </div>
+    <div class="theory-banner">
+        <h2>What we measure</h2>
+        <p>We measure democracy not by procedures (elections, constitutions) but by whether every individual has <strong>effective power</strong> over decisions that shape their life. Three pillars: <strong>Integrated Will</strong> (are preferences genuine or manufactured?), <strong>Organic Ties</strong> (do communities protect without oppressing?), <strong>Social Capital Transformation</strong> (does wealth serve the public or extract from it?).</p>
+    </div>
+
+    <div class="pillars">
+        <div class="pillar">
+            <div class="label">Pillar I</div>
+            <div class="name">Integrated Will</div>
         </div>
-
-        <div class="status">
-            <span>🚧 Under Construction</span> — Building theoretical foundation &amp; data pipeline<br><br>
-            <a href="https://github.com/alprnkmbr/democracy">GitHub Repository</a>
+        <div class="pillar">
+            <div class="label">Pillar II</div>
+            <div class="name">Organic Ties</div>
+        </div>
+        <div class="pillar">
+            <div class="label">Pillar III</div>
+            <div class="name">Social Capital<br>Transformation</div>
         </div>
     </div>
+
+    <div class="country-nav">
+        <button class="country-btn" data-country="norway">🇳🇴 Norway</button>
+        <button class="country-btn" data-country="usa">🇺🇸 United States</button>
+        <button class="country-btn" data-country="turkey">🇹🇷 Turkey</button>
+        <button class="country-btn" data-country="india">🇮🇳 India</button>
+        <button class="country-btn" data-country="china">🇨🇳 China</button>
+    </div>
+
+    <div id="country-data"></div>
+
+    <div class="footer">
+        <p>Democracy Pulse — GST Index v0.1-pilot | <a href="https://github.com/alprnkmbr/democracy">GitHub</a></p>
+        <p>Data is preliminary. Methodology under active development.</p>
+    </div>
+
+    <script>
+        const countries = {};
+
+        async function loadCountry(name) {
+            if (countries[name]) return countries[name];
+            try {
+                const res = await fetch(`data/raw/${name}_pilot_v0.1.json`);
+                countries[name] = await res.json();
+                return countries[name];
+            } catch(e) {
+                console.error('Failed to load:', name, e);
+                return null;
+            }
+        }
+
+        function renderCountry(d) {
+            const tag = (text, cls) => `<span class="status-tag tag-${cls}">${text}</span>`;
+            let html = `
+                <div class="country-header">
+                    <h2>${d.country}</h2>
+                    <div class="collection-date">Data collected: ${d.collection_date} | Version: ${d.data_version}</div>
+                </div>
+            `;
+
+            // Pillar I
+            html += `<div class="section"><h3>Pillar I — Integrated Will</h3>`;
+            
+            if (d.pillar_I_integrated_will.press_freedom) {
+                const pf = d.pillar_I_integrated_will.press_freedom;
+                html += `<div class="dimension">
+                    <div class="dim-title">Press Freedom ${tag(`Rank ${pf.rank}`, pf.rank <= 10 ? 'high' : pf.rank <= 40 ? 'moderate' : 'low')}</div>
+                    <div class="dim-content">Score: ${pf.score} | Political: ${pf.political_indicator} | Economic: ${pf.economic_indicator} | Legislative: ${pf.legislative_indicator}</div>
+                    ${pf.trend ? `<div class="dim-content"><strong>Trend:</strong> ${pf.trend}</div>` : ''}
+                </div>`;
+            }
+
+            if (d.pillar_I_integrated_will.economic_precarity) {
+                const ep = d.pillar_I_integrated_will.economic_precarity;
+                html += `<div class="dimension">
+                    <div class="dim-title">Economic Precarity ${tag(ep.gini_coefficient_pretax > 0.4 ? 'high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'low', ep.gini_coefficient_pretax > 0.4 ? 'very-high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'high')}</div>
+                    <div class="dim-content">
+                        <strong>Gini (pre-tax):</strong> ${ep.gini_coefficient_pretax} | <strong>Gini (post-tax):</strong> ${ep.gini_coefficient_posttax}<br>
+                        <strong>Poverty rate:</strong> ${ep.poverty_rate_pct}% | <strong>Unemployment:</strong> ${ep.unemployment_rate_pct}%<br>
+                        <strong>Healthcare:</strong> ${ep.healthcare_access}
+                    </div>
+                </div>`;
+            }
+
+            if (d.pillar_I_integrated_will.forced_substitution) {
+                html += `<div class="dimension">
+                    <div class="dim-title">Forced Substitution Coefficient ${tag(d.gst_specific_observations.forced_substitution_coefficient.estimated_level, d.gst_specific_observations.forced_substitution_coefficient.estimated_level === 'low' ? 'high' : 'very-high')}</div>
+                    <div class="dim-content">${d.gst_specific_observations.forced_substitution_coefficient.note}</div>
+                </div>`;
+            }
+
+            if (d.pillar_I_integrated_will.information_environment) {
+                const ie = d.pillar_I_integrated_will.information_environment;
+                html += `<div class="dimension">
+                    <div class="dim-title">Information Environment</div>
+                    <div class="dim-content">
+                        <strong>Media independence:</strong> ${ie.media_independence} | <strong>Internet freedom:</strong> ${ie.internet_freedom}<br>
+                        ${ie.note || ''}
+                    </div>
+                </div>`;
+            }
+
+            html += `</div>`;
+
+            // Pillar II
+            html += `<div class="section"><h3>Pillar II — Organic Ties</h3>`;
+
+            if (d.pillar_II_organic_ties.social_cohesion) {
+                const sc = d.pillar_II_organic_ties.social_cohesion;
+                html += `<div class="dimension">
+                    <div class="dim-title">Social Cohesion ${sc.social_trust_pct ? tag(`${sc.social_trust_pct}% trust`, sc.social_trust_pct > 50 ? 'high' : sc.social_trust_pct > 30 ? 'moderate' : 'low') : ''}</div>
+                    <div class="dim-content">${sc.note || ''}</div>
+                </div>`;
+            }
+
+            if (d.pillar_II_organic_ties.civic_participation_beyond_voting) {
+                const cp = d.pillar_II_organic_ties.civic_participation_beyond_voting;
+                html += `<div class="dimension">
+                    <div class="dim-title">Civic Participation ${cp.union_density_pct ? tag(`${cp.union_density_pct}% union density`, cp.union_density_pct > 30 ? 'high' : cp.union_density_pct > 15 ? 'moderate' : 'low') : ''}</div>
+                    <div class="dim-content">${cp.note || ''}</div>
+                </div>`;
+            }
+
+            if (d.pillar_II_organic_ties.social_isolation) {
+                const si = d.pillar_II_organic_ties.social_isolation;
+                html += `<div class="dimension">
+                    <div class="dim-title">Social Isolation ${si.loneliness_rate_pct ? tag(`${si.loneliness_rate_pct}% loneliness`, si.loneliness_rate_pct < 10 ? 'low' : si.loneliness_rate_pct < 30 ? 'moderate' : 'high') : ''}</div>
+                    <div class="dim-content">${si.note || ''}</div>
+                </div>`;
+            }
+
+            html += `</div>`;
+
+            // Pillar III
+            html += `<div class="section"><h3>Pillar III — Social Capital Transformation</h3>`;
+
+            if (d.pillar_III_social_capital_transformation.wealth_distribution) {
+                const wd = d.pillar_III_social_capital_transformation.wealth_distribution;
+                html += `<div class="dimension">
+                    <div class="dim-title">Wealth Distribution</div>
+                    <div class="dim-content">
+                        <strong>Gini (pre-tax):</strong> ${wd.gini_pretax} | <strong>Gini (post-tax):</strong> ${wd.gini_posttax}<br>
+                        ${wd.top_1_pct_wealth_share ? `<strong>Top 1% wealth share:</strong> ${wd.top_1_pct_wealth_share}% | <strong>Bottom 50%:</strong> ${wd.bottom_50_pct_wealth_share}%<br>` : ''}
+                        ${wd.wealth_concentration_note || ''}
+                    </div>
+                </div>`;
+            }
+
+            if (d.pillar_III_social_capital_transformation.taxation_progressivity) {
+                const tp = d.pillar_III_social_capital_transformation.taxation_progressivity;
+                html += `<div class="dimension">
+                    <div class="dim-title">Taxation & Redistribution</div>
+                    <div class="dim-content"><strong>Tax-to-GDP:</strong> ${tp.tax_to_gdp_pct}% | <strong>Top marginal rate:</strong> ${tp.top_marginal_income_tax_pct}%<br>${tp.progressivity_note || ''}</div>
+                </div>`;
+            }
+
+            if (d.pillar_III_social_capital_transformation.public_investment) {
+                const pi = d.pillar_III_social_capital_transformation.public_investment;
+                html += `<div class="dimension">
+                    <div class="dim-title">Public Investment</div>
+                    <div class="dim-content">
+                        <strong>Healthcare:</strong> ${pi.healthcare_spending_pct_gdp}% GDP ${pi.healthcare_note ? `(${pi.healthcare_note})` : ''}<br>
+                        <strong>Education:</strong> ${pi.education_spending_pct_gdp}% GDP<br>
+                        <strong>Social protection:</strong> ${pi.social_protection_pct_gdp}% GDP ${pi.social_protection_note ? `(${pi.social_protection_note})` : ''}
+                    </div>
+                </div>`;
+            }
+
+            if (d.pillar_III_social_capital_transformation.social_mobility) {
+                const sm = d.pillar_III_social_capital_transformation.social_mobility;
+                html += `<div class="dimension">
+                    <div class="dim-title">Social Mobility ${sm.intergenerational_income_elasticity ? tag(`elasticity ${sm.intergenerational_income_elasticity}`, sm.intergenerational_income_elasticity < 0.2 ? 'high' : sm.intergenerational_income_elasticity < 0.35 ? 'moderate' : 'low') : ''}</div>
+                    <div class="dim-content">${sm.note || ''}</div>
+                </div>`;
+            }
+
+            html += `</div>`;
+
+            // Cross-cutting Rights
+            html += `<div class="section"><h3>Cross-Cutting — Six Rights</h3>`;
+            const rights = d.cross_cutting_rights;
+            if (rights) {
+                for (const [key, data] of Object.entries(rights)) {
+                    const notes = [];
+                    for (const [k, v] of Object.entries(data)) {
+                        if (k !== 'source' && k !== 'note' && k.endsWith('_note')) notes.push(`<strong>${k.replace(/_/g, ' ').replace(/ note$/, '')}:</strong> ${v}`);
+                    }
+                    html += `<div class="dimension">
+                        <div class="dim-title">${key.charAt(0).toUpperCase() + key.slice(1)}</div>
+                        <div class="dim-content">${data.note || ''}</div>
+                    </div>`;
+                }
+            }
+            html += `</div>`;
+
+            // GST-specific observations
+            if (d.gst_specific_observations) {
+                const obs = d.gst_specific_observations;
+                html += `<div class="gst-observations"><h3>🔍 GST-Specific Analysis</h3>`;
+                
+                if (obs.forced_substitution_coefficient) {
+                    html += `<div class="dimension"><div class="dim-title">Forced Substitution Coefficient ${tag(obs.forced_substitution_coefficient.estimated_level, obs.forced_substitution_coefficient.estimated_level === 'low' ? 'high' : obs.forced_substitution_coefficient.estimated_level === 'very high' ? 'very-high' : 'moderate')}</div>
+                    <div class="dim-content">${obs.forced_substitution_coefficient.note}</div></div>`;
+                }
+
+                if (obs.organic_vs_microfascism) {
+                    const ovm = obs.organic_vs_microfascism;
+                    const cls = ovm.estimated_level.includes('organic') && !ovm.estimated_level.includes('polarized') ? 'high' : ovm.estimated_level.includes('polarized') ? 'polarized' : 'low';
+                    html += `<div class="dimension"><div class="dim-title">Organic vs. Micro-Fascism ${tag(ovm.estimated_level, cls)}</div>
+                    <div class="dim-content">${ovm.note}</div></div>`;
+                }
+
+                if (obs.capital_transformation) {
+                    const ct = obs.capital_transformation;
+                    const cls = ct.estimated_level === 'high' ? 'high' : ct.estimated_level === 'very low' ? 'very-high' : 'moderate';
+                    html += `<div class="dimension"><div class="dim-title">Capital Transformation ${tag(ct.estimated_level, cls)}</div>
+                    <div class="dim-content">${ct.note}</div></div>`;
+                }
+
+                if (obs.key_gst_deficits) {
+                    html += `<div style="margin-top:0.8rem"><strong>Key GST Deficits:</strong></div>`;
+                    for (const [k, v] of Object.entries(obs.key_gst_deficits)) {
+                        html += `<div class="gst-deficit"><strong>${k.replace(/_/g, ' ').charAt(0).toUpperCase() + k.replace(/_/g, ' ').slice(1)}:</strong> ${v}</div>`;
+                    }
+                }
+
+                html += `</div>`;
+            }
+
+            html += `<div class="data-note">All data is preliminary (v0.1-pilot). Sources include RSF, Freedom House, OECD, WJP, World Bank, and others. Methodology under active development.</div>`;
+
+            return html;
+        }
+
+        // Button handlers
+        document.querySelectorAll('.country-btn').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const name = btn.dataset.country;
+                const data = await loadCountry(name);
+                if (data) {
+                    document.getElementById('country-data').style.display = 'block';
+                    document.getElementById('country-data').innerHTML = renderCountry(data);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
