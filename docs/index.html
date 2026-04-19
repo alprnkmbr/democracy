@@ -287,14 +287,30 @@
 
             if (d.pillar_I_integrated_will.economic_precarity) {
                 const ep = d.pillar_I_integrated_will.economic_precarity;
-                html += `<div class="dimension">
-                    <div class="dim-title">Economic Precarity ${tag(ep.gini_coefficient_pretax > 0.4 ? 'high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'low', ep.gini_coefficient_pretax > 0.4 ? 'very-high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'high')}</div>
-                    <div class="dim-content">
-                        <strong>Gini (pre-tax):</strong> ${ep.gini_coefficient_pretax} | <strong>Gini (post-tax):</strong> ${ep.gini_coefficient_posttax}<br>
-                        <strong>Poverty rate:</strong> ${ep.poverty_rate_pct}% | <strong>Unemployment:</strong> ${ep.unemployment_rate_pct}%<br>
-                        <strong>Healthcare:</strong> ${ep.healthcare_access}
-                    </div>
-                </div>`;
+                let epHtml = '<div class="dimension">';
+                epHtml += `<div class="dim-title">Economic Precarity ${tag(ep.gini_coefficient_pretax > 0.4 ? 'high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'low', ep.gini_coefficient_pretax > 0.4 ? 'very-high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'high')}</div>`;
+                epHtml += '<div class="dim-content">';
+                if (ep.gini_coefficient_pretax) epHtml += `<strong>Gini (pre-tax):</strong> ${ep.gini_coefficient_pretax} | `;
+                if (ep.gini_coefficient_posttax) epHtml += `<strong>Gini (post-tax):</strong> ${ep.gini_coefficient_posttax}<br>`; else epHtml += '<br>';
+                if (ep.poverty_rate_pct) epHtml += `<strong>Poverty rate:</strong> ${ep.poverty_rate_pct}% | `;
+                if (ep.unemployment_rate_pct) epHtml += `<strong>Unemployment:</strong> ${ep.unemployment_rate_pct}%`;
+                if (ep.youth_unemployment_pct) epHtml += ` | <strong>Youth:</strong> ${ep.youth_unemployment_pct}%`;
+                epHtml += '<br>';
+                if (ep.labor_force_participation_pct) epHtml += `<strong>Labor force participation:</strong> ${ep.labor_force_participation_pct}% | `;
+                if (ep.employment_rate_pct) epHtml += `<strong>Employment rate:</strong> ${ep.employment_rate_pct}%<br>`; else epHtml += '<br>';
+                if (ep.inflation_cpi_pct) epHtml += `<strong>Inflation (CPI):</strong> ${ep.inflation_cpi_pct}%`;
+                if (ep.food_inflation_pct) epHtml += ` | <strong>Food:</strong> ${ep.food_inflation_pct}%`;
+                if (ep.core_inflation_pct) epHtml += ` | <strong>Core:</strong> ${ep.core_inflation_pct}%`;
+                epHtml += '<br>';
+                if (ep.minimum_wage_net_usd) epHtml += `<strong>Min. wage (net):</strong> ~$${ep.minimum_wage_net_usd}/mo`;
+                if (ep.minimum_wage_note) epHtml += ` — ${ep.minimum_wage_note}`;
+                epHtml += '<br>';
+                if (ep.gdp_per_capita_usd) epHtml += `<strong>GDP/capita:</strong> $${ep.gdp_per_capita_usd} nominal`;
+                if (ep.gdp_per_capita_ppp_usd) epHtml += ` | $${ep.gdp_per_capita_ppp_usd} PPP`;
+                epHtml += '<br>';
+                if (ep.healthcare_access) epHtml += `<strong>Healthcare:</strong> ${ep.healthcare_access}`;
+                epHtml += '</div></div>';
+                html += epHtml;
             }
 
             if (d.pillar_I_integrated_will.forced_substitution) {
@@ -307,9 +323,10 @@
             if (d.pillar_I_integrated_will.information_environment) {
                 const ie = d.pillar_I_integrated_will.information_environment;
                 html += `<div class="dimension">
-                    <div class="dim-title">Information Environment</div>
+                    <div class="dim-title">Perception Authenticity</div>
                     <div class="dim-content">
-                        <strong>Media independence:</strong> ${ie.media_independence} | <strong>Internet freedom:</strong> ${ie.internet_freedom}<br>
+                        <strong>Mainstream media:</strong> ${ie.media_independence}<br>
+                        <strong>Digital/Internet:</strong> ${ie.internet_freedom}<br>
                         ${ie.note || ''}
                     </div>
                 </div>`;
