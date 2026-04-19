@@ -75,7 +75,7 @@
       "source": "Qualitative / national statistics",
       "domestic_violence_note": "Severe and systemic. Turkey has one of the highest rates of domestic violence and femicide in Europe. 2021 Istanbul Convention withdrawal by Erdoğan was a major regression. Protection orders exist on paper but enforcement is weak.",
       "family_stability": "Extended family remains central — but this is a double-edged sword. Family networks provide economic buffering but also enforce conformity (honor culture, patriarchal control, political loyalty).",
-      "note": "The family structure is EXACTLY the GST test case: strong extended families provide belonging and economic support (a form of Organic Ties) but also enforce conformity and suppress dissent (Micro-Fascism tendency). Women face the sharpest edge of this dynamic through domestic violence and patriarchal control. LGBTQ+ individuals face societal conformity pressure — not state persecution — which is precisely the Micro-Fascism mechanism: the community enforces norms, not the law."
+      "note": "The family structure is EXACTLY the GST test case: strong extended families provide belonging and economic support (a form of Organic Ties) but also enforce conformity and suppress dissent (Micro-Fascism tendency). Women face the sharpest edge of this dynamic through domestic violence and patriarchal control."
     },
     "civic_participation_beyond_voting": {
       "source": "ITUC / national statistics",
@@ -88,7 +88,7 @@
     "internal_dissent_capacity": {
       "source": "Freedom House / qualitative",
       "score": "extremely low",
-      "note": "Protests routinely banned and violently dispersed. Gezi Park (2013) was a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. Pride parades banned since 2015. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
+      "note": "Protests routinely banned and violently dispersed. Gezi Park (2013) was a watershed — since then, state capacity to suppress dissent has only grown. May Day protests in Istanbul banned despite Constitutional Court ruling. Academic dissent punished with dismissal and prosecution. Insulting the president is a criminal offense used extensively. Constitutional Court rulings are routinely ignored by lower courts and the executive."
     },
     "social_isolation": {
       "source": "Qualitative assessment",
@@ -143,10 +143,10 @@
     "integrity": {
       "source": "HRW / Amnesty / CIRI / national data",
       "political_imprisonment": "severe — thousands of political prisoners including journalists, academics, opposition politicians, and post-coup purge detainees. Many held for years without verdict. Insulting the president is a criminal offense used extensively.",
-      "bodily_autonomy": "mixed — Turkey withdrew from the Istanbul Convention in 2021, a major regression on violence against women. Femicide rates among the highest in the region. Abortion technically legal but access increasingly restricted. LGBTQ+ situation is more nuanced than Western NGOs portray: there is no systematic state persecution of LGBTQ+ individuals. Individual LGBTQ+ public figures can be celebrated (e.g., Bülent Ersoy, a trans diva and national cultural icon). The friction is around collective public identity expression — pride parades are banned, and LGBTQ+ organizing as a visible group faces societal and occasional state pushback. But being openly LGBTQ+ is not criminalized, and many LGBTQ+ individuals live openly without state harassment. The GST should capture this as a community conformity pressure (Micro-Fascism pattern) rather than state persecution: society tolerates individual exceptions but resists collective visibility.",
+      "bodily_autonomy": "mixed — Turkey withdrew from the Istanbul Convention in 2021, a major regression on violence against women. Femicide rates among the highest in the region. Abortion technically legal but access increasingly restricted.",
       "mass_incarceration": "high — 260,000+ prisoners (2018), 118% over capacity. Includes massive pre-trial detention population. Prison population nearly quadrupled from 49,512 (2000) to 200,339 (2016). Many political prisoners.",
       "torture_and_ill_treatment": "documented and ongoing — particularly in counter-terrorism detention. ECtHR has repeatedly found Turkey in violation of Article 3 (prohibition of torture).",
-      "note": "CRITICAL: Political imprisonment and torture are systematic state violations of integrity. Femicide is severe and the Istanbul Convention withdrawal is a major regression. LGBTQ+ rights require a more nuanced framing: the state does not systematically persecute LGBTQ+ individuals (no criminalization, prominent LGBTQ+ public figures exist and are celebrated). The pressure is societal and around collective visibility, not state-directed persecution."
+      "note": "CRITICAL: Political imprisonment and torture are systematic state violations of integrity. Femicide is severe and the Istanbul Convention withdrawal is a major regression."
     },
     "justice": {
       "source": "WJP / Freedom House / ECtHR",
@@ -178,7 +178,7 @@
       "press_freedom_score": 29.4,
       "press_freedom_trend": "declining sharply — rank dropped from 158 to 159, score from 31.60 to 29.40",
       "government_transparency": "extremely low — Corruption Perceptions Index score 31/100 (rank 124). State statistics contested (TÜİK vs ENAG inflation figures). AKP refuses to disclose details of sovereign wealth fund, defense spending, and tenders.",
-      "scientific_integrity": "compromised — academics dismissed for political views, universities under presidential appointment control, research on sensitive topics (Kurdish issues, Armenian genocide, gender) effectively forbidden",
+      "scientific_integrity": "compromised — academics dismissed for political views, universities under presidential appointment control, research on sensitive topics (Armenian genocide, gender) effectively forbidden",
       "censorship": "systematic and state-directed — 197,000+ websites blocked, disinformation law criminalizing 'false information', social media companies forced to comply with takedown demands, journalists imprisoned and convicted",
       "note": "CRITICAL: Turkey is the case where ALL mechanisms of truth suppression operate simultaneously: direct state censorship (website blocking, broadcast regulation), legal prosecution (disinformation law, insult laws), economic pressure (media ownership tied to government tenders), and self-censorship (academic dismissals, fear of prosecution). This is not manufactured consent — it's manufactured ignorance."
     },
@@ -206,7 +206,7 @@
     },
     "key_gst_deficits": {
       "state_directed_forced_substitution": "Unlike the US (market-directed), Turkey's Forced Substitution is primarily state-directed. Alternatives are not absent because the market doesn't provide them — they're absent because the state suppresses them. Media, education, and civic space are the clearest examples.",
-      "micro_fascism_in_community": "Turkey's strong community networks (family, religious, regional) provide belonging but enforce conformity. Women face patriarchal control within families. LGBTQ+ individuals face a distinctive pattern: not state persecution but societal conformity enforcement — individual LGBTQ+ people can be accepted and celebrated (Bülent Ersoy being the paradigmatic example), but collective LGBTQ+ identity expression (pride, organizing) triggers pushback from both state and society. This is Micro-Fascism operating through community norms rather than state coercion.",
+      "micro_fascism_in_community": "Turkey's strong community networks (family, religious, regional) provide belonging but enforce conformity. Women face patriarchal control within families. This is Micro-Fascism operating through community norms rather than state coercion.",
       "political_extraction": "Capital extraction operates through political patronage rather than corporate concentration. Government tenders, regulatory decisions, and asset seizures flow to political loyalists. Corruption Perceptions Index: 31/100.",
       "manufactured_ignorance": "Not manufactured consent (the US model) but manufactured ignorance: the state actively suppresses information rather than allowing corporate media to shape it. 197,000+ websites blocked, journalists imprisoned, disinformation law criminalizing truth-telling.",
       "earthquake_as_political_outcome": "The 2023 earthquake killed 50,000+ people not because Turkey can't build safe buildings, but because construction amnesties (paid regulatory violations) and political patronage networks made unsafe construction profitable. This is capital extraction with lethal consequences.",
