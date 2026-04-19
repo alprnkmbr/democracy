@@ -14,7 +14,7 @@
       "sociocultural_indicator": 33.44,
       "security_indicator": 35.37,
       "trend": "DECLINING — Dropped from rank 158 and score 31.60 in 2024. All indicators worsened. With authoritarianism gaining ground, media pluralism is being called into question. All possible means are used to undermine critics.",
-      "note": "One of the worst press freedom records in the world. Journalists imprisoned, detained, and convicted in large numbers. Thousands of online news articles and hundreds of thousands of websites blocked. Government forces social media companies to maintain offices and comply with takedown demands. Disinformation law (2022) carries up to 3 years imprisonment."
+      "note": "One of the worst press freedom records in the world for mainstream media. Journalists imprisoned, detained, and convicted in large numbers. Thousands of online news articles and hundreds of thousands of websites blocked. Government forces social media companies to maintain offices and comply with takedown demands. Disinformation law (2022) carries up to 3 years imprisonment. CRITICAL DISTINCTION: mainstream/broadcast media is heavily captured; online space is contested but remains the primary channel for independent reporting and opposition discourse."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
@@ -34,7 +34,7 @@
     "information_environment": {
       "source": "RSF, Freedom House, qualitative",
       "media_independence": "extremely low — most major media owned by businesses dependent on government tenders or with close the president ties; identical pro-government headlines across outlets",
-      "internet_freedom": "not free — heavy censorship, 197,000+ websites blocked, social media companies forced to comply with takedown demands or face fines and ad bans",
+      "internet_freedom": "mixed — the state actively censors (hundreds of thousands of websites blocked, social media companies forced to comply with takedown demands), BUT the internet remains the primary space for opposition discourse. Twitter/X, YouTube, independent news sites, and podcasts are widely used for government criticism. VPN usage is widespread. The state attempts control but has not succeeded in closing off the internet as a space for dissent. This is a critical distinction from mainstream media, which is far more captured.",
       "state_media_capture": "YES — systematic. state broadcast regulator (state broadcast regulator) members appointed by ruling-party-controlled parliament; fines and revokes licenses of independent outlets. Acik Radio license revoked in 2024 for discussing Armenian genocide.",
       "disinformation_prevalence": "high and state-driven — 2022 disinformation law criminalizes 'false information' with up to 3 years imprisonment; used to prosecute journalists and social media users",
       "note": "CRITICAL GST CONCERN: This is not corporate-manufactured consent (like the US) but direct state capture of information. Media oligarchs aligned with government, state regulator punishing dissent, legal prosecution of journalists, mass internet censorship. The Forced Substitution is overt: people consume state-approved narratives because alternatives are shut down, not just because they're economically pressured."
@@ -60,7 +60,7 @@
     "digital_rights": {
       "source": "Freedom House Freedom on the Net; qualitative",
       "status": "Not Free",
-      "note": "Systemic internet censorship. 2022 disinformation law criminalizes online content. Social media companies forced to maintain local offices and comply with content removal demands. VPN usage widespread but government periodically targets VPN services. Political accounts blocked by court order (69 accounts blocked in August 2024 alone)."
+      "note": "The state attempts systemic internet censorship — disinformation law criminalizes online content, social media companies forced to maintain local offices and comply with takedown demands, VPN usage periodically targeted. HOWEVER: the internet remains the most open information channel in Turkey. Opposition discourse thrives online despite state pressure. The gap between mainstream media (heavily captured) and online media (contested but open) is a defining feature of Turkey's information environment."
     }
   },
   "pillar_II_organic_ties": {
