@@ -7,49 +7,38 @@
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
       "rank": 57,
-      "score": 65.48,
-      "political_indicator": 62.38,
-      "economic_indicator": 55.65,
-      "legislative_indicator": 68.81,
-      "sociocultural_indicator": 62.56,
-      "security_indicator": 78.03,
-      "trend": "DECLINING — After a century of gradual expansion of press rights, the US is experiencing its first significant and prolonged decline in modern history. Trump's return to presidency greatly exacerbating the situation.",
-      "note": "Massive drop from 2024 (66.59, rank 55). Security indicator improved but political, economic, and sociocultural indicators all worsened significantly."
+      "score": 65.48
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
       "overall_score": null,
       "status": "Free (with significant concerns)",
-      "note": "FH scores the US as Free but documents extensive equality gaps. The 2025 report highlights: persistent wage disparities (Black women earn 69 cents vs White men's dollar; Hispanic women 57 cents), de facto school segregation, housing discrimination, 3.6 million pending immigration cases with 4+ year wait times, rising hate crimes, and Supreme Court rollback of affirmative action."
+      "political_rights": null,
+      "civil_liberties": null
     },
     "information_environment": {
       "source": "Multiple (RSF, Freedom House, qualitative assessment)",
       "media_independence": "declining",
-      "internet_freedom": "moderately free but eroding",
-      "state_media_capture": "not state-captured but corporate-concentrated",
-      "disinformation_prevalence": "high — systemic, amplified by social media and political polarization",
-      "note": "CRITICAL GST CONCERN: The information environment is heavily shaped by corporate media consolidation and political polarization. Manufactured consent operates through corporate media framing rather than state censorship — a subtler but significant form of cognitive manipulation."
+      "internet_freedom": "moderately free but eroding"
     },
     "economic_precarity": {
       "source": "OECD / World Bank / Census",
       "poverty_rate_pct": 11.5,
-      "poverty_rate_note": "Official poverty measure; Supplemental measure (accounting for cost of living and transfers) is ~12.9%. Extreme disparities by race.",
       "gini_coefficient_pretax": 0.51,
       "gini_coefficient_posttax": 0.385,
-      "gini_note": "Among highest in developed world. Minimal redistribution compared to peers — pre-tax to post-tax reduction only ~0.125 points (vs Norway's ~0.128).",
       "unemployment_rate_pct": 4.1,
+      "youth_unemployment_pct": null,
       "healthcare_access": "NOT universal — ~26 million uninsured, many more underinsured",
-      "housing_security_note": "Severe affordability crisis. Homelessness at record levels. Rent-burdened households (30%+ income on rent) exceed 50% in major cities.",
-      "note": "CRITICAL GST CONCERN: Economic precarity is a primary mechanism of cognitive coercion. Millions cannot meaningfully participate in democratic life because they are in survival mode. This is Forced Substitution in action — people 'choose' inadequate options because the system offers no real alternative."
+      "uninsured_rate_pct": null,
+      "out_of_pocket_healthcare_pct": null
     },
     "civic_education": {
       "source": "OECD / national assessments",
-      "note": "Uneven. Civics education varies wildly by state. Only ~25% of US students reach 'proficient' on NAEP civics assessment. Many states have no civics requirement."
+      "civic_knowledge_scores_available": null
     },
     "digital_rights": {
       "source": "Freedom on the Net (Freedom House)",
-      "status": "Free but eroding",
-      "note": "No nationwide internet shutdowns, but increasing surveillance, content moderation debates, and state-level social media restrictions. Net neutrality has been repealed."
+      "status": "Free but eroding"
     }
   },
   "pillar_II_organic_ties": {
@@ -57,33 +46,28 @@
       "source": "OECD / World Values Survey / Pew",
       "social_trust_pct": 31,
       "social_trust_note": "Well below OECD average. Declining for decades. 'Most people can be trusted' response has fallen from ~50% in 1970s.",
-      "community_organization": "fragmented — strong in some areas, nearly absent in others",
-      "note": "CRITICAL: Low social trust is a fundamental GST concern. When people don't trust each other, community buffers against state and capital power are weakened."
+      "community_organization": "fragmented — strong in some areas, nearly absent in others"
     },
     "family_structure_health": {
       "source": "CDC / national statistics",
       "domestic_violence_note": "~1 in 4 women experience intimate partner violence. ~1 in 9 men. Gun violence in domestic contexts is uniquely American problem.",
-      "family_stability": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)",
-      "note": "Family structure health is deeply intertwined with economic precarity and racial inequality. The GST framework sees this not as a cultural failure but as a consequence of structural pressures."
+      "family_stability": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)"
     },
     "civic_participation_beyond_voting": {
       "source": "Various",
       "volunteering_rate": "moderate — formal volunteering declining, informal mutual aid rose during COVID but receded",
       "mutual_aid": "growing in crisis moments but not institutionalized",
       "union_density_pct": 10.0,
-      "union_note": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%.",
-      "note": "The collapse of union density is a major GST concern. Without organized labor, workers have far less collective power to buffer against capital."
+      "union_note": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%."
     },
     "internal_dissent_capacity": {
       "source": "V-Dem deliberation index / qualitative",
-      "score": "moderate but declining",
-      "note": "Formal dissent channels exist (protest, speech, petition) but are increasingly polarized and performative. Social media enables expression but not necessarily effective deliberation. Cancel culture dynamics create social conformity pressures (Micro-Fascism risk in certain community contexts)."
+      "score": "moderate but declining"
     },
     "social_isolation": {
       "source": "Cigna / US Surgeon General",
       "loneliness_rate_pct": null,
-      "loneliness_note": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness.",
-      "note": "CRITICAL: An epidemic of isolation means Organic Ties are fundamentally weakened. Atomized individuals are maximally vulnerable to both state and capital power."
+      "loneliness_note": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness."
     }
   },
   "pillar_III_social_capital_transformation": {
@@ -104,8 +88,7 @@
       "top_marginal_income_tax_pct": 37.0,
       "corporate_tax_pct": 21.0,
       "vat_pct": null,
-      "sales_tax_note": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature.",
-      "progressivity_note": "MODERATE GST CONCERN: Tax system is less progressive than it appears. Capital gains taxed lower than income. Payroll taxes are regressive. Effective corporate tax rate much lower than 21% due to deductions. Minimal wealth tax."
+      "sales_tax_note": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature."
     },
     "public_investment": {
       "source": "OECD / WHO / UNESCO",
@@ -114,24 +97,20 @@
       "public_healthcare_pct_gdp": 8.6,
       "education_spending_pct_gdp": 6.1,
       "social_protection_pct_gdp": 12.4,
-      "social_protection_note": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers.",
-      "note": "CRITICAL: The US spends more on healthcare than any nation on earth but leaves millions uninsured. This is Forced Substitution defined — people forced into inadequate private options because public provision is absent."
+      "social_protection_note": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers."
     },
     "social_mobility": {
       "source": "OECD / Raj Chetty et al.",
       "intergenerational_income_elasticity": 0.47,
-      "mobility_note": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries.",
-      "note": "CRITICAL: Low social mobility means capital is NOT transforming — it is stagnating. Wealth stays with the wealthy. The bottom 50% stay at the bottom."
+      "mobility_note": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries."
     },
     "cultural_production_accessibility": {
       "source": "National data",
       "public_cultural_spending_pct_gdp": 0.03,
-      "cultural_spending_note": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible.",
-      "note": "Cultural production is almost entirely privatized. Access depends on income and geography. This is capital NOT transforming into public benefit."
+      "cultural_spending_note": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible."
     },
     "corporate_extraction_vs_public_benefit": {
-      "source": "National economic accounts",
-      "note": "CRITICAL: The US is the extreme case for GST analysis. Corporate profits are at record levels while public infrastructure decays. Pharmaceutical companies extract massive profits while millions lack medication. Tech monopolies capture value without corresponding public benefit. Private equity strips productive assets. The delta between private extraction and public transformation is enormous."
+      "source": "National economic accounts"
     }
   },
   "cross_cutting_rights": {
@@ -153,8 +132,7 @@
       "source": "OECD / UNHCR",
       "social_safety_net": "thin — unemployment benefits time-limited, no universal healthcare, no paid parental leave nationally, no guaranteed housing",
       "refugee_policy": "declining — tightening asylum rules, 3.6M pending immigration cases, detention conditions criticized",
-      "healthcare_access": "NOT universal — this alone is a major compassion deficit",
-      "note": "The US is unique among developed nations in not guaranteeing healthcare as a right. Under GST, this is a fundamental failure of the compassion right."
+      "healthcare_access": "NOT universal — this alone is a major compassion deficit"
     },
     "welfare": {
       "source": "World Bank / OECD",
@@ -170,39 +148,16 @@
       "press_freedom_trend": "declining sharply",
       "government_transparency": "mixed — strong FOIA law but extensive classification, corporate secrecy, and lobbying opacity",
       "scientific_integrity": "declining — political interference in science agencies, corporate capture of research",
-      "censorship": "not state censorship but corporate platform moderation and algorithmic suppression",
-      "note": "CRITICAL GST CONCERN: The US doesn't have state censorship — it has corporate information control. Media consolidation, algorithmic amplification of outrage, and manufactured narratives serve capital's interests. This is Pillar I cognitive manipulation through market mechanisms rather than state coercion."
+      "censorship": "not state censorship but corporate platform moderation and algorithmic suppression"
     },
     "solidarity": {
       "source": "ILO / national data",
       "labor_protections": "weak — at-will employment in most states, no guaranteed paid leave, minimal collective bargaining",
       "mutual_aid_networks": "present but fragile — grew during COVID, receding since",
-      "community_support": "varies enormously by geography and income",
-      "note": "Solidarity is structurally undermined. The system incentivizes individual competition over collective support. Union collapse (10% density) means the primary mechanism of economic solidarity has been systematically dismantled."
+      "community_support": "varies enormously by geography and income"
     }
   },
   "gst_specific_observations": {
-    "ceiling_test": "The US is the key test case for whether the GST can capture democratic deficits in a 'full democracy' that procedural indices score highly.",
-    "forced_substitution_coefficient": {
-      "note": "VERY HIGH — Healthcare is the textbook case: millions 'choose' private insurance not because they prefer it but because no public option exists. Education: families 'choose' private schools because public schools are underfunded. Housing: people 'choose' expensive rentals because public housing is negligible. Nearly every domain of life in the US features manufactured alternatives where genuine public provision is absent.",
-      "estimated_level": "very high"
-    },
-    "organic_vs_microfascism": {
-      "note": "MIXED AND POLARIZED — Some communities function as Organic Democracy (progressive mutual aid networks, labor organizing, community defense). Others are clearly Micro-Fascist (religious communities enforcing conformity, cancel culture dynamics, ideological echo chambers). The social fabric is fracturing along multiple lines.",
-      "estimated_level": "polarized — organic in some spaces, microfascist in others"
-    },
-    "capital_transformation": {
-      "note": "VERY LOW — This is the strongest GST critique of the US. Capital extracts rather than transforms. Corporate profits at record highs, public infrastructure decaying, healthcare spending highest in world with worst outcomes, cultural production privatized. The sovereign wealth fund comparison with Norway is instructive: the US has no mechanism to transform private wealth into public benefit at scale.",
-      "estimated_level": "very low"
-    },
-    "key_gst_deficits": {
-      "economic_precarity_as_cognitive_coercion": "Millions in survival mode cannot meaningfully exercise democratic power. This is the Forced Substitution mechanism at its most visible.",
-      "information_environment": "Corporate media consolidation and algorithmic amplification create manufactured consent through market mechanisms, not state censorship.",
-      "structural_inequality": "The gap between the Black mother in Alabama and the Wall Street lawyer is not incidental — it is the defining GST deficit. Every right exists on paper but access is wildly unequal.",
-      "capital_extraction": "The US is the global center of capital extraction without transformation. Record corporate profits, decaying public infrastructure, no universal healthcare, minimal social protection.",
-      "organic_ties_collapse": "50% loneliness epidemic, 10% union density, declining social trust — the community buffer is fundamentally weakened.",
-      "mass_incarceration": "2M people incarcerated, disproportionately Black — a core integrity and justice violation.",
-      "policy_congruence_gap": "Majority public opinion on healthcare, gun control, minimum wage, and climate does not translate into policy — the monitory democracy deficit is enormous."
-    }
+    "note": "GST analysis to be performed separately from data collection"
   }
 }

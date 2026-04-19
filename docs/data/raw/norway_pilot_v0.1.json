@@ -7,84 +7,61 @@
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
       "rank": 1,
-      "score": 92.31,
-      "political_indicator": 96.22,
-      "economic_indicator": 87.32,
-      "legislative_indicator": 91.96,
-      "sociocultural_indicator": 90.03,
-      "security_indicator": 96.03,
-      "note": "Highest in the world. Strong across all sub-indicators."
+      "score": 92.31
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
       "overall_score": 99,
       "status": "Free",
       "political_rights": 39,
-      "civil_liberties": 60,
-      "pr_max": 40,
-      "cl_max": 60,
-      "note": "Near-perfect scores. Only weakness: C2 (safeguards against corruption) scored 3/4 due to recent stock-trading scandals involving politicians including former PM Solberg."
+      "civil_liberties": 60
     },
     "information_environment": {
       "source": "Freedom House / V-Dem",
       "media_independence": "strong",
-      "internet_freedom": "generally free",
-      "state_media_capture": "minimal",
-      "note": "Norway has one of the healthiest information environments globally. NRK (public broadcaster) is independent. Low disinformation prevalence relative to peers."
+      "internet_freedom": "generally free"
     },
     "economic_precarity": {
       "source": "OECD / World Bank",
       "poverty_rate_pct": 0.5,
-      "poverty_rate_note": "One of lowest in world, measured as share below 50% median income",
       "gini_coefficient_pretax": 0.386,
       "gini_coefficient_posttax": 0.258,
-      "gini_note": "Dramatic reduction from pre-tax to post-tax shows effective redistribution",
       "unemployment_rate_pct": 4.2,
-      "healthcare_access": "universal",
-      "housing_security_note": "Strong public housing support but affordability issues in major cities"
+      "youth_unemployment_pct": null,
+      "healthcare_access": "universal"
     },
     "civic_education": {
       "source": "OECD / national assessments",
-      "note": "High civic knowledge. Norway participates in ICCS (International Civic and Citizenship Education Study). Strong civic education in public schooling."
+      "civic_knowledge_scores_available": null
     },
     "digital_rights": {
       "source": "Freedom on the Net (Freedom House)",
-      "status": "Free",
-      "note": "Strong digital rights framework. Some concerns around surveillance legislation but generally robust privacy protections."
+      "status": "Free"
     }
   },
   "pillar_II_organic_ties": {
     "social_cohesion": {
       "source": "OECD / World Values Survey",
       "social_trust_pct": 74,
-      "social_trust_note": "Highest in OECD. 'Most people can be trusted' response.",
-      "community_organization": "strong",
-      "note": "Exceptionally high social trust and community organization. Voluntary sector is large."
+      "community_organization": "strong"
     },
     "family_structure_health": {
       "source": "WHO / national statistics",
-      "domestic_violence_note": "Exists but robust legal framework and support systems. Repeated surveys show ~25% of women experience intimate partner violence lifetime — comparable to Nordic average, indicating this is measured and addressed rather than hidden.",
-      "family_stability": "moderate-high",
-      "note": "High divorce rate (Nordic pattern) but this reflects liberal divorce laws and women's economic independence, not necessarily family dysfunction. Children's welfare indicators strong."
+      "domestic_violence_severity": "Exists but robust legal framework and support systems",
+      "family_stability": "moderate-high"
     },
     "civic_participation_beyond_voting": {
       "source": "Johns Hopkins / national data",
       "volunteering_rate": "high",
-      "mutual_aid": "strong institutionalized",
-      "union_density_pct": 50.4,
-      "union_note": "Strong trade union tradition. Collective bargaining coverage ~70%.",
-      "note": "Very high civic participation. Membership in organizations, volunteer work, and mutual aid are culturally embedded."
+      "union_density_pct": 50.4
     },
     "internal_dissent_capacity": {
       "source": "V-Dem deliberation index / qualitative",
-      "score": "high",
-      "note": "Strong tradition of open debate within communities and organizations. The Sámi conflict over Fosen wind turbines shows both the capacity for dissent AND the institutional friction in addressing it. Dissent is permitted but institutional responsiveness to minority dissent is imperfect."
+      "score": "high"
     },
     "social_isolation": {
       "source": "OECD well-being data",
-      "loneliness_rate_pct": 6,
-      "loneliness_note": "Among lowest in OECD but rising among elderly",
-      "note": "Strong social safety nets reduce isolation, but urbanization and digitalization creating new forms of disconnection."
+      "loneliness_rate_pct": 6
     }
   },
   "pillar_III_social_capital_transformation": {
@@ -93,8 +70,7 @@
       "gini_pretax": 0.386,
       "gini_posttax": 0.258,
       "top_10_pct_income_share": 24.7,
-      "bottom_50_pct_income_share": 19.4,
-      "wealth_concentration_note": "One of lowest income inequalities globally. Wealth inequality is higher than income inequality but still moderate by international standards."
+      "bottom_50_pct_income_share": 19.4
     },
     "taxation_progressivity": {
       "source": "OECD tax statistics",
@@ -102,8 +78,7 @@
       "tax_to_gdp_note": "High tax burden with significant redistribution",
       "top_marginal_income_tax_pct": 47.8,
       "corporate_tax_pct": 22.0,
-      "vat_pct": 25.0,
-      "progressivity_note": "Progressive income tax with wealth tax. Effective redistribution through transfers and public services."
+      "vat_pct": 25.0
     },
     "public_investment": {
       "source": "OECD / WHO / UNESCO",
@@ -116,19 +91,16 @@
     "social_mobility": {
       "source": "OECD social mobility indices",
       "intergenerational_income_elasticity": 0.17,
-      "mobility_note": "Among highest social mobility in the world. Low correlation between parent and child income.",
-      "note": "Strong public education, universal healthcare, and robust social safety nets create genuine opportunity for advancement."
+      "mobility_note": "Among highest social mobility in the world. Low correlation between parent and child income."
     },
     "cultural_production_accessibility": {
       "source": "UNESCO / national budgets",
-      "public_cultural_spending_pct_gdp": 1.3,
-      "note": "Significant public investment in cultural institutions, libraries, museums. Many free or heavily subsidized."
+      "public_cultural_spending_pct_gdp": 1.3
     },
     "corporate_extraction_vs_public_benefit": {
       "source": "National economic accounts",
       "sovereign_wealth_fund_usd": 1700000000000,
-      "swf_note": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations.",
-      "note": "Textbook case of capital transformation: petroleum profits are taxed heavily and invested in a sovereign wealth fund for public benefit. This is close to the GST ideal of capital continuously transforming into public benefit."
+      "swf_note": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations."
     }
   },
   "cross_cutting_rights": {
@@ -149,8 +121,7 @@
       "source": "OECD / UNHCR",
       "social_safety_net": "comprehensive",
       "refugee_policy": "generous by international standards",
-      "healthcare_access": "universal",
-      "note": "Strong on institutional compassion but rising anti-immigration sentiment creates tension."
+      "healthcare_access": "universal"
     },
     "welfare": {
       "source": "World Bank / OECD",
@@ -164,36 +135,16 @@
       "press_freedom_rank": 1,
       "government_transparency": "very high",
       "scientific_integrity": "strong",
-      "censorship": "minimal",
-      "note": "One of the most transparent governments globally. Public records access is robust."
+      "censorship": "minimal"
     },
     "solidarity": {
       "source": "ILO / national data",
       "labor_protections": "strong",
       "mutual_aid_networks": "strong institutionalized",
-      "community_support": "high",
-      "note": "Strong labor movement, high union density, comprehensive welfare state. Solidarity is structurally embedded."
+      "community_support": "high"
     }
   },
   "gst_specific_observations": {
-    "ceiling_test": "Norway is expected to score highest among pilot countries. If it doesn't, the measurement framework needs adjustment.",
-    "forced_substitution_coefficient": {
-      "note": "LOW — Public services are high quality, so private alternatives are genuine preference, not manufactured necessity. Private schooling exists but is not driven by public school failure. Healthcare is universal and high-quality.",
-      "estimated_level": "low"
-    },
-    "organic_vs_microfascism": {
-      "note": "Mostly ORGANIC — Communities allow internal dissent. Strong tradition of organizational democracy. Some exceptions: certain religious communities may enforce conformity. Sámi communities have legitimate internal governance structures but face external institutional barriers.",
-      "estimated_level": "predominantly organic"
-    },
-    "capital_transformation": {
-      "note": "STRONG — Sovereign wealth fund is textbook GST capital transformation. Oil profits → public investment. High taxation with visible public benefit. Cultural production is publicly funded and accessible.",
-      "estimated_level": "high"
-    },
-    "key_gst_deficits": {
-      "sami_rights": "Fosen case shows that even strong institutions can fail minorities. The 2021 Supreme Court ruling found wind turbines violated Sámi cultural rights; it took 3 years to reach agreement. Institutional responsiveness to minority dissent is imperfect.",
-      "urban_housing": "Housing affordability crisis in Oslo and other cities creates economic precarity for young people and immigrants — a form of forced substitution if people are priced out of adequate housing.",
-      "anti_immigrant_sentiment": "Rising right-wing populism challenges solidarity toward non-Norwegian residents. Institutional compassion exists but social solidarity has boundaries.",
-      "corporate_influence_in_fishing_and_oil": "Resource industries have significant political influence, creating policy congruence questions."
-    }
+    "note": "GST analysis to be performed separately from data collection"
   }
 }
