@@ -28,6 +28,15 @@
         "government_ad_spend_share_pct": null,
         "media_subsidies_exist": null,
         "journalist_avg_salary_vs_national_avg_pct": null
+      },
+      "social_media_journalism": {
+        "youtube_news_channels_top10_subscribers_total": null,
+        "twitter_x_journalist_followers_top10_total": null,
+        "tiktok_news_content_creators_count": null,
+        "independent_youtube_news_avg_views": null,
+        "social_media_as_primary_news_source_pct": null,
+        "government_social_media_censorship_cases_2024": null,
+        "social_media_platform_bans_or_restrictions": null
       }
     },
     "economic_precarity": {
