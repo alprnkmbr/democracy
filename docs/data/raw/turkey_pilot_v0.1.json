@@ -206,5 +206,12 @@
   },
   "gst_specific_observations": {
     "note": "GST analysis to be performed separately from data collection"
+  },
+  "government_type": {
+    "government_type": "presidential_republic",
+    "head_of_state": "elected president",
+    "head_of_government": "elected president",
+    "sovereignty_origin": "the people — constitutional sovereignty of the nation",
+    "hereditary_privilege_encoded": false
   }
 }

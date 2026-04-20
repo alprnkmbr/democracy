@@ -193,6 +193,19 @@ The following dimensions are derived from the three pillars and six rights. They
 | Economic precarity as cognitive coercion | Poverty rates, housing insecurity, healthcare access — conditions that make free preference impossible | World Bank poverty data, OECD social indicators, national census data |
 | Civic education levels | Whether citizens understand their rights and governance structures | OECD education data, national surveys, literacy assessments |
 
+### Government Type (Structural)
+
+| Dimension | What it measures | Existing data sources |
+|---|---|---|
+| Constitutional sovereignty origin | Whether sovereignty derives from the people (republic) or from hereditary privilege (monarchy/dynasty) | Constitutional text analysis, CIA World Factbook |
+| Hereditary political privilege | Whether any family or dynasty holds formal political power by birthright | Constitutional text analysis, national governance databases |
+
+**Principle**: A hereditary monarchy encodes birth-based inequality into the constitutional order itself. Regardless of how progressive its governance, a state where one family's political status is determined by birth cannot score as fully democratic. This is not cosmetic — sovereignty derived from the people vs. sovereignty derived from birth is a structural distinction.
+
+**Scoring**: Government type is shown separately and prominently. It reduces a country's score proportionally — a well-governed constitutional monarchy scores lower than an equivalent republic, but NOT as low as authoritarian states. The democratic deficit is real but bounded.
+
+---
+
 ### Pillar II — Organic Ties
 
 | Dimension | What it measures | Existing data sources |

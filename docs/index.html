@@ -273,6 +273,23 @@
                 </div>
             `;
 
+            // Government Type — shown prominently, before pillars
+            if (d.government_type) {
+                const gt = d.government_type;
+                html += `<div class="section" style="border-left: 3px solid #ff6b6b;">
+                    <h3 style="color: #ff6b6b;">⚠ Government Type</h3>
+                    <div class="dim-content">
+                        <strong>Type:</strong> ${gt.government_type.replace(/_/g, ' ')} | 
+                        <strong>Head of state:</strong> ${gt.head_of_state}
+                        <br>
+                        <strong>Sovereignty origin:</strong> ${gt.sovereignty_origin}
+                        ${gt.hereditary_privilege_encoded ? '<br><span style="color: #ff6b6b; font-weight: bold;">HEREDITARY PRIVILEGE ENCODED IN CONSTITUTION</span>' : ''}
+                        ${gt.monarch_formal_powers ? '<br><strong>Monarch formal powers:</strong> ' + gt.monarch_formal_powers : ''}
+                        ${gt.gst_assessment ? '<br><strong>GST:</strong> ' + gt.gst_assessment : ''}
+                    </div>
+                </div>`;
+            }
+
             // Pillar I
             html += `<div class="section"><h3>Pillar I — Integrated Will</h3>`;
             

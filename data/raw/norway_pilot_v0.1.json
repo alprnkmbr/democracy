@@ -146,5 +146,14 @@
   },
   "gst_specific_observations": {
     "note": "GST analysis to be performed separately from data collection"
+  },
+  "government_type": {
+    "government_type": "constitutional_monarchy",
+    "head_of_state": "hereditary monarch",
+    "head_of_government": "elected prime minister",
+    "monarch_formal_powers": "limited but real — formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
+    "sovereignty_origin": "mixed — constitution derives from the people in practice, but the monarch retains formal sovereignty",
+    "hereditary_privilege_encoded": true,
+    "gst_assessment": "structural democratic deficit — well-governed but constitutionally unequal"
   }
 }
