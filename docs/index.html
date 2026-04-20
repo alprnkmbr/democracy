@@ -345,44 +345,46 @@
                 </div>`;
             }
             
-            if (d.pillar_I_integrated_will.press_freedom) {
-                const pf = d.pillar_I_integrated_will.press_freedom;
-                let pfHtml = '<div class="dimension">';
-                pfHtml += `<div class="dim-title">Press Freedom (External Reference) ${tag(`Rank ${pf.rank}`, pf.rank <= 10 ? 'high' : pf.rank <= 40 ? 'moderate' : 'low')}</div>`;
-                pfHtml += '<div class="dim-content">';
-                pfHtml += `<strong>Source:</strong> ${pf.source}<br>`;
-                pfHtml += `<strong>Rank:</strong> ${pf.rank} | <strong>Score:</strong> ${pf.score}`;
-                if (pf.methodology_note) pfHtml += `<br><em style="font-size:0.75rem;color:var(--text-dim);">${pf.methodology_note}</em>`;
-                pfHtml += '</div></div>';
-                html += pfHtml;
-            }
-
-            if (d.pillar_I_integrated_will.freedom_house_scores) {
-                const fh = d.pillar_I_integrated_will.freedom_house_scores;
-                let fhHtml = '<div class="dimension">';
-                fhHtml += '<div class="dim-title">Freedom House (External Reference)</div>';
-                fhHtml += '<div class="dim-content">';
-                fhHtml += `<strong>Source:</strong> ${fh.source}<br>`;
-                fhHtml += `<strong>Score:</strong> ${fh.overall_score}/100 | <strong>Status:</strong> ${fh.status}<br>`;
-                fhHtml += `<strong>Political rights:</strong> ${fh.political_rights} | <strong>Civil liberties:</strong> ${fh.civil_liberties}`;
-                if (fh.methodology_note) fhHtml += `<br><em style="font-size:0.75rem;color:var(--text-dim);">${fh.methodology_note}</em>`;
-                fhHtml += '</div></div>';
-                html += fhHtml;
-            }
-
             if (d.pillar_I_integrated_will.information_environment) {
                 const ie = d.pillar_I_integrated_will.information_environment;
                 let ieHtml = '<div class="dimension">';
-                ieHtml += '<div class="dim-title">Information Environment (Raw Data)</div>';
+                ieHtml += '<div class="dim-title">Information Environment</div>';
                 ieHtml += '<div class="dim-content">';
-                if (ie.internet_penetration_pct != null) ieHtml += `<strong>Internet penetration:</strong> ${ie.internet_penetration_pct}%<br>`;
-                if (ie.state_owned_broadcasters != null) ieHtml += `<strong>State-owned broadcasters:</strong> ${ie.state_owned_broadcasters}<br>`;
-                if (ie.journalists_imprisoned_2024 != null) ieHtml += `<strong>Journalists imprisoned (2024):</strong> ${ie.journalists_imprisoned_2024}<br>`;
-                if (ie.journalists_killed_2024 != null) ieHtml += `<strong>Journalists killed (2024):</strong> ${ie.journalists_killed_2024}<br>`;
-                if (ie.media_ownership_concentration_pct != null) ieHtml += `<strong>Media ownership concentration:</strong> ${ie.media_ownership_concentration_pct}%<br>`;
-                if (ie.online_censorship_laws != null) ieHtml += `<strong>Online censorship laws:</strong> ${ie.online_censorship_laws}<br>`;
-                if (ie.data_retention_laws != null) ieHtml += `<strong>Data retention laws:</strong> ${ie.data_retention_laws}<br>`;
-                if (ie.source) ieHtml += `<em style="font-size:0.75rem;color:var(--text-dim);">${ie.source}</em>`;
+
+                if (ie.mainstream_media) {
+                    ieHtml += '<strong>Mainstream Media</strong><br>';
+                    const mm = ie.mainstream_media;
+                    if (mm.state_owned_broadcasters_count != null) ieHtml += `<strong>State-owned broadcasters:</strong> ${mm.state_owned_broadcasters_count}<br>`;
+                    if (mm.private_broadcasters_count != null) ieHtml += `<strong>Private broadcasters:</strong> ${mm.private_broadcasters_count}<br>`;
+                    if (mm.top_5_owners_market_share_pct != null) ieHtml += `<strong>Top 5 owners market share:</strong> ${mm.top_5_owners_market_share_pct}%<br>`;
+                    if (mm.daily_newspapers_circulation_per_1000 != null) ieHtml += `<strong>Newspapers per 1000:</strong> ${mm.daily_newspapers_circulation_per_1000}<br>`;
+                    if (mm.journalists_imprisoned_2024 != null) ieHtml += `<strong>Journalists imprisoned (2024):</strong> ${mm.journalists_imprisoned_2024}<br>`;
+                    if (mm.journalists_killed_2024 != null) ieHtml += `<strong>Journalists killed (2024):</strong> ${mm.journalists_killed_2024}<br>`;
+                    ieHtml += '<br>';
+                }
+
+                if (ie.digital_media) {
+                    ieHtml += '<strong>Digital Media</strong><br>';
+                    const dm = ie.digital_media;
+                    if (dm.internet_penetration_pct != null) ieHtml += `<strong>Internet penetration:</strong> ${dm.internet_penetration_pct}%<br>`;
+                    if (dm.social_media_usage_pct != null) ieHtml += `<strong>Social media usage:</strong> ${dm.social_media_usage_pct}%<br>`;
+                    if (dm.internet_shutdowns_2024 != null) ieHtml += `<strong>Internet shutdowns (2024):</strong> ${dm.internet_shutdowns_2024}<br>`;
+                    if (dm.online_censorship_laws_count != null) ieHtml += `<strong>Online censorship laws:</strong> ${dm.online_censorship_laws_count}<br>`;
+                    if (dm.data_retention_laws_count != null) ieHtml += `<strong>Data retention laws:</strong> ${dm.data_retention_laws_count}<br>`;
+                    if (dm.vpn_usage_pct != null) ieHtml += `<strong>VPN usage:</strong> ${dm.vpn_usage_pct}%<br>`;
+                    if (dm.independent_news_sites_blocked != null) ieHtml += `<strong>Independent news sites blocked:</strong> ${dm.independent_news_sites_blocked}<br>`;
+                    ieHtml += '<br>';
+                }
+
+                if (ie.economic_structure) {
+                    ieHtml += '<strong>Economic Structure</strong><br>';
+                    const es = ie.economic_structure;
+                    if (es.advertising_market_total_usd != null) ieHtml += `<strong>Advertising market:</strong> $${es.advertising_market_total_usd}M<br>`;
+                    if (es.government_ad_spend_share_pct != null) ieHtml += `<strong>Govt ad spend share:</strong> ${es.government_ad_spend_share_pct}%<br>`;
+                    if (es.media_subsidies_exist != null) ieHtml += `<strong>Media subsidies:</strong> ${es.media_subsidies_exist}<br>`;
+                    if (es.journalist_avg_salary_vs_national_avg_pct != null) ieHtml += `<strong>Journalist salary vs national avg:</strong> ${es.journalist_avg_salary_vs_national_avg_pct}%<br>`;
+                }
+
                 ieHtml += '</div></div>';
                 html += ieHtml;
             }
