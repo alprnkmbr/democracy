@@ -273,15 +273,16 @@
                 </div>
             `;
 
-            // Government Type — shown prominently, before pillars
-            if (d.government_type) {
-                const gt = d.government_type;
-                html += `<div class="section">
-                    <h3>Government Type</h3>
+            // Pillar I
+            html += `<div class="section"><h3>Pillar I — Integrated Will</h3>`;
+
+            if (d.pillar_I_integrated_will && d.pillar_I_integrated_will.government_type) {
+                const gt = d.pillar_I_integrated_will.government_type;
+                html += `<div class="dimension">
+                    <div class="dim-title">Government Type</div>
                     <div class="dim-content">
                         <strong>Type:</strong> ${gt.government_type.replace(/_/g, ' ')} | 
-                        <strong>Head of state:</strong> ${gt.head_of_state}
-                        <br>
+                        <strong>Head of state:</strong> ${gt.head_of_state}<br>
                         <strong>Sovereignty origin:</strong> ${gt.sovereignty_origin}
                         ${gt.hereditary_privilege_encoded ? '<br><strong>Hereditary privilege encoded:</strong> Yes' : ''}
                         ${gt.monarch_formal_powers ? '<br><strong>Monarch formal powers:</strong> ' + gt.monarch_formal_powers : ''}
@@ -289,9 +290,6 @@
                     </div>
                 </div>`;
             }
-
-            // Pillar I
-            html += `<div class="section"><h3>Pillar I — Integrated Will</h3>`;
             
             if (d.pillar_I_integrated_will.press_freedom) {
                 const pf = d.pillar_I_integrated_will.press_freedom;

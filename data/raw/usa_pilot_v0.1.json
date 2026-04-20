@@ -39,6 +39,13 @@
     "digital_rights": {
       "source": "Freedom on the Net (Freedom House)",
       "status": "Free but eroding"
+    },
+    "government_type": {
+      "government_type": "federal_republic",
+      "head_of_state": "elected president",
+      "head_of_government": "elected president",
+      "sovereignty_origin": "the people — 'We the People' constitutional preamble",
+      "hereditary_privilege_encoded": false
     }
   },
   "pillar_II_organic_ties": {
@@ -159,12 +166,5 @@
   },
   "gst_specific_observations": {
     "note": "GST analysis to be performed separately from data collection"
-  },
-  "government_type": {
-    "government_type": "federal_republic",
-    "head_of_state": "elected president",
-    "head_of_government": "elected president",
-    "sovereignty_origin": "the people — 'We the People' constitutional preamble",
-    "hereditary_privilege_encoded": false
   }
 }

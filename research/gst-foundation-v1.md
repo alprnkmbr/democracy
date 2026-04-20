@@ -186,23 +186,13 @@ The following dimensions are derived from the three pillars and six rights. They
 
 | Dimension | What it measures | Existing data sources |
 |---|---|---|
+| Government type | Whether sovereignty derives from the people (republic) or from hereditary privilege (monarchy/dynasty). A hereditary head of state encodes birth-based inequality into the constitutional order — a forced substitution at the most fundamental level. Reduces score proportionally: a well-governed constitutional monarchy scores lower than an equivalent republic, but not as low as authoritarian states. | Constitutional text analysis, CIA World Factbook |
 | Perception authenticity | Whether the public can perceive its condition authentically, or whether that perception is substituted (by state, capital, or structural mechanisms) | Multi-source: RSF, V-Dem, media ownership analysis, digital ecosystem mapping |
-| Information substitution mechanism | Identifies WHO substitutes perception and HOW: state coercion (Turkey), capital capture (US), structural conditions making substitution unnecessary (Norway), external geopolitical framing (Latvia) | Media ownership data, state censorship records, advertising revenue concentration, geopolitical alignment analysis |
+| Information substitution mechanism | Identifies WHO substitutes perception and HOW: state coercion, capital capture, structural conditions making substitution unnecessary, external geopolitical framing | Media ownership data, state censorship records, advertising revenue concentration, geopolitical alignment analysis |
 | Full-spectrum information environment | Not just mainstream press but digital media, social platforms, independent podcasts, community media — the entire ecosystem through which citizens form perception | Digital platform usage data, independent media audience metrics, social media discourse analysis |
 | Forced Substitution Coefficient | Abandonment of public services due to manufactured insecurity (not genuine preference) | National statistics on privatization, public service usage, out-of-pocket spending |
 | Economic precarity as cognitive coercion | Poverty rates, housing insecurity, healthcare access — conditions that make free preference impossible | World Bank poverty data, OECD social indicators, national census data |
 | Civic education levels | Whether citizens understand their rights and governance structures | OECD education data, national surveys, literacy assessments |
-
-### Government Type (Structural)
-
-| Dimension | What it measures | Existing data sources |
-|---|---|---|
-| Constitutional sovereignty origin | Whether sovereignty derives from the people (republic) or from hereditary privilege (monarchy/dynasty) | Constitutional text analysis, CIA World Factbook |
-| Hereditary political privilege | Whether any family or dynasty holds formal political power by birthright | Constitutional text analysis, national governance databases |
-
-**Principle**: A hereditary monarchy encodes birth-based inequality into the constitutional order itself. Regardless of how progressive its governance, a state where one family's political status is determined by birth cannot score as fully democratic. This is not cosmetic — sovereignty derived from the people vs. sovereignty derived from birth is a structural distinction.
-
-**Scoring**: Government type is shown separately and prominently. It reduces a country's score proportionally — a well-governed constitutional monarchy scores lower than an equivalent republic, but NOT as low as authoritarian states. The democratic deficit is real but bounded.
 
 ---
 
