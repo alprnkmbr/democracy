@@ -5,137 +5,241 @@
   "data_version": "0.1-pilot",
   "pillar_I_integrated_will": {
     "information_environment": {
-      "source": "To be populated from original sources",
-      "mainstream_media": {
-        "state_owned_broadcasters_count": 1,
-        "private_broadcasters_count": null,
-        "top_5_owners_market_share_pct": null,
-        "daily_newspapers_circulation_per_1000": null,
-        "journalists_imprisoned_2024": 0,
-        "journalists_killed_2024": 0
-      },
-      "digital_media": {
-        "internet_penetration_pct": 92,
-        "social_media_usage_pct": null,
-        "internet_shutdowns_2024": null,
-        "online_censorship_laws_count": null,
-        "data_retention_laws_count": null,
-        "vpn_usage_pct": null,
-        "independent_news_sites_blocked": null
+      "social_media_journalism": {
+        "platform_bans_or_restrictions": null,
+        "social_media_as_primary_news_source_pct": null,
+        "youtube_news_top10_subscribers_total": null,
+        "podcast_listenership_as_news_source_pct": null,
+        "tiktok_news_content_creators_count": null,
+        "crowdfunded_journalism_platforms_count": null,
+        "independent_youtube_news_avg_views": null,
+        "twitter_x_journalist_followers_top10_total": null,
+        "government_social_media_censorship_cases_per_year": null
       },
       "economic_structure": {
-        "advertising_market_total_usd": null,
+        "journalist_avg_salary_vs_national_avg_pct": null,
+        "cross_ownership_non_media_pct": null,
         "government_ad_spend_share_pct": null,
+        "advertising_market_total_usd_m": null,
         "media_subsidies_exist": null,
-        "journalist_avg_salary_vs_national_avg_pct": null
+        "foreign_ownership_restrictions": null
       },
-      "social_media_journalism": {
-        "youtube_news_channels_top10_subscribers_total": null,
-        "twitter_x_journalist_followers_top10_total": null,
-        "tiktok_news_content_creators_count": null,
-        "independent_youtube_news_avg_views": null,
-        "social_media_as_primary_news_source_pct": null,
-        "government_social_media_censorship_cases_2024": null,
-        "social_media_platform_bans_or_restrictions": null
+      "mainstream_media": {
+        "top_5_owners_market_share_pct": null,
+        "prior_restraint_orders_per_year": null,
+        "journalists_killed_current_year": 0,
+        "defamation_prison_sentences_exists": null,
+        "private_broadcasters_count": null,
+        "journalists_imprisoned_current_year": 0,
+        "government_ad_spend_share_pct": null,
+        "broadcast_licensing_process": null,
+        "daily_newspapers_circulation_per_1000": null,
+        "media_regulator_independence": null,
+        "state_owned_broadcasters_count": 1
+      },
+      "digital_media": {
+        "social_media_usage_pct": null,
+        "encrypted_messaging_restrictions": null,
+        "vpn_usage_pct": null,
+        "internet_shutdowns_per_year": null,
+        "digital_surveillance_legislation": null,
+        "data_retention_laws": null,
+        "independent_news_sites_blocked": null,
+        "internet_penetration_pct": 92,
+        "government_content_removal_requests_per_year": null,
+        "online_censorship_laws_count": null
       }
     },
     "economic_precarity": {
-      "source": "OECD / World Bank / Census",
-      "poverty_rate_pct": 11.5,
-      "gini_coefficient_pretax": 0.51,
-      "gini_coefficient_posttax": 0.385,
-      "unemployment_rate_pct": 4.1,
+      "employment_rate_pct": null,
+      "uninsured_population_pct": 7.7,
+      "average_wage_usd": null,
+      "inflation_food_pct": null,
+      "inflation_producer_prices_pct": null,
+      "unemployment_rate_pct": 4.2,
+      "gini_coefficient_pretax": 0.398,
+      "food_cost_pct_of_household_expenditure": null,
+      "gdp_per_capita_nominal_usd": null,
+      "out_of_pocket_healthcare_pct": 10.8,
       "youth_unemployment_pct": null,
-      "healthcare_access": "NOT universal — ~26 million uninsured, many more underinsured",
-      "uninsured_rate_pct": null,
-      "out_of_pocket_healthcare_pct": null
+      "minimum_wage_net_local": null,
+      "minimum_wage_gross_local": null,
+      "labor_force_participation_pct": null,
+      "average_wage_local": null,
+      "poverty_rate_pct": 11.5,
+      "workforce_on_minimum_wage_pct": null,
+      "gdp_per_capita_ppp_usd": null,
+      "housing_cost_to_income_ratio": null,
+      "gini_coefficient_posttax": 0.301,
+      "minimum_wage_net_usd": null,
+      "real_wage_growth_5yr_pct": null,
+      "union_density_pct": null,
+      "inflation_core_pct": null,
+      "inflation_cpi_pct": null
     },
     "civic_education": {
-      "source": "OECD / national assessments",
-      "civic_knowledge_scores_available": null
+      "civic_knowledge_score_iccs": null,
+      "voter_turnout_last_election_pct": null,
+      "political_efficacy_pct": null,
+      "civic_education_mandatory_hours_per_year": null
     },
     "digital_rights": {
-      "source": "Freedom on the Net (Freedom House)",
-      "status": "Free but eroding"
+      "constitutional_right_to_internet": null,
+      "net_neutrality_legislation": null,
+      "digital_id_system_scope": null,
+      "biometric_data_legislation": null,
+      "right_to_be_forgotten_legislation": null
     },
     "government_type": {
-      "government_type": "federal_republic",
-      "head_of_state": "elected president",
-      "head_of_government": "elected president",
+      "head_of_state_formal_powers": null,
       "sovereignty_origin": "the people — 'We the People' constitutional preamble",
-      "hereditary_privilege_encoded": false
+      "head_of_state": "elected president",
+      "monarch_budget_per_capita_usd": null,
+      "head_of_state_selection": "elected",
+      "hereditary_privilege_encoded": false,
+      "government_type": "federal_republic"
+    },
+    "forced_substitution_coefficient": {
+      "private_tutoring_enrollment_pct": null,
+      "private_healthcare_usage_pct": null,
+      "privatization_revenue_pct_gdp": null,
+      "out_of_pocket_core_services_pct_household_income": null,
+      "public_vs_private_school_enrollment_pct": null,
+      "public_vs_private_hospital_beds_ratio": null,
+      "pension_coverage_public_pct": null,
+      "pension_coverage_private_pct": null
     }
   },
   "pillar_II_organic_ties": {
     "social_cohesion": {
-      "source": "OECD / World Values Survey / Pew",
+      "community_organization_participation_pct": null,
+      "community_organization": "fragmented — strong in some areas, nearly absent in others",
+      "volunteer_rate_pct": null,
+      "charitable_giving_pct_gdp": null,
       "social_trust_pct": 31,
-      "social_trust_note": "Well below OECD average. Declining for decades. 'Most people can be trusted' response has fallen from ~50% in 1970s.",
-      "community_organization": "fragmented — strong in some areas, nearly absent in others"
+      "source": "OECD / World Values Survey / Pew",
+      "social_trust_note": "Well below OECD average. Declining for decades. 'Most people can be trusted' response has fallen from ~50% in 1970s."
     },
     "family_structure_health": {
-      "source": "CDC / national statistics",
+      "maternal_mortality_per_100000": null,
       "domestic_violence_note": "~1 in 4 women experience intimate partner violence. ~1 in 9 men. Gun violence in domestic contexts is uniquely American problem.",
-      "family_stability": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)"
+      "divorce_rate_per_1000": null,
+      "family_stability": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)",
+      "single_parent_household_pct": null,
+      "source": "CDC / national statistics",
+      "elder_care_public_vs_family_ratio": null,
+      "child_poverty_rate_pct": null,
+      "domestic_violence_incidents_per_1000": null
     },
     "civic_participation_beyond_voting": {
-      "source": "Various",
+      "ngo_count_per_capita": null,
       "volunteering_rate": "moderate — formal volunteering declining, informal mutual aid rose during COVID but receded",
+      "volunteer_rate_pct": null,
       "mutual_aid": "growing in crisis moments but not institutionalized",
+      "protest_participation_pct_5yr": null,
+      "union_note": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%.",
       "union_density_pct": 10.0,
-      "union_note": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%."
+      "source": "Various",
+      "petition_participation_pct": null
     },
     "internal_dissent_capacity": {
+      "participatory_budgeting_exists": null,
+      "assembly_law_restrictions": null,
+      "score": "moderate but declining",
+      "legal_right_to_protest": null,
+      "protest_permit_denial_rate_pct": null,
       "source": "V-Dem deliberation index / qualitative",
-      "score": "moderate but declining"
+      "protest_permit_required": null
     },
     "social_isolation": {
-      "source": "Cigna / US Surgeon General",
+      "loneliness_note": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness.",
+      "birth_rate_per_1000": null,
       "loneliness_rate_pct": null,
-      "loneliness_note": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness."
+      "elderly_isolation_indicator": null,
+      "source": "Cigna / US Surgeon General",
+      "suicide_rate_per_100000": null,
+      "living_alone_pct": null
     }
   },
   "pillar_III_social_capital_transformation": {
     "wealth_distribution": {
-      "source": "Federal Reserve / World Inequality Database",
-      "gini_pretax": 0.51,
-      "gini_posttax": 0.385,
       "top_1_pct_wealth_share": 30.5,
       "bottom_50_pct_wealth_share": 2.5,
+      "bottom_50pct_wealth_share": null,
+      "gini_coefficient_pretax": null,
+      "wealth_gini": null,
+      "billionaire_wealth_pct_gdp": null,
+      "gini_coefficient_posttax": null,
+      "gini_posttax": 0.385,
       "top_10_pct_income_share": null,
+      "wealth_concentration_note": "Top 1% holds 30.5% of wealth. Bottom 50% holds 2.5%. The ratio is ~12:1 between median and mean wealth — extreme inequality. During COVID, billionaire wealth increased 70%.",
       "bottom_50_pct_income_share": null,
-      "wealth_concentration_note": "Top 1% holds 30.5% of wealth. Bottom 50% holds 2.5%. The ratio is ~12:1 between median and mean wealth — extreme inequality. During COVID, billionaire wealth increased 70%."
+      "source": "Federal Reserve / World Inequality Database",
+      "gini_pretax": 0.51,
+      "top_1pct_income_share": null,
+      "top_10pct_wealth_share": null
     },
     "taxation_progressivity": {
-      "source": "OECD tax statistics",
-      "tax_to_gdp_pct": 27.1,
+      "inheritance_estate_tax_exists": null,
+      "top_marginal_income_tax_rate_pct": null,
       "tax_to_gdp_note": "Among lowest in OECD (average ~34%). The US collects far less in taxes than peer nations, limiting redistribution capacity.",
-      "top_marginal_income_tax_pct": 37.0,
+      "tax_gap_estimate_pct": null,
+      "property_tax_rate_pct": null,
+      "sales_tax_note": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature.",
+      "corporate_tax_rate_pct": null,
+      "tax_to_gdp_pct": 27.1,
       "corporate_tax_pct": 21.0,
+      "top_marginal_income_tax_pct": 37.0,
       "vat_pct": null,
-      "sales_tax_note": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature."
+      "capital_gains_tax_rate_pct": null,
+      "effective_tax_rate_by_decile": null,
+      "source": "OECD tax statistics",
+      "inheritance_tax_threshold": null,
+      "capital_gains_vs_income_tax_gap_pct": null
     },
     "public_investment": {
-      "source": "OECD / WHO / UNESCO",
-      "healthcare_spending_pct_gdp": 17.3,
       "healthcare_note": "HIGHEST in world by GDP share but with worst outcomes among developed nations. Most spending is private, not public.",
-      "public_healthcare_pct_gdp": 8.6,
+      "healthcare_spending_public_pct": null,
       "education_spending_pct_gdp": 6.1,
       "social_protection_pct_gdp": 12.4,
-      "social_protection_note": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers."
+      "r_and_d_spending_pct_gdp": null,
+      "public_healthcare_pct_gdp": 8.6,
+      "social_protection_note": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers.",
+      "healthcare_spending_pct_gdp": 17.3,
+      "military_spending_pct_gdp": null,
+      "social_protection_spending_pct_gdp": null,
+      "education_spending_public_pct": null,
+      "source": "OECD / WHO / UNESCO",
+      "infrastructure_spending_pct_gdp": null,
+      "r_and_d_spending_public_pct": null
     },
     "social_mobility": {
       "source": "OECD / Raj Chetty et al.",
+      "public_university_enrollment_by_income_quintile_pct": null,
+      "education_attainment_by_parental_income_quartile": null,
       "intergenerational_income_elasticity": 0.47,
-      "mobility_note": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries."
+      "mobility_note": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries.",
+      "income_quintile_mobility_bottom_to_top_pct": null
     },
     "cultural_production_accessibility": {
+      "public_library_branches_per_capita": null,
+      "cultural_spending_note": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible.",
       "source": "National data",
       "public_cultural_spending_pct_gdp": 0.03,
-      "cultural_spending_note": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible."
+      "public_broadcasting_budget_per_capita_usd": null,
+      "public_arts_funding_per_capita_usd": null,
+      "cultural_participation_rate_pct": null,
+      "museum_gallery_attendance_per_capita": null
     },
     "corporate_extraction_vs_public_benefit": {
-      "source": "National economic accounts"
+      "revolving_door_count": null,
+      "share_buybacks_pct_corporate_profits": null,
+      "lobbying_expenditure_total_usd": null,
+      "dividend_vs_reinvestment_ratio": null,
+      "source": "National economic accounts",
+      "ceo_to_worker_pay_ratio": null,
+      "corporate_profit_pct_gdp": null,
+      "lobbying_expenditure_per_capita_usd": null
     }
   },
   "cross_cutting_rights": {

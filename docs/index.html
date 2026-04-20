@@ -318,254 +318,294 @@
             }
         }
 
+        // Human-readable labels for field keys
+        const fieldLabels = {
+            // Government Type
+            government_type: 'Government type',
+            head_of_state_selection: 'Head of state selection',
+            head_of_state_formal_powers: 'Head of state formal powers',
+            head_of_state: 'Head of state',
+            sovereignty_origin: 'Sovereignty origin',
+            hereditary_privilege_encoded: 'Hereditary privilege encoded',
+            monarch_budget_per_capita_usd: 'Monarch budget per capita (USD)',
+            gst_assessment: 'GST assessment',
+            // Economic Precarity
+            gini_coefficient_pretax: 'Gini (pre-tax)',
+            gini_coefficient_posttax: 'Gini (post-tax)',
+            poverty_rate_pct: 'Poverty rate',
+            unemployment_rate_pct: 'Unemployment',
+            youth_unemployment_pct: 'Youth unemployment',
+            labor_force_participation_pct: 'Labor force participation',
+            employment_rate_pct: 'Employment rate',
+            inflation_cpi_pct: 'Inflation (CPI)',
+            inflation_food_pct: 'Food inflation',
+            inflation_core_pct: 'Core inflation',
+            inflation_producer_prices_pct: 'Producer prices inflation',
+            minimum_wage_gross_local: 'Min. wage (gross, local)',
+            minimum_wage_net_local: 'Min. wage (net, local)',
+            minimum_wage_net_usd: 'Min. wage (net, USD)',
+            average_wage_local: 'Average wage (local)',
+            average_wage_usd: 'Average wage (USD)',
+            gdp_per_capita_nominal_usd: 'GDP per capita (nominal USD)',
+            gdp_per_capita_ppp_usd: 'GDP per capita (PPP USD)',
+            workforce_on_minimum_wage_pct: 'Workforce on minimum wage',
+            housing_cost_to_income_ratio: 'Housing cost to income ratio',
+            food_cost_pct_of_household_expenditure: 'Food cost share of household expenditure',
+            out_of_pocket_healthcare_pct: 'Out-of-pocket healthcare',
+            uninsured_population_pct: 'Uninsured population',
+            real_wage_growth_5yr_pct: 'Real wage growth (5yr)',
+            union_density_pct: 'Union density',
+            // Information Environment - Mainstream Media
+            state_owned_broadcasters_count: 'State-owned broadcasters',
+            private_broadcasters_count: 'Private broadcasters (national reach)',
+            top_5_owners_market_share_pct: 'Top 5 owners market share',
+            daily_newspapers_circulation_per_1000: 'Newspapers per 1000',
+            journalists_imprisoned_current_year: 'Journalists imprisoned (current year)',
+            journalists_killed_current_year: 'Journalists killed (current year)',
+            media_regulator_independence: 'Media regulator independence',
+            broadcast_licensing_process: 'Broadcast licensing process',
+            government_ad_spend_share_pct: 'Govt ad spend share',
+            defamation_prison_sentences_exists: 'Defamation carries prison sentences',
+            prior_restraint_orders_per_year: 'Prior restraint / publication bans per year',
+            // Digital Media
+            internet_penetration_pct: 'Internet penetration',
+            social_media_usage_pct: 'Social media usage',
+            internet_shutdowns_per_year: 'Internet shutdowns per year',
+            online_censorship_laws_count: 'Online censorship laws',
+            data_retention_laws: 'Data retention laws',
+            vpn_usage_pct: 'VPN usage',
+            independent_news_sites_blocked: 'Independent news sites blocked',
+            encrypted_messaging_restrictions: 'Encrypted messaging restrictions',
+            government_content_removal_requests_per_year: 'Govt content removal requests per year',
+            digital_surveillance_legislation: 'Digital surveillance legislation',
+            // Economic Structure
+            advertising_market_total_usd_m: 'Advertising market',
+            media_subsidies_exist: 'Media subsidies',
+            cross_ownership_non_media_pct: 'Cross-ownership by non-media conglomerates',
+            foreign_ownership_restrictions: 'Foreign ownership restrictions',
+            journalist_avg_salary_vs_national_avg_pct: 'Journalist salary vs national avg',
+            // Social Media Journalism
+            youtube_news_top10_subscribers_total: 'YouTube news (top 10 subscribers)',
+            twitter_x_journalist_followers_top10_total: 'X journalist followers (top 10)',
+            tiktok_news_content_creators_count: 'TikTok news creators',
+            independent_youtube_news_avg_views: 'Independent YouTube news avg views',
+            social_media_as_primary_news_source_pct: 'Social media as primary news source',
+            government_social_media_censorship_cases_per_year: 'Govt social media censorship per year',
+            platform_bans_or_restrictions: 'Platform bans/restrictions',
+            crowdfunded_journalism_platforms_count: 'Crowdfunded journalism platforms',
+            podcast_listenership_as_news_source_pct: 'Podcast as news source',
+            // Forced Substitution
+            private_tutoring_enrollment_pct: 'Private tutoring enrollment',
+            private_healthcare_usage_pct: 'Private healthcare usage',
+            privatization_revenue_pct_gdp: 'Privatization revenue (% GDP)',
+            out_of_pocket_core_services_pct_household_income: 'Out-of-pocket core services (% household income)',
+            public_vs_private_school_enrollment_pct: 'Public vs private school enrollment',
+            public_vs_private_hospital_beds_ratio: 'Public vs private hospital beds',
+            pension_coverage_public_pct: 'Public pension coverage',
+            pension_coverage_private_pct: 'Private pension coverage',
+            // Civic Education
+            civic_knowledge_score_iccs: 'Civic knowledge score (ICCS)',
+            voter_turnout_last_election_pct: 'Voter turnout (last election)',
+            political_efficacy_pct: 'Political efficacy',
+            civic_education_mandatory_hours_per_year: 'Civic education (mandatory hours/year)',
+            // Digital Rights
+            constitutional_right_to_internet: 'Constitutional right to internet',
+            net_neutrality_legislation: 'Net neutrality legislation',
+            digital_id_system_scope: 'Digital ID system scope',
+            biometric_data_legislation: 'Biometric data legislation',
+            right_to_be_forgotten_legislation: 'Right to be forgotten legislation',
+            // Social Cohesion
+            social_trust_pct: 'Social trust',
+            community_organization_participation_pct: 'Community organization participation',
+            volunteer_rate_pct: 'Volunteer rate',
+            charitable_giving_pct_gdp: 'Charitable giving (% GDP)',
+            // Family Structure Health
+            domestic_violence_incidents_per_1000: 'Domestic violence (per 1000)',
+            divorce_rate_per_1000: 'Divorce rate (per 1000)',
+            single_parent_household_pct: 'Single-parent households',
+            child_poverty_rate_pct: 'Child poverty rate',
+            maternal_mortality_per_100000: 'Maternal mortality (per 100k)',
+            elder_care_public_vs_family_ratio: 'Elder care: public vs family',
+            // Civic Participation
+            ngo_count_per_capita: 'NGOs per capita',
+            protest_participation_pct_5yr: 'Protest participation (5yr)',
+            petition_participation_pct: 'Petition/signature participation',
+            // Internal Dissent Capacity
+            legal_right_to_protest: 'Legal right to protest',
+            protest_permit_required: 'Protest permit required',
+            protest_permit_denial_rate_pct: 'Protest permit denial rate',
+            assembly_law_restrictions: 'Assembly law restrictions',
+            participatory_budgeting_exists: 'Participatory budgeting exists',
+            // Social Isolation
+            loneliness_rate_pct: 'Loneliness rate',
+            living_alone_pct: 'Living alone',
+            elderly_isolation_indicator: 'Elderly isolation indicator',
+            suicide_rate_per_100000: 'Suicide rate (per 100k)',
+            birth_rate_per_1000: 'Birth rate (per 1000)',
+            // Wealth Distribution
+            top_1pct_income_share: 'Top 1% income share',
+            top_10pct_wealth_share: 'Top 10% wealth share',
+            bottom_50pct_wealth_share: 'Bottom 50% wealth share',
+            wealth_gini: 'Wealth Gini',
+            billionaire_wealth_pct_gdp: 'Billionaire wealth (% GDP)',
+            // Taxation
+            top_marginal_income_tax_rate_pct: 'Top marginal income tax rate',
+            corporate_tax_rate_pct: 'Corporate tax rate',
+            capital_gains_tax_rate_pct: 'Capital gains tax rate',
+            capital_gains_vs_income_tax_gap_pct: 'Capital gains vs income tax gap',
+            effective_tax_rate_by_decile: 'Effective tax rate by decile',
+            tax_gap_estimate_pct: 'Tax gap estimate',
+            property_tax_rate_pct: 'Property tax rate',
+            inheritance_estate_tax_exists: 'Inheritance/estate tax exists',
+            inheritance_tax_threshold: 'Inheritance tax threshold',
+            // Public Investment
+            healthcare_spending_pct_gdp: 'Healthcare spending',
+            healthcare_spending_public_pct: 'Healthcare (public share)',
+            education_spending_pct_gdp: 'Education spending',
+            education_spending_public_pct: 'Education (public share)',
+            infrastructure_spending_pct_gdp: 'Infrastructure spending',
+            r_and_d_spending_pct_gdp: 'R&D spending',
+            r_and_d_spending_public_pct: 'R&D (public share)',
+            social_protection_spending_pct_gdp: 'Social protection spending',
+            military_spending_pct_gdp: 'Military spending',
+            // Social Mobility
+            intergenerational_income_elasticity: 'Intergenerational income elasticity',
+            education_attainment_by_parental_income_quartile: 'Education by parental income quartile',
+            income_quintile_mobility_bottom_to_top_pct: 'Income mobility (bottom → top)',
+            public_university_enrollment_by_income_quintile_pct: 'Public university enrollment by income quintile',
+            // Cultural Production
+            public_arts_funding_per_capita_usd: 'Public arts funding (per capita USD)',
+            museum_gallery_attendance_per_capita: 'Museum/gallery attendance (per capita)',
+            public_library_branches_per_capita: 'Public library branches (per capita)',
+            public_broadcasting_budget_per_capita_usd: 'Public broadcasting budget (per capita USD)',
+            cultural_participation_rate_pct: 'Cultural participation rate',
+            // Corporate Extraction
+            corporate_profit_pct_gdp: 'Corporate profit (% GDP)',
+            ceo_to_worker_pay_ratio: 'CEO-to-worker pay ratio',
+            share_buybacks_pct_corporate_profits: 'Share buybacks (% corporate profits)',
+            dividend_vs_reinvestment_ratio: 'Dividend vs reinvestment ratio',
+            lobbying_expenditure_total_usd: 'Lobbying expenditure (total USD)',
+            lobbying_expenditure_per_capita_usd: 'Lobbying expenditure (per capita USD)',
+            revolving_door_count: 'Revolving door instances'
+        };
+
+        // Unit suffixes for certain fields
+        const fieldUnits = {
+            _pct: '%',
+            _usd: 'USD',
+            _pct_gdp: '% GDP',
+            gini_coefficient_pretax: '',
+            gini_coefficient_posttax: '',
+            intergenerational_income_elasticity: ''
+        };
+
+        function getUnit(key) {
+            if (fieldUnits[key] !== undefined) return fieldUnits[key];
+            if (key.endsWith('_pct')) return '%';
+            if (key.endsWith('_pct_gdp')) return '% GDP';
+            if (key.endsWith('_usd')) return 'USD';
+            if (key.endsWith('_per_1000')) return '/1000';
+            if (key.endsWith('_per_100000')) return '/100k';
+            return '';
+        }
+
+        function formatValue(val, key) {
+            if (val === null || val === undefined) return '—';
+            if (typeof val === 'boolean') return val ? 'Yes' : 'No';
+            const unit = getUnit(key);
+            if (typeof val === 'number') {
+                if (key.includes('_usd') && !key.includes('per_capita')) return '$' + val.toLocaleString() + (unit ? ' ' + unit : '');
+                if (key.includes('per_capita_usd')) return '$' + val.toLocaleString() + (unit ? ' ' + unit : '');
+                return val.toLocaleString() + (unit ? ' ' + unit : '');
+            }
+            return val + (unit ? ' ' + unit : '');
+        }
+
+        function renderDimension(title, data) {
+            if (!data) return '';
+            let html = '<div class="dimension">';
+            html += `<div class="dim-title">${title}</div>`;
+            html += '<div class="dim-content">';
+            for (const [key, val] of Object.entries(data)) {
+                if (val === null || val === undefined || key === 'source') continue;
+                if (typeof val === 'object' && !Array.isArray(val)) continue; // sub-sections handled separately
+                const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(val, key)}\u003cbr\u003e`;
+            }
+            html += '\u003c/div\u003e\u003c/div\u003e';
+            return html;
+        }
+
+        function renderDimensionWithSubsections(title, data, sectionOrder) {
+            if (!data) return '';
+            let html = '\u003cdiv class="dimension"\u003e';
+            html += `\u003cdiv class="dim-title"\u003e${title}\u003c/div\u003e`;
+            html += '\u003cdiv class="dim-content"\u003e';
+            const subKeys = Object.keys(data).filter(k => typeof data[k] === 'object' && data[k] !== null && !Array.isArray(data[k]));
+            const topKeys = Object.keys(data).filter(k => typeof data[k] !== 'object' || data[k] === null || Array.isArray(data[k]));
+            // Render top-level non-object fields first
+            for (const key of topKeys) {
+                if (data[key] === null || data[key] === undefined || key === 'source') continue;
+                const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(data[key], key)}\u003cbr\u003e`;
+            }
+            // Render sub-sections in specified order
+            const order = sectionOrder || subKeys;
+            for (const secName of order) {
+                const sec = data[secName];
+                if (!sec || typeof sec !== 'object') continue;
+                if (topKeys.length > 0 || order.indexOf(secName) > 0) html += '\u003cbr\u003e';
+                html += `\u003cstrong\u003e${secName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}\u003c/strong\u003e\u003cbr\u003e`;
+                for (const [key, val] of Object.entries(sec)) {
+                    const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(val, key)}\u003cbr\u003e`;
+                }
+            }
+            html += '\u003c/div\u003e\u003c/div\u003e';
+            return html;
+        }
+
         function renderCountry(d) {
-            const tag = (text, cls) => `<span class="status-tag tag-${cls}">${text}</span>`;
             let html = `
-                <div class="country-header">
-                    <h2>${d.country}</h2>
-                    <div class="collection-date">Data collected: ${d.collection_date} | Version: ${d.data_version}</div>
-                </div>
+                \u003cdiv class="country-header"\u003e
+                    \u003ch2\u003e${d.country}\u003c/h2\u003e
+                    \u003cdiv class="collection-date"\u003eData collected: ${d.collection_date} | Version: ${d.data_version}\u003c/div\u003e
+                \u003c/div\u003e
             `;
 
             // Pillar I
-            html += `<div class="section"><h3>Pillar I — Integrated Will</h3>`;
-
-            if (d.pillar_I_integrated_will && d.pillar_I_integrated_will.government_type) {
-                const gt = d.pillar_I_integrated_will.government_type;
-                html += `<div class="dimension">
-                    <div class="dim-title">Government Type</div>
-                    <div class="dim-content">
-                        <strong>Type:</strong> ${gt.government_type.replace(/_/g, ' ')}<br>
-                        <strong>Head of state:</strong> ${gt.head_of_state}<br>
-                        <strong>Sovereignty origin:</strong> ${gt.sovereignty_origin}
-                        ${gt.hereditary_privilege_encoded ? '<br><strong>Hereditary privilege encoded:</strong> Yes' : ''}
-                        ${gt.monarch_formal_powers ? '<br><strong>Monarch formal powers:</strong> ' + gt.monarch_formal_powers : ''}
-                        ${gt.gst_assessment ? '<br><strong>GST:</strong> ' + gt.gst_assessment : ''}
-                    </div>
-                </div>`;
-            }
-            
-            if (d.pillar_I_integrated_will.information_environment) {
-                const ie = d.pillar_I_integrated_will.information_environment;
-                let ieHtml = '<div class="dimension">';
-                ieHtml += '<div class="dim-title">Information Environment</div>';
-                ieHtml += '<div class="dim-content">';
-
-                const ieSections = [
-                    { name: 'Mainstream Media', obj: ie.mainstream_media, fields: [
-                        ['State-owned broadcasters', 'state_owned_broadcasters_count', ''],
-                        ['Private broadcasters', 'private_broadcasters_count', ''],
-                        ['Top 5 owners market share', 'top_5_owners_market_share_pct', '%'],
-                        ['Newspapers per 1000', 'daily_newspapers_circulation_per_1000', ''],
-                        ['Journalists imprisoned (2024)', 'journalists_imprisoned_2024', ''],
-                        ['Journalists killed (2024)', 'journalists_killed_2024', '']
-                    ]},
-                    { name: 'Digital Media', obj: ie.digital_media, fields: [
-                        ['Internet penetration', 'internet_penetration_pct', '%'],
-                        ['Social media usage', 'social_media_usage_pct', '%'],
-                        ['Internet shutdowns (2024)', 'internet_shutdowns_2024', ''],
-                        ['Online censorship laws', 'online_censorship_laws_count', ''],
-                        ['Data retention laws', 'data_retention_laws_count', ''],
-                        ['VPN usage', 'vpn_usage_pct', '%'],
-                        ['Independent news sites blocked', 'independent_news_sites_blocked', '']
-                    ]},
-                    { name: 'Economic Structure', obj: ie.economic_structure, fields: [
-                        ['Advertising market', 'advertising_market_total_usd', 'M USD'],
-                        ['Govt ad spend share', 'government_ad_spend_share_pct', '%'],
-                        ['Media subsidies', 'media_subsidies_exist', ''],
-                        ['Journalist salary vs national avg', 'journalist_avg_salary_vs_national_avg_pct', '%']
-                    ]},
-                    { name: 'Social Media Journalism', obj: ie.social_media_journalism, fields: [
-                        ['YouTube news (top 10 subscribers)', 'youtube_news_channels_top10_subscribers_total', ''],
-                        ['X journalist followers (top 10)', 'twitter_x_journalist_followers_top10_total', ''],
-                        ['TikTok news creators', 'tiktok_news_content_creators_count', ''],
-                        ['Independent YouTube news avg views', 'independent_youtube_news_avg_views', ''],
-                        ['Social media as primary news source', 'social_media_as_primary_news_source_pct', '%'],
-                        ['Govt social media censorship (2024)', 'government_social_media_censorship_cases_2024', ''],
-                        ['Platform bans/restrictions', 'social_media_platform_bans_or_restrictions', '']
-                    ]}
-                ];
-                let first = true;
-                for (const sec of ieSections) {
-                    if (sec.obj) {
-                        if (!first) ieHtml += '<br>';
-                        first = false;
-                        ieHtml += `<strong>${sec.name}</strong><br>`;
-                        for (const [label, key, unit] of sec.fields) {
-                            const val = sec.obj[key];
-                            const display = val != null ? val + (unit ? ' ' + unit : '') : '—';
-                            ieHtml += `<strong>${label}:</strong> ${display}<br>`;
-                        }
-                    }
-                }
-
-                ieHtml += '</div></div>';
-                html += ieHtml;
-            }
-
-            if (d.pillar_I_integrated_will.economic_precarity) {
-                const ep = d.pillar_I_integrated_will.economic_precarity;
-                let epHtml = '<div class="dimension">';
-                epHtml += `<div class="dim-title">Economic Precarity ${tag(ep.gini_coefficient_pretax > 0.4 ? 'high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'low', ep.gini_coefficient_pretax > 0.4 ? 'very-high' : ep.gini_coefficient_pretax > 0.3 ? 'moderate' : 'high')}</div>`;
-                epHtml += '<div class="dim-content">';
-                if (ep.gini_coefficient_pretax) epHtml += `<strong>Gini (pre-tax):</strong> ${ep.gini_coefficient_pretax} | `;
-                if (ep.gini_coefficient_posttax) epHtml += `<strong>Gini (post-tax):</strong> ${ep.gini_coefficient_posttax}<br>`; else epHtml += '<br>';
-                if (ep.poverty_rate_pct) epHtml += `<strong>Poverty rate:</strong> ${ep.poverty_rate_pct}% | `;
-                if (ep.unemployment_rate_pct) epHtml += `<strong>Unemployment:</strong> ${ep.unemployment_rate_pct}%`;
-                if (ep.youth_unemployment_pct) epHtml += ` | <strong>Youth:</strong> ${ep.youth_unemployment_pct}%`;
-                epHtml += '<br>';
-                if (ep.labor_force_participation_pct) epHtml += `<strong>Labor force participation:</strong> ${ep.labor_force_participation_pct}% | `;
-                if (ep.employment_rate_pct) epHtml += `<strong>Employment rate:</strong> ${ep.employment_rate_pct}%<br>`; else epHtml += '<br>';
-                if (ep.inflation_cpi_pct) epHtml += `<strong>Inflation (CPI):</strong> ${ep.inflation_cpi_pct}%`;
-                if (ep.food_inflation_pct) epHtml += ` | <strong>Food:</strong> ${ep.food_inflation_pct}%`;
-                if (ep.core_inflation_pct) epHtml += ` | <strong>Core:</strong> ${ep.core_inflation_pct}%`;
-                epHtml += '<br>';
-                if (ep.minimum_wage_net_usd) epHtml += `<strong>Min. wage (net):</strong> ~$${ep.minimum_wage_net_usd}/mo`;
-                if (ep.minimum_wage_note) epHtml += ` — ${ep.minimum_wage_note}`;
-                epHtml += '<br>';
-                if (ep.gdp_per_capita_usd) epHtml += `<strong>GDP/capita:</strong> $${ep.gdp_per_capita_usd} nominal`;
-                if (ep.gdp_per_capita_ppp_usd) epHtml += ` | $${ep.gdp_per_capita_ppp_usd} PPP`;
-                epHtml += '<br>';
-                if (ep.healthcare_access) epHtml += `<strong>Healthcare:</strong> ${ep.healthcare_access}`;
-                epHtml += '</div></div>';
-                html += epHtml;
-            }
-
-            if (d.pillar_I_integrated_will.forced_substitution) {
-                html += `<div class="dimension">
-                    <div class="dim-title">Forced Substitution Coefficient ${tag(d.gst_specific_observations.forced_substitution_coefficient.estimated_level, d.gst_specific_observations.forced_substitution_coefficient.estimated_level === 'low' ? 'high' : 'very-high')}</div>
-                    <div class="dim-content">${d.gst_specific_observations.forced_substitution_coefficient.note}</div>
-                </div>`;
-            }
-
-            html += `</div>`;
+            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar I — Integrated Will\u003c/h3\u003e';
+            const p1 = d.pillar_I_integrated_will || {};
+            html += renderDimension('Government Type', p1.government_type);
+            html += renderDimensionWithSubsections('Information Environment', p1.information_environment, ['mainstream_media', 'digital_media', 'economic_structure', 'social_media_journalism']);
+            html += renderDimension('Economic Precarity', p1.economic_precarity);
+            html += renderDimension('Forced Substitution Coefficient', p1.forced_substitution_coefficient);
+            html += renderDimension('Civic Education', p1.civic_education);
+            html += renderDimension('Digital Rights', p1.digital_rights);
+            html += '\u003c/div\u003e';
 
             // Pillar II
-            html += `<div class="section"><h3>Pillar II — Organic Ties</h3>`;
-
-            if (d.pillar_II_organic_ties.social_cohesion) {
-                const sc = d.pillar_II_organic_ties.social_cohesion;
-                html += `<div class="dimension">
-                    <div class="dim-title">Social Cohesion ${sc.social_trust_pct ? tag(`${sc.social_trust_pct}% trust`, sc.social_trust_pct > 50 ? 'high' : sc.social_trust_pct > 30 ? 'moderate' : 'low') : ''}</div>
-                    <div class="dim-content">${sc.note || ''}</div>
-                </div>`;
-            }
-
-            if (d.pillar_II_organic_ties.civic_participation_beyond_voting) {
-                const cp = d.pillar_II_organic_ties.civic_participation_beyond_voting;
-                html += `<div class="dimension">
-                    <div class="dim-title">Civic Participation ${cp.union_density_pct ? tag(`${cp.union_density_pct}% union density`, cp.union_density_pct > 30 ? 'high' : cp.union_density_pct > 15 ? 'moderate' : 'low') : ''}</div>
-                    <div class="dim-content">${cp.note || ''}</div>
-                </div>`;
-            }
-
-            if (d.pillar_II_organic_ties.social_isolation) {
-                const si = d.pillar_II_organic_ties.social_isolation;
-                html += `<div class="dimension">
-                    <div class="dim-title">Social Isolation ${si.loneliness_rate_pct ? tag(`${si.loneliness_rate_pct}% loneliness`, si.loneliness_rate_pct < 10 ? 'low' : si.loneliness_rate_pct < 30 ? 'moderate' : 'high') : ''}</div>
-                    <div class="dim-content">${si.note || ''}</div>
-                </div>`;
-            }
-
-            html += `</div>`;
+            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar II — Organic Ties\u003c/h3\u003e';
+            const p2 = d.pillar_II_organic_ties || {};
+            html += renderDimension('Social Cohesion', p2.social_cohesion);
+            html += renderDimension('Family Structure Health', p2.family_structure_health);
+            html += renderDimension('Civic Participation', p2.civic_participation_beyond_voting);
+            html += renderDimension('Internal Dissent Capacity', p2.internal_dissent_capacity);
+            html += renderDimension('Social Isolation', p2.social_isolation);
+            html += '\u003c/div\u003e';
 
             // Pillar III
-            html += `<div class="section"><h3>Pillar III — Social Capital Transformation</h3>`;
+            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar III — Social Capital Transformation\u003c/h3\u003e';
+            const p3 = d.pillar_III_social_capital_transformation || {};
+            html += renderDimension('Wealth Distribution', p3.wealth_distribution);
+            html += renderDimension('Taxation Progressivity', p3.taxation_progressivity);
+            html += renderDimension('Public Investment', p3.public_investment);
+            html += renderDimension('Social Mobility', p3.social_mobility);
+            html += renderDimension('Cultural Production Accessibility', p3.cultural_production_accessibility);
+            html += renderDimension('Corporate Extraction vs Public Benefit', p3.corporate_extraction_vs_public_benefit);
+            html += '\u003c/div\u003e';
 
-            if (d.pillar_III_social_capital_transformation.wealth_distribution) {
-                const wd = d.pillar_III_social_capital_transformation.wealth_distribution;
-                html += `<div class="dimension">
-                    <div class="dim-title">Wealth Distribution</div>
-                    <div class="dim-content">
-                        <strong>Gini (pre-tax):</strong> ${wd.gini_pretax} | <strong>Gini (post-tax):</strong> ${wd.gini_posttax}<br>
-                        ${wd.top_1_pct_wealth_share ? `<strong>Top 1% wealth share:</strong> ${wd.top_1_pct_wealth_share}% | <strong>Bottom 50%:</strong> ${wd.bottom_50_pct_wealth_share}%<br>` : ''}
-                        ${wd.wealth_concentration_note || ''}
-                    </div>
-                </div>`;
-            }
-
-            if (d.pillar_III_social_capital_transformation.taxation_progressivity) {
-                const tp = d.pillar_III_social_capital_transformation.taxation_progressivity;
-                html += `<div class="dimension">
-                    <div class="dim-title">Taxation & Redistribution</div>
-                    <div class="dim-content"><strong>Tax-to-GDP:</strong> ${tp.tax_to_gdp_pct}% | <strong>Top marginal rate:</strong> ${tp.top_marginal_income_tax_pct}%<br>${tp.progressivity_note || ''}</div>
-                </div>`;
-            }
-
-            if (d.pillar_III_social_capital_transformation.public_investment) {
-                const pi = d.pillar_III_social_capital_transformation.public_investment;
-                html += `<div class="dimension">
-                    <div class="dim-title">Public Investment</div>
-                    <div class="dim-content">
-                        <strong>Healthcare:</strong> ${pi.healthcare_spending_pct_gdp}% GDP ${pi.healthcare_note ? `(${pi.healthcare_note})` : ''}<br>
-                        <strong>Education:</strong> ${pi.education_spending_pct_gdp}% GDP<br>
-                        <strong>Social protection:</strong> ${pi.social_protection_pct_gdp}% GDP ${pi.social_protection_note ? `(${pi.social_protection_note})` : ''}
-                    </div>
-                </div>`;
-            }
-
-            if (d.pillar_III_social_capital_transformation.social_mobility) {
-                const sm = d.pillar_III_social_capital_transformation.social_mobility;
-                html += `<div class="dimension">
-                    <div class="dim-title">Social Mobility ${sm.intergenerational_income_elasticity ? tag(`elasticity ${sm.intergenerational_income_elasticity}`, sm.intergenerational_income_elasticity < 0.2 ? 'high' : sm.intergenerational_income_elasticity < 0.35 ? 'moderate' : 'low') : ''}</div>
-                    <div class="dim-content">${sm.note || ''}</div>
-                </div>`;
-            }
-
-            html += `</div>`;
-
-            // Cross-cutting Rights
-            html += `<div class="section"><h3>Cross-Cutting — Six Rights</h3>`;
-            const rights = d.cross_cutting_rights;
-            if (rights) {
-                for (const [key, data] of Object.entries(rights)) {
-                    const notes = [];
-                    for (const [k, v] of Object.entries(data)) {
-                        if (k !== 'source' && k !== 'note' && k.endsWith('_note')) notes.push(`<strong>${k.replace(/_/g, ' ').replace(/ note$/, '')}:</strong> ${v}`);
-                    }
-                    html += `<div class="dimension">
-                        <div class="dim-title">${key.charAt(0).toUpperCase() + key.slice(1)}</div>
-                        <div class="dim-content">${data.note || ''}</div>
-                    </div>`;
-                }
-            }
-            html += `</div>`;
-
-            // GST-specific observations
-            if (d.gst_specific_observations) {
-                const obs = d.gst_specific_observations;
-                html += `<div class="gst-observations"><h3>🔍 GST-Specific Analysis</h3>`;
-                
-                if (obs.forced_substitution_coefficient) {
-                    html += `<div class="dimension"><div class="dim-title">Forced Substitution Coefficient ${tag(obs.forced_substitution_coefficient.estimated_level, obs.forced_substitution_coefficient.estimated_level === 'low' ? 'high' : obs.forced_substitution_coefficient.estimated_level === 'very high' ? 'very-high' : 'moderate')}</div>
-                    <div class="dim-content">${obs.forced_substitution_coefficient.note}</div></div>`;
-                }
-
-                if (obs.organic_vs_microfascism) {
-                    const ovm = obs.organic_vs_microfascism;
-                    const cls = ovm.estimated_level.includes('organic') && !ovm.estimated_level.includes('polarized') ? 'high' : ovm.estimated_level.includes('polarized') ? 'polarized' : 'low';
-                    html += `<div class="dimension"><div class="dim-title">Organic vs. Micro-Fascism ${tag(ovm.estimated_level, cls)}</div>
-                    <div class="dim-content">${ovm.note}</div></div>`;
-                }
-
-                if (obs.capital_transformation) {
-                    const ct = obs.capital_transformation;
-                    const cls = ct.estimated_level === 'high' ? 'high' : ct.estimated_level === 'very low' ? 'very-high' : 'moderate';
-                    html += `<div class="dimension"><div class="dim-title">Capital Transformation ${tag(ct.estimated_level, cls)}</div>
-                    <div class="dim-content">${ct.note}</div></div>`;
-                }
-
-                if (obs.key_gst_deficits) {
-                    html += `<div style="margin-top:0.8rem"><strong>Key GST Deficits:</strong></div>`;
-                    for (const [k, v] of Object.entries(obs.key_gst_deficits)) {
-                        html += `<div class="gst-deficit"><strong>${k.replace(/_/g, ' ').charAt(0).toUpperCase() + k.replace(/_/g, ' ').slice(1)}:</strong> ${v}</div>`;
-                    }
-                }
-
-                html += `</div>`;
-            }
-
-            html += `<div class="data-note">All data is preliminary (v0.1-pilot). Sources include RSF, Freedom House, OECD, WJP, World Bank, and others. Methodology under active development.</div>`;
+            html += `\u003cdiv class="data-note"\u003eAll data is preliminary (v0.1-pilot). Methodology under active development.\u003c/div\u003e`;
 
             return html;
         }
@@ -583,7 +623,7 @@
                 }
             });
         });
-        // Theme toggle
+
         function toggleTheme() {
             const html = document.documentElement;
             const btn = document.getElementById('theme-toggle');

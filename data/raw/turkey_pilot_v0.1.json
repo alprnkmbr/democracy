@@ -5,154 +5,236 @@
   "data_version": "0.1-pilot",
   "pillar_I_integrated_will": {
     "information_environment": {
-      "source": "To be populated from original sources",
-      "mainstream_media": {
-        "state_owned_broadcasters_count": 1,
-        "private_broadcasters_count": null,
-        "top_5_owners_market_share_pct": null,
-        "daily_newspapers_circulation_per_1000": null,
-        "journalists_imprisoned_2024": null,
-        "journalists_killed_2024": 0
-      },
-      "digital_media": {
-        "internet_penetration_pct": 83,
-        "social_media_usage_pct": null,
-        "internet_shutdowns_2024": null,
-        "online_censorship_laws_count": null,
-        "data_retention_laws_count": null,
-        "vpn_usage_pct": null,
-        "independent_news_sites_blocked": null
+      "social_media_journalism": {
+        "platform_bans_or_restrictions": null,
+        "social_media_as_primary_news_source_pct": null,
+        "youtube_news_top10_subscribers_total": null,
+        "podcast_listenership_as_news_source_pct": null,
+        "tiktok_news_content_creators_count": null,
+        "crowdfunded_journalism_platforms_count": null,
+        "independent_youtube_news_avg_views": null,
+        "twitter_x_journalist_followers_top10_total": null,
+        "government_social_media_censorship_cases_per_year": null
       },
       "economic_structure": {
-        "advertising_market_total_usd": null,
+        "journalist_avg_salary_vs_national_avg_pct": null,
+        "cross_ownership_non_media_pct": null,
         "government_ad_spend_share_pct": null,
+        "advertising_market_total_usd_m": null,
         "media_subsidies_exist": null,
-        "journalist_avg_salary_vs_national_avg_pct": null
+        "foreign_ownership_restrictions": null
       },
-      "social_media_journalism": {
-        "youtube_news_channels_top10_subscribers_total": null,
-        "twitter_x_journalist_followers_top10_total": null,
-        "tiktok_news_content_creators_count": null,
-        "independent_youtube_news_avg_views": null,
-        "social_media_as_primary_news_source_pct": null,
-        "government_social_media_censorship_cases_2024": null,
-        "social_media_platform_bans_or_restrictions": null
+      "mainstream_media": {
+        "top_5_owners_market_share_pct": null,
+        "prior_restraint_orders_per_year": null,
+        "journalists_killed_current_year": 0,
+        "defamation_prison_sentences_exists": null,
+        "private_broadcasters_count": null,
+        "journalists_imprisoned_current_year": null,
+        "government_ad_spend_share_pct": null,
+        "broadcast_licensing_process": null,
+        "daily_newspapers_circulation_per_1000": null,
+        "media_regulator_independence": null,
+        "state_owned_broadcasters_count": 1
+      },
+      "digital_media": {
+        "social_media_usage_pct": null,
+        "encrypted_messaging_restrictions": null,
+        "vpn_usage_pct": null,
+        "internet_shutdowns_per_year": null,
+        "digital_surveillance_legislation": null,
+        "data_retention_laws": null,
+        "independent_news_sites_blocked": null,
+        "internet_penetration_pct": 83,
+        "government_content_removal_requests_per_year": null,
+        "online_censorship_laws_count": null
       }
     },
     "economic_precarity": {
-      "source": "Trading Economics / TÜİK / World Bank (April 2026)",
-      "poverty_rate_pct": 14.4,
-      "gini_coefficient_pretax": 0.448,
-      "gini_coefficient_posttax": null,
-      "gini_note": "44.8 pre-tax (2024) — high inequality. Post-tax figure not reliably available; Turkey's weak redistribution likely means minimal reduction.",
-      "unemployment_rate_pct": 8.5,
-      "youth_unemployment_pct": 15.8,
-      "healthcare_access": "nominally universal but severely strained — public system underfunded, private healthcare growing, rural access limited",
-      "unemployment_note": "Official TÜİK figure. Low labor force participation rate (52.6%) likely masks real unemployment — people who've stopped looking aren't counted. Over a third of the workforce earns minimum wage.",
-      "labor_force_participation_pct": 52.6,
       "employment_rate_pct": 48.2,
-      "minimum_wage_gross_try": 33030,
-      "minimum_wage_net_try": 28075,
+      "uninsured_population_pct": null,
+      "average_wage_usd": null,
+      "inflation_food_pct": 32.36,
+      "inflation_producer_prices_pct": 28.08,
+      "unemployment_rate_pct": 8.5,
+      "gini_coefficient_pretax": 0.397,
+      "food_cost_pct_of_household_expenditure": null,
+      "gdp_per_capita_nominal_usd": 15148,
+      "out_of_pocket_healthcare_pct": 17.0,
+      "youth_unemployment_pct": 15.8,
+      "minimum_wage_net_local": 28075,
+      "minimum_wage_gross_local": 33030,
+      "labor_force_participation_pct": 52.6,
+      "average_wage_local": 39253,
+      "poverty_rate_pct": 17.1,
+      "workforce_on_minimum_wage_pct": 33,
+      "gdp_per_capita_ppp_usd": 35294,
+      "housing_cost_to_income_ratio": null,
+      "gini_coefficient_posttax": 0.337,
       "minimum_wage_net_usd": 655,
-      "minimum_wage_note": "2026 gross minimum wage. Over a third of the 30M+ workforce earns minimum wage — this IS the economic reality for most Turkish workers.",
-      "average_gross_wage_try": 39253,
-      "average_gross_wage_note": "2024 average gross wage (39,253 TRY/month), projected ~50,636 TRY/month for 2026.",
-      "inflation_cpi_pct": 30.87,
-      "food_inflation_pct": 32.36,
-      "core_inflation_pct": 29.68,
-      "producer_price_change_pct": 28.08,
-      "interest_rate_pct": 37.0,
-      "inflation_trend": "Down from peak of ~75% but still far above the central bank's 5% target. Year-end 2025 was ~31%, 2026 target is 16%.",
-      "gdp_per_capita_usd": 15148,
-      "gdp_per_capita_ppp_usd": 35294
+      "real_wage_growth_5yr_pct": null,
+      "union_density_pct": 11.5,
+      "inflation_core_pct": 29.68,
+      "inflation_cpi_pct": 30.87
     },
     "civic_education": {
-      "source": "National assessments",
-      "mandatory_religious_education": true,
-      "academics_dismissed_post_2016": "thousands",
-      "rectors_appointed_by_president": true,
-      "constitutional_court_ruling_unconstitutional_date": "June 2024"
+      "civic_knowledge_score_iccs": null,
+      "voter_turnout_last_election_pct": null,
+      "political_efficacy_pct": null,
+      "civic_education_mandatory_hours_per_year": null
     },
     "digital_rights": {
-      "source": "Freedom House Freedom on the Net; qualitative",
-      "status": "Not Free",
-      "disinformation_law_year": 2022,
-      "social_media_local_office_mandate": true,
-      "political_accounts_blocked_aug_2024": 69,
-      "websites_blocked_2023": "197,000+"
+      "constitutional_right_to_internet": null,
+      "net_neutrality_legislation": null,
+      "digital_id_system_scope": null,
+      "biometric_data_legislation": null,
+      "right_to_be_forgotten_legislation": null
     },
     "government_type": {
-      "government_type": "presidential_republic",
-      "head_of_state": "elected president",
-      "head_of_government": "elected president",
+      "head_of_state_formal_powers": null,
       "sovereignty_origin": "the people — constitutional sovereignty of the nation",
-      "hereditary_privilege_encoded": false
+      "head_of_state": "elected president",
+      "monarch_budget_per_capita_usd": null,
+      "head_of_state_selection": "elected",
+      "hereditary_privilege_encoded": false,
+      "government_type": "presidential_republic"
+    },
+    "forced_substitution_coefficient": {
+      "private_tutoring_enrollment_pct": null,
+      "private_healthcare_usage_pct": null,
+      "privatization_revenue_pct_gdp": null,
+      "out_of_pocket_core_services_pct_household_income": null,
+      "public_vs_private_school_enrollment_pct": null,
+      "public_vs_private_hospital_beds_ratio": null,
+      "pension_coverage_public_pct": null,
+      "pension_coverage_private_pct": null
     }
   },
   "pillar_II_organic_ties": {
     "social_cohesion": {
-      "source": "World Values Survey / OECD",
+      "community_organization_participation_pct": null,
+      "community_organization": "polarized — strong within groups, near-zero bridging capital",
+      "volunteer_rate_pct": null,
+      "charitable_giving_pct_gdp": null,
       "social_trust_pct": null,
-      "community_organization": "polarized — strong within groups, near-zero bridging capital"
+      "source": "World Values Survey / OECD"
     },
     "family_structure_health": {
-      "source": "National statistics / qualitative",
-      "istanbul_convention_withdrawn": true,
       "withdrawal_year": 2021,
-      "domestic_violence_severity": "one of highest rates in Europe"
+      "maternal_mortality_per_100000": null,
+      "divorce_rate_per_1000": null,
+      "domestic_violence_severity": "one of highest rates in Europe",
+      "istanbul_convention_withdrawn": true,
+      "single_parent_household_pct": null,
+      "source": "National statistics / qualitative",
+      "elder_care_public_vs_family_ratio": null,
+      "child_poverty_rate_pct": null,
+      "domestic_violence_incidents_per_1000": null
     },
     "civic_participation_beyond_voting": {
-      "source": "ITUC / national statistics",
+      "ngo_count_per_capita": null,
+      "total_union_members_estimate": "2.7M+",
+      "volunteer_rate_pct": null,
+      "protest_participation_pct_5yr": null,
       "union_density_pct": 12.6,
-      "total_union_members_estimate": "2.7M+"
+      "source": "ITUC / national statistics",
+      "petition_participation_pct": null
     },
     "internal_dissent_capacity": {
-      "source": "Freedom House / qualitative",
+      "constitutional_court_rulings_routinely_ignored": true,
+      "participatory_budgeting_exists": null,
+      "assembly_law_restrictions": null,
       "insulting_president_criminal_offense": true,
-      "constitutional_court_rulings_routinely_ignored": true
+      "legal_right_to_protest": null,
+      "protest_permit_denial_rate_pct": null,
+      "source": "Freedom House / qualitative",
+      "protest_permit_required": null
     },
     "social_isolation": {
-      "source": "Qualitative assessment",
+      "birth_rate_per_1000": null,
       "loneliness_rate_pct": null,
+      "elderly_isolation_indicator": null,
       "atomization_level": "low — strong family/community networks",
-      "capture_level": "high — communities enforce conformity"
+      "source": "Qualitative assessment",
+      "capture_level": "high — communities enforce conformity",
+      "suicide_rate_per_100000": null,
+      "living_alone_pct": null
     }
   },
   "pillar_III_social_capital_transformation": {
     "wealth_distribution": {
-      "source": "World Bank / OECD",
-      "gini_pretax": 0.448,
+      "bottom_50pct_wealth_share": null,
+      "gini_coefficient_pretax": null,
+      "wealth_gini": null,
+      "billionaire_wealth_pct_gdp": null,
+      "corruption_perceptions_index_total": 180,
+      "gini_coefficient_posttax": null,
       "gini_posttax": null,
       "corruption_perceptions_index_score": 31,
       "corruption_perceptions_index_rank": 124,
-      "corruption_perceptions_index_total": 180
+      "source": "World Bank / OECD",
+      "gini_pretax": 0.448,
+      "top_1pct_income_share": null,
+      "top_10pct_wealth_share": null
     },
     "taxation_progressivity": {
-      "source": "OECD / World Bank",
+      "inheritance_estate_tax_exists": null,
+      "top_marginal_income_tax_rate_pct": null,
+      "personal_income_tax_top_rate_pct": 40.0,
+      "tax_gap_estimate_pct": null,
+      "property_tax_rate_pct": null,
+      "corporate_tax_rate_pct": null,
       "corporate_tax_pct": 20.0,
       "vat_pct": 20.0,
-      "personal_income_tax_top_rate_pct": 40.0,
-      "tax_to_gdp_pct_estimated": "25-28%"
+      "capital_gains_tax_rate_pct": null,
+      "tax_to_gdp_pct_estimated": "25-28%",
+      "effective_tax_rate_by_decile": null,
+      "source": "OECD / World Bank",
+      "inheritance_tax_threshold": null,
+      "capital_gains_vs_income_tax_gap_pct": null
     },
     "public_investment": {
-      "source": "OECD / WHO / UNESCO",
+      "healthcare_spending_public_pct": null,
+      "education_spending_pct_gdp": null,
+      "r_and_d_spending_pct_gdp": null,
       "healthcare_spending_pct_gdp": 4.4,
-      "universal_healthcare_since": 2003
+      "military_spending_pct_gdp": null,
+      "social_protection_spending_pct_gdp": null,
+      "education_spending_public_pct": null,
+      "source": "OECD / WHO / UNESCO",
+      "universal_healthcare_since": 2003,
+      "infrastructure_spending_pct_gdp": null,
+      "r_and_d_spending_public_pct": null
     },
     "social_mobility": {
       "source": "OECD / qualitative",
+      "public_university_enrollment_by_income_quintile_pct": null,
+      "regional_disparity": "high — Western Turkey vs. Southeast",
+      "education_attainment_by_parental_income_quartile": null,
       "intergenerational_income_elasticity": null,
-      "regional_disparity": "high — Western Turkey vs. Southeast"
+      "income_quintile_mobility_bottom_to_top_pct": null
     },
     "cultural_production_accessibility": {
+      "public_library_branches_per_capita": null,
       "source": "Qualitative assessment",
-      "cultural_events_banned_2019_2024": "26+"
+      "public_broadcasting_budget_per_capita_usd": null,
+      "public_arts_funding_per_capita_usd": null,
+      "cultural_events_banned_2019_2024": "26+",
+      "cultural_participation_rate_pct": null,
+      "museum_gallery_attendance_per_capita": null
     },
     "corporate_extraction_vs_public_benefit": {
-      "source": "Transparency International",
+      "revolving_door_count": null,
+      "corruption_perceptions_index_total": 180,
+      "share_buybacks_pct_corporate_profits": null,
       "corruption_perceptions_index_score": 31,
+      "lobbying_expenditure_total_usd": null,
       "corruption_perceptions_index_rank": 124,
-      "corruption_perceptions_index_total": 180
+      "dividend_vs_reinvestment_ratio": null,
+      "source": "Transparency International",
+      "ceo_to_worker_pay_ratio": null,
+      "corporate_profit_pct_gdp": null,
+      "lobbying_expenditure_per_capita_usd": null
     }
   },
   "cross_cutting_rights": {
