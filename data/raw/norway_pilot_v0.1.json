@@ -7,19 +7,28 @@
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
       "rank": 1,
-      "score": 92.31
+      "score": 7.59,
+      "methodology_note": "RSF score is an inference, not raw data. Retained as external reference only."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
-      "overall_score": 99,
+      "overall_score": 100,
       "status": "Free",
-      "political_rights": 39,
-      "civil_liberties": 60
+      "political_rights": 40,
+      "civil_liberties": 60,
+      "methodology_note": "Freedom House score is an inference, not raw data. Retained as external reference only."
     },
     "information_environment": {
-      "source": "Freedom House / V-Dem",
-      "media_independence": "strong",
-      "internet_freedom": "generally free"
+      "media_ownership_concentration_pct": null,
+      "state_owned_broadcasters": 1,
+      "independent_daily_newspapers": null,
+      "journalists_imprisoned_2024": 0,
+      "journalists_killed_2024": 0,
+      "internet_penetration_pct": 99,
+      "social_media_usage_pct": null,
+      "online_censorship_laws": null,
+      "data_retention_laws": null,
+      "source": "To be verified against original sources"
     },
     "economic_precarity": {
       "source": "OECD / World Bank",

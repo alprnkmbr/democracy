@@ -6,20 +6,29 @@
   "pillar_I_integrated_will": {
     "press_freedom": {
       "source": "RSF Press Freedom Index 2025",
-      "rank": 57,
-      "score": 65.48
+      "rank": 55,
+      "score": 36.28,
+      "methodology_note": "RSF score is an inference, not raw data. Retained as external reference only."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
-      "overall_score": null,
-      "status": "Free (with significant concerns)",
-      "political_rights": null,
-      "civil_liberties": null
+      "overall_score": 86,
+      "status": "Free",
+      "political_rights": 33,
+      "civil_liberties": 53,
+      "methodology_note": "Freedom House score is an inference, not raw data. Retained as external reference only."
     },
     "information_environment": {
-      "source": "Multiple (RSF, Freedom House, qualitative assessment)",
-      "media_independence": "declining",
-      "internet_freedom": "moderately free but eroding"
+      "media_ownership_concentration_pct": null,
+      "state_owned_broadcasters": 1,
+      "independent_daily_newspapers": null,
+      "journalists_imprisoned_2024": 0,
+      "journalists_killed_2024": 0,
+      "internet_penetration_pct": 92,
+      "social_media_usage_pct": null,
+      "online_censorship_laws": null,
+      "data_retention_laws": null,
+      "source": "To be verified against original sources"
     },
     "economic_precarity": {
       "source": "OECD / World Bank / Census",

@@ -187,7 +187,7 @@
         }
         .dimension .dim-title {
             font-size: 0.85rem;
-            color: #ddd;
+            color: var(--text-tertiary);
             font-weight: 500;
         }
         .dimension .dim-content {
@@ -347,11 +347,44 @@
             
             if (d.pillar_I_integrated_will.press_freedom) {
                 const pf = d.pillar_I_integrated_will.press_freedom;
-                html += `<div class="dimension">
-                    <div class="dim-title">Press Freedom ${tag(`Rank ${pf.rank}`, pf.rank <= 10 ? 'high' : pf.rank <= 40 ? 'moderate' : 'low')}</div>
-                    <div class="dim-content">Score: ${pf.score} | Political: ${pf.political_indicator} | Economic: ${pf.economic_indicator} | Legislative: ${pf.legislative_indicator}</div>
-                    ${pf.trend ? `<div class="dim-content"><strong>Trend:</strong> ${pf.trend}</div>` : ''}
-                </div>`;
+                let pfHtml = '<div class="dimension">';
+                pfHtml += `<div class="dim-title">Press Freedom (External Reference) ${tag(`Rank ${pf.rank}`, pf.rank <= 10 ? 'high' : pf.rank <= 40 ? 'moderate' : 'low')}</div>`;
+                pfHtml += '<div class="dim-content">';
+                pfHtml += `<strong>Source:</strong> ${pf.source}<br>`;
+                pfHtml += `<strong>Rank:</strong> ${pf.rank} | <strong>Score:</strong> ${pf.score}`;
+                if (pf.methodology_note) pfHtml += `<br><em style="font-size:0.75rem;color:var(--text-dim);">${pf.methodology_note}</em>`;
+                pfHtml += '</div></div>';
+                html += pfHtml;
+            }
+
+            if (d.pillar_I_integrated_will.freedom_house_scores) {
+                const fh = d.pillar_I_integrated_will.freedom_house_scores;
+                let fhHtml = '<div class="dimension">';
+                fhHtml += '<div class="dim-title">Freedom House (External Reference)</div>';
+                fhHtml += '<div class="dim-content">';
+                fhHtml += `<strong>Source:</strong> ${fh.source}<br>`;
+                fhHtml += `<strong>Score:</strong> ${fh.overall_score}/100 | <strong>Status:</strong> ${fh.status}<br>`;
+                fhHtml += `<strong>Political rights:</strong> ${fh.political_rights} | <strong>Civil liberties:</strong> ${fh.civil_liberties}`;
+                if (fh.methodology_note) fhHtml += `<br><em style="font-size:0.75rem;color:var(--text-dim);">${fh.methodology_note}</em>`;
+                fhHtml += '</div></div>';
+                html += fhHtml;
+            }
+
+            if (d.pillar_I_integrated_will.information_environment) {
+                const ie = d.pillar_I_integrated_will.information_environment;
+                let ieHtml = '<div class="dimension">';
+                ieHtml += '<div class="dim-title">Information Environment (Raw Data)</div>';
+                ieHtml += '<div class="dim-content">';
+                if (ie.internet_penetration_pct != null) ieHtml += `<strong>Internet penetration:</strong> ${ie.internet_penetration_pct}%<br>`;
+                if (ie.state_owned_broadcasters != null) ieHtml += `<strong>State-owned broadcasters:</strong> ${ie.state_owned_broadcasters}<br>`;
+                if (ie.journalists_imprisoned_2024 != null) ieHtml += `<strong>Journalists imprisoned (2024):</strong> ${ie.journalists_imprisoned_2024}<br>`;
+                if (ie.journalists_killed_2024 != null) ieHtml += `<strong>Journalists killed (2024):</strong> ${ie.journalists_killed_2024}<br>`;
+                if (ie.media_ownership_concentration_pct != null) ieHtml += `<strong>Media ownership concentration:</strong> ${ie.media_ownership_concentration_pct}%<br>`;
+                if (ie.online_censorship_laws != null) ieHtml += `<strong>Online censorship laws:</strong> ${ie.online_censorship_laws}<br>`;
+                if (ie.data_retention_laws != null) ieHtml += `<strong>Data retention laws:</strong> ${ie.data_retention_laws}<br>`;
+                if (ie.source) ieHtml += `<em style="font-size:0.75rem;color:var(--text-dim);">${ie.source}</em>`;
+                ieHtml += '</div></div>';
+                html += ieHtml;
             }
 
             if (d.pillar_I_integrated_will.economic_precarity) {
@@ -386,18 +419,6 @@
                 html += `<div class="dimension">
                     <div class="dim-title">Forced Substitution Coefficient ${tag(d.gst_specific_observations.forced_substitution_coefficient.estimated_level, d.gst_specific_observations.forced_substitution_coefficient.estimated_level === 'low' ? 'high' : 'very-high')}</div>
                     <div class="dim-content">${d.gst_specific_observations.forced_substitution_coefficient.note}</div>
-                </div>`;
-            }
-
-            if (d.pillar_I_integrated_will.information_environment) {
-                const ie = d.pillar_I_integrated_will.information_environment;
-                html += `<div class="dimension">
-                    <div class="dim-title">Perception Authenticity</div>
-                    <div class="dim-content">
-                        <strong>Mainstream media:</strong> ${ie.media_independence}<br>
-                        <strong>Digital/Internet:</strong> ${ie.internet_freedom}<br>
-                        ${ie.note || ''}
-                    </div>
                 </div>`;
             }
 

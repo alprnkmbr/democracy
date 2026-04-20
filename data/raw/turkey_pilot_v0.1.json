@@ -5,43 +5,30 @@
   "data_version": "0.1-pilot",
   "pillar_I_integrated_will": {
     "press_freedom": {
-      "source": "RSF Press Freedom Index 2025 (mainstream press); Trading Economics; qualitative (digital ecosystem)",
-      "rank": 159,
-      "score": 29.4,
-      "political_indicator": 19.69,
-      "economic_indicator": 26.09,
-      "legislative_indicator": 32.42,
-      "sociocultural_indicator": 33.44,
-      "security_indicator": 35.37,
-      "trend": "DECLINING — Dropped from rank 158 and score 31.60 in 2024. All indicators worsened. With authoritarianism gaining ground, media pluralism is being called into question. All possible means are used to undermine critics."
+      "source": "RSF Press Freedom Index 2025",
+      "rank": 158,
+      "score": 61.68,
+      "methodology_note": "RSF score is an inference, not raw data. Retained as external reference only."
     },
     "freedom_house_scores": {
       "source": "Freedom House Freedom in the World 2025",
-      "overall_score": 33,
+      "overall_score": 32,
       "status": "Not Free",
-      "political_rights": 8,
-      "civil_liberties": 25,
-      "electoral_process": 7,
-      "functioning_of_government": 2,
-      "political_pluralism_and_participation": 8,
-      "freedom_of_expression_and_belief": 5,
-      "associational_and_organizational_rights": 3,
-      "rule_of_law": 3,
-      "personal_autonomy_and_individual_rights": 9,
-      "note": "Scored 33/100 — Not Free. The the ruling party has ruled since 2002, with the ruling party consolidating power through constitutional changes and imprisonment of opponents. Post-2016 coup attempt purge was massive: 150,000+ dismissed, thousands imprisoned. The 2023 presidential election was not assessed as free and fair by international observers."
+      "political_rights": 9,
+      "civil_liberties": 23,
+      "methodology_note": "Freedom House score is an inference, not raw data. Retained as external reference only."
     },
     "information_environment": {
-      "source": "RSF, Trading Economics, qualitative",
-      "mainstream_media_capture": "high — most major media owned by businesses dependent on government tenders",
-      "internet_censorship_websites_blocked": "197,000+",
-      "internet_censorship_year": 2023,
-      "social_media_takedown_law": true,
-      "disinformation_law_year": 2022,
-      "disinformation_law_max_sentence_years": 3,
-      "journalists_imprisoned_dec_2024": 11,
-      "journalists_detained_2024": 57,
-      "journalists_convicted_2024": 36,
-      "online_articles_censored": "14,000+"
+      "media_ownership_concentration_pct": null,
+      "state_owned_broadcasters": 1,
+      "independent_daily_newspapers": null,
+      "journalists_imprisoned_2024": null,
+      "journalists_killed_2024": 0,
+      "internet_penetration_pct": 83,
+      "social_media_usage_pct": null,
+      "online_censorship_laws": null,
+      "data_retention_laws": null,
+      "source": "To be verified against original sources"
     },
     "economic_precarity": {
       "source": "Trading Economics / TÜİK / World Bank (April 2026)",
