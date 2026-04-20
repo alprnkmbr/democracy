@@ -351,50 +351,52 @@
                 ieHtml += '<div class="dim-title">Information Environment</div>';
                 ieHtml += '<div class="dim-content">';
 
-                if (ie.mainstream_media) {
-                    ieHtml += '<strong>Mainstream Media</strong><br>';
-                    const mm = ie.mainstream_media;
-                    if (mm.state_owned_broadcasters_count != null) ieHtml += `<strong>State-owned broadcasters:</strong> ${mm.state_owned_broadcasters_count}<br>`;
-                    if (mm.private_broadcasters_count != null) ieHtml += `<strong>Private broadcasters:</strong> ${mm.private_broadcasters_count}<br>`;
-                    if (mm.top_5_owners_market_share_pct != null) ieHtml += `<strong>Top 5 owners market share:</strong> ${mm.top_5_owners_market_share_pct}%<br>`;
-                    if (mm.daily_newspapers_circulation_per_1000 != null) ieHtml += `<strong>Newspapers per 1000:</strong> ${mm.daily_newspapers_circulation_per_1000}<br>`;
-                    if (mm.journalists_imprisoned_2024 != null) ieHtml += `<strong>Journalists imprisoned (2024):</strong> ${mm.journalists_imprisoned_2024}<br>`;
-                    if (mm.journalists_killed_2024 != null) ieHtml += `<strong>Journalists killed (2024):</strong> ${mm.journalists_killed_2024}<br>`;
-                    ieHtml += '<br>';
-                }
-
-                if (ie.digital_media) {
-                    ieHtml += '<strong>Digital Media</strong><br>';
-                    const dm = ie.digital_media;
-                    if (dm.internet_penetration_pct != null) ieHtml += `<strong>Internet penetration:</strong> ${dm.internet_penetration_pct}%<br>`;
-                    if (dm.social_media_usage_pct != null) ieHtml += `<strong>Social media usage:</strong> ${dm.social_media_usage_pct}%<br>`;
-                    if (dm.internet_shutdowns_2024 != null) ieHtml += `<strong>Internet shutdowns (2024):</strong> ${dm.internet_shutdowns_2024}<br>`;
-                    if (dm.online_censorship_laws_count != null) ieHtml += `<strong>Online censorship laws:</strong> ${dm.online_censorship_laws_count}<br>`;
-                    if (dm.data_retention_laws_count != null) ieHtml += `<strong>Data retention laws:</strong> ${dm.data_retention_laws_count}<br>`;
-                    if (dm.vpn_usage_pct != null) ieHtml += `<strong>VPN usage:</strong> ${dm.vpn_usage_pct}%<br>`;
-                    if (dm.independent_news_sites_blocked != null) ieHtml += `<strong>Independent news sites blocked:</strong> ${dm.independent_news_sites_blocked}<br>`;
-                    ieHtml += '<br>';
-                }
-
-                if (ie.economic_structure) {
-                    ieHtml += '<strong>Economic Structure</strong><br>';
-                    const es = ie.economic_structure;
-                    if (es.advertising_market_total_usd != null) ieHtml += `<strong>Advertising market:</strong> $${es.advertising_market_total_usd}M<br>`;
-                    if (es.government_ad_spend_share_pct != null) ieHtml += `<strong>Govt ad spend share:</strong> ${es.government_ad_spend_share_pct}%<br>`;
-                    if (es.media_subsidies_exist != null) ieHtml += `<strong>Media subsidies:</strong> ${es.media_subsidies_exist}<br>`;
-                    if (es.journalist_avg_salary_vs_national_avg_pct != null) ieHtml += `<strong>Journalist salary vs national avg:</strong> ${es.journalist_avg_salary_vs_national_avg_pct}%<br>`;
-                }
-
-                if (ie.social_media_journalism) {
-                    ieHtml += '<br><strong>Social Media Journalism</strong><br>';
-                    const sm = ie.social_media_journalism;
-                    if (sm.youtube_news_channels_top10_subscribers_total != null) ieHtml += `<strong>YouTube news (top 10 subscribers):</strong> ${sm.youtube_news_channels_top10_subscribers_total}<br>`;
-                    if (sm.twitter_x_journalist_followers_top10_total != null) ieHtml += `<strong>X journalist followers (top 10):</strong> ${sm.twitter_x_journalist_followers_top10_total}<br>`;
-                    if (sm.tiktok_news_content_creators_count != null) ieHtml += `<strong>TikTok news creators:</strong> ${sm.tiktok_news_content_creators_count}<br>`;
-                    if (sm.independent_youtube_news_avg_views != null) ieHtml += `<strong>Independent YouTube news avg views:</strong> ${sm.independent_youtube_news_avg_views}<br>`;
-                    if (sm.social_media_as_primary_news_source_pct != null) ieHtml += `<strong>Social media as primary news source:</strong> ${sm.social_media_as_primary_news_source_pct}%<br>`;
-                    if (sm.government_social_media_censorship_cases_2024 != null) ieHtml += `<strong>Govt social media censorship (2024):</strong> ${sm.government_social_media_censorship_cases_2024}<br>`;
-                    if (sm.social_media_platform_bans_or_restrictions != null) ieHtml += `<strong>Platform bans/restrictions:</strong> ${sm.social_media_platform_bans_or_restrictions}<br>`;
+                const ieSections = [
+                    { name: 'Mainstream Media', obj: ie.mainstream_media, fields: [
+                        ['State-owned broadcasters', 'state_owned_broadcasters_count', ''],
+                        ['Private broadcasters', 'private_broadcasters_count', ''],
+                        ['Top 5 owners market share', 'top_5_owners_market_share_pct', '%'],
+                        ['Newspapers per 1000', 'daily_newspapers_circulation_per_1000', ''],
+                        ['Journalists imprisoned (2024)', 'journalists_imprisoned_2024', ''],
+                        ['Journalists killed (2024)', 'journalists_killed_2024', '']
+                    ]},
+                    { name: 'Digital Media', obj: ie.digital_media, fields: [
+                        ['Internet penetration', 'internet_penetration_pct', '%'],
+                        ['Social media usage', 'social_media_usage_pct', '%'],
+                        ['Internet shutdowns (2024)', 'internet_shutdowns_2024', ''],
+                        ['Online censorship laws', 'online_censorship_laws_count', ''],
+                        ['Data retention laws', 'data_retention_laws_count', ''],
+                        ['VPN usage', 'vpn_usage_pct', '%'],
+                        ['Independent news sites blocked', 'independent_news_sites_blocked', '']
+                    ]},
+                    { name: 'Economic Structure', obj: ie.economic_structure, fields: [
+                        ['Advertising market', 'advertising_market_total_usd', 'M USD'],
+                        ['Govt ad spend share', 'government_ad_spend_share_pct', '%'],
+                        ['Media subsidies', 'media_subsidies_exist', ''],
+                        ['Journalist salary vs national avg', 'journalist_avg_salary_vs_national_avg_pct', '%']
+                    ]},
+                    { name: 'Social Media Journalism', obj: ie.social_media_journalism, fields: [
+                        ['YouTube news (top 10 subscribers)', 'youtube_news_channels_top10_subscribers_total', ''],
+                        ['X journalist followers (top 10)', 'twitter_x_journalist_followers_top10_total', ''],
+                        ['TikTok news creators', 'tiktok_news_content_creators_count', ''],
+                        ['Independent YouTube news avg views', 'independent_youtube_news_avg_views', ''],
+                        ['Social media as primary news source', 'social_media_as_primary_news_source_pct', '%'],
+                        ['Govt social media censorship (2024)', 'government_social_media_censorship_cases_2024', ''],
+                        ['Platform bans/restrictions', 'social_media_platform_bans_or_restrictions', '']
+                    ]}
+                ];
+                let first = true;
+                for (const sec of ieSections) {
+                    if (sec.obj) {
+                        if (!first) ieHtml += '<br>';
+                        first = false;
+                        ieHtml += `<strong>${sec.name}</strong><br>`;
+                        for (const [label, key, unit] of sec.fields) {
+                            const val = sec.obj[key];
+                            const display = val != null ? val + (unit ? ' ' + unit : '') : '—';
+                            ieHtml += `<strong>${label}:</strong> ${display}<br>`;
+                        }
+                    }
                 }
 
                 ieHtml += '</div></div>';
