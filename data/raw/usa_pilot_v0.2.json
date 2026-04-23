@@ -1,0 +1,380 @@
+{
+  "country": "United States",
+  "country_code": "US",
+  "collection_date": "2026-04-19",
+  "data_version": "0.2-pilot",
+  "pillar_I_integrated_will": {
+    "information_environment": {
+      "social_media_journalism": {
+        "platform_bans_or_restrictions": null,
+        "social_media_as_primary_news_source_pct": null,
+        "youtube_news_top10_subscribers_total": null,
+        "podcast_listenership_as_news_source_pct": null,
+        "tiktok_news_content_creators_count": null,
+        "crowdfunded_journalism_platforms_count": null,
+        "independent_youtube_news_avg_views": null,
+        "twitter_x_journalist_followers_top10_total": null,
+        "government_social_media_censorship_cases_per_year": null
+      },
+      "economic_structure": {
+        "journalist_avg_salary_vs_national_avg_pct": null,
+        "cross_ownership_non_media_pct": null,
+        "government_ad_spend_share_pct": null,
+        "advertising_market_total_usd_m": null,
+        "media_subsidies_exist": null,
+        "foreign_ownership_restrictions": null
+      },
+      "mainstream_media": {
+        "top_5_owners_market_share_pct": null,
+        "prior_restraint_orders_per_year": null,
+        "journalists_killed_current_year": 0,
+        "defamation_prison_sentences_exists": null,
+        "private_broadcasters_count": null,
+        "journalists_imprisoned_current_year": 0,
+        "government_ad_spend_share_pct": null,
+        "broadcast_licensing_process": null,
+        "daily_newspapers_circulation_per_1000": null,
+        "media_regulator_independence": null,
+        "state_owned_broadcasters_count": 1
+      },
+      "digital_media": {
+        "social_media_usage_pct": null,
+        "encrypted_messaging_restrictions": null,
+        "vpn_usage_pct": null,
+        "internet_shutdowns_per_year": null,
+        "digital_surveillance_legislation": null,
+        "data_retention_laws": null,
+        "independent_news_sites_blocked": null,
+        "internet_penetration_pct": 92,
+        "government_content_removal_requests_per_year": null,
+        "online_censorship_laws_count": null
+      }
+    },
+    "economic_precarity": {
+      "employment_rate_pct": null,
+      "uninsured_population_pct": {
+        "value": 7.7,
+        "source": "US Census Bureau 2023",
+        "confidence": "high"
+      },
+      "average_wage_usd": null,
+      "inflation_food_pct": null,
+      "inflation_producer_prices_pct": null,
+      "unemployment_rate_pct": {
+        "value": 4.2,
+        "source": "BLS 2024",
+        "confidence": "high"
+      },
+      "gini_coefficient_pretax": {
+        "value": 0.398,
+        "source": "World Bank PIP 2021",
+        "confidence": "medium"
+      },
+      "food_cost_pct_of_household_expenditure": null,
+      "gdp_per_capita_nominal_usd": {
+        "value": 81032,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "out_of_pocket_healthcare_pct": {
+        "value": 10.8,
+        "source": "OECD Health Statistics 2023",
+        "confidence": "high"
+      },
+      "youth_unemployment_pct": null,
+      "minimum_wage_net_local": null,
+      "minimum_wage_gross_local": null,
+      "labor_force_participation_pct": null,
+      "average_wage_local": null,
+      "poverty_rate_pct": {
+        "value": 11.5,
+        "source": "US Census Bureau 2023",
+        "confidence": "high"
+      },
+      "workforce_on_minimum_wage_pct": null,
+      "gdp_per_capita_ppp_usd": null,
+      "housing_cost_to_income_ratio": null,
+      "gini_coefficient_posttax": {
+        "value": 0.301,
+        "source": "World Bank PIP / CBO 2021",
+        "confidence": "medium"
+      },
+      "minimum_wage_net_usd": null,
+      "real_wage_growth_5yr_pct": null,
+      "union_density_pct": null,
+      "inflation_core_pct": null,
+      "inflation_cpi_pct": null,
+      "gini_coefficient_pretax_wb": {
+        "value": 0.418,
+        "source": "World Bank SI.POV.GINI 2023",
+        "confidence": "high",
+        "note": "WB Gini 2023. Our 0.398 is from 2021 PIP. Both included for comparability."
+      },
+      "gni_per_capita_atlas_usd": {
+        "value": 80000,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gni_per_capita_ppp_usd": {
+        "value": 82600,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gdp_gni_gap_usd": {
+        "value": 1032,
+        "source": "Computed: GDP 81032 - GNI(atlas) 80000",
+        "confidence": "high",
+        "note": "Small gap: GDP slightly exceeds GNI, indicating modest net foreign capital presence. Much smaller than Ireland or Luxembourg distortions."
+      },
+      "poverty_rate_national_pct": {
+        "value": 11.5,
+        "source": "US Census Bureau 2023",
+        "confidence": "high"
+      },
+      "relative_poverty_rate_pct": {
+        "value": 17.0,
+        "source": "OECD IDD 2023",
+        "confidence": "high",
+        "note": "Relative poverty = share below 50% of median equivalised disposable income."
+      }
+    },
+    "civic_education": {
+      "civic_knowledge_score_iccs": null,
+      "voter_turnout_last_election_pct": null,
+      "political_efficacy_pct": null,
+      "civic_education_mandatory_hours_per_year": null,
+      "hdi_value": {
+        "value": 0.927,
+        "source": "UNDP HDR 2025 (2023 data)",
+        "confidence": "high"
+      },
+      "hdi_life_expectancy": {
+        "value": 78.4,
+        "source": "World Bank 2023",
+        "confidence": "high"
+      },
+      "hdi_expected_years_schooling": {
+        "value": 17.3,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      },
+      "hdi_mean_years_schooling": {
+        "value": 13.7,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      }
+    },
+    "digital_rights": {
+      "constitutional_right_to_internet": null,
+      "net_neutrality_legislation": null,
+      "digital_id_system_scope": null,
+      "biometric_data_legislation": null,
+      "right_to_be_forgotten_legislation": null
+    },
+    "government_type": {
+      "head_of_state_formal_powers": null,
+      "sovereignty_origin": "the people — 'We the People' constitutional preamble",
+      "head_of_state": "elected president",
+      "monarch_budget_per_capita_usd": null,
+      "head_of_state_selection": "elected",
+      "hereditary_privilege_encoded": false,
+      "government_type": "federal_republic"
+    },
+    "forced_substitution_coefficient": {
+      "private_tutoring_enrollment_pct": null,
+      "private_healthcare_usage_pct": null,
+      "privatization_revenue_pct_gdp": null,
+      "out_of_pocket_core_services_pct_household_income": null,
+      "public_vs_private_school_enrollment_pct": null,
+      "public_vs_private_hospital_beds_ratio": null,
+      "pension_coverage_public_pct": null,
+      "pension_coverage_private_pct": null
+    }
+  },
+  "pillar_II_organic_ties": {
+    "social_cohesion": {
+      "community_organization_participation_pct": null,
+      "community_organization": "fragmented — strong in some areas, nearly absent in others",
+      "volunteer_rate_pct": null,
+      "charitable_giving_pct_gdp": null,
+      "social_trust_pct": {
+        "value": 31,
+        "source": "OECD / World Values Survey / Pew",
+        "confidence": "medium",
+        "note": "Well below OECD average. Declining for decades. Most recent WVS wave estimate."
+      },
+      "source": "OECD / World Values Survey / Pew",
+      "social_trust_note": "Well below OECD average. Declining for decades. 'Most people can be trusted' response has fallen from ~50% in 1970s."
+    },
+    "family_structure_health": {
+      "maternal_mortality_per_100000": null,
+      "domestic_violence_note": "~1 in 4 women experience intimate partner violence. ~1 in 9 men. Gun violence in domestic contexts is uniquely American problem.",
+      "divorce_rate_per_1000": null,
+      "family_stability": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)",
+      "single_parent_household_pct": null,
+      "source": "CDC / national statistics",
+      "elder_care_public_vs_family_ratio": null,
+      "child_poverty_rate_pct": null,
+      "domestic_violence_incidents_per_1000": null
+    },
+    "civic_participation_beyond_voting": {
+      "ngo_count_per_capita": null,
+      "volunteering_rate": "moderate — formal volunteering declining, informal mutual aid rose during COVID but receded",
+      "volunteer_rate_pct": null,
+      "mutual_aid": "growing in crisis moments but not institutionalized",
+      "protest_participation_pct_5yr": null,
+      "union_note": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%.",
+      "union_density_pct": 10.0,
+      "source": "Various",
+      "petition_participation_pct": null
+    },
+    "internal_dissent_capacity": {
+      "participatory_budgeting_exists": null,
+      "assembly_law_restrictions": null,
+      "score": "moderate but declining",
+      "legal_right_to_protest": null,
+      "protest_permit_denial_rate_pct": null,
+      "source": "V-Dem deliberation index / qualitative",
+      "protest_permit_required": null
+    },
+    "social_isolation": {
+      "loneliness_note": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness.",
+      "birth_rate_per_1000": null,
+      "loneliness_rate_pct": null,
+      "elderly_isolation_indicator": null,
+      "source": "Cigna / US Surgeon General",
+      "suicide_rate_per_100000": null,
+      "living_alone_pct": null
+    }
+  },
+  "pillar_III_social_capital_transformation": {
+    "wealth_distribution": {
+      "top_1_pct_wealth_share": 30.5,
+      "bottom_50_pct_wealth_share": 2.5,
+      "bottom_50pct_wealth_share": null,
+      "gini_coefficient_pretax": null,
+      "wealth_gini": null,
+      "billionaire_wealth_pct_gdp": null,
+      "gini_coefficient_posttax": null,
+      "gini_posttax": 0.385,
+      "top_10_pct_income_share": null,
+      "wealth_concentration_note": "Top 1% holds 30.5% of wealth. Bottom 50% holds 2.5%. The ratio is ~12:1 between median and mean wealth — extreme inequality. During COVID, billionaire wealth increased 70%.",
+      "bottom_50_pct_income_share": null,
+      "source": "Federal Reserve / World Inequality Database",
+      "gini_pretax": 0.51,
+      "top_1pct_income_share": null,
+      "top_10pct_wealth_share": null
+    },
+    "taxation_progressivity": {
+      "inheritance_estate_tax_exists": null,
+      "top_marginal_income_tax_rate_pct": null,
+      "tax_to_gdp_note": "Among lowest in OECD (average ~34%). The US collects far less in taxes than peer nations, limiting redistribution capacity.",
+      "tax_gap_estimate_pct": null,
+      "property_tax_rate_pct": null,
+      "sales_tax_note": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature.",
+      "corporate_tax_rate_pct": null,
+      "tax_to_gdp_pct": 27.1,
+      "corporate_tax_pct": 21.0,
+      "top_marginal_income_tax_pct": 37.0,
+      "vat_pct": null,
+      "capital_gains_tax_rate_pct": null,
+      "effective_tax_rate_by_decile": null,
+      "source": "OECD tax statistics",
+      "inheritance_tax_threshold": null,
+      "capital_gains_vs_income_tax_gap_pct": null
+    },
+    "public_investment": {
+      "healthcare_note": "HIGHEST in world by GDP share but with worst outcomes among developed nations. Most spending is private, not public.",
+      "healthcare_spending_public_pct": null,
+      "education_spending_pct_gdp": 6.1,
+      "social_protection_pct_gdp": 12.4,
+      "r_and_d_spending_pct_gdp": null,
+      "public_healthcare_pct_gdp": 8.6,
+      "social_protection_note": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers.",
+      "healthcare_spending_pct_gdp": 17.3,
+      "military_spending_pct_gdp": null,
+      "social_protection_spending_pct_gdp": null,
+      "education_spending_public_pct": null,
+      "source": "OECD / WHO / UNESCO",
+      "infrastructure_spending_pct_gdp": null,
+      "r_and_d_spending_public_pct": null
+    },
+    "social_mobility": {
+      "source": "OECD / Raj Chetty et al.",
+      "public_university_enrollment_by_income_quintile_pct": null,
+      "education_attainment_by_parental_income_quartile": null,
+      "intergenerational_income_elasticity": 0.47,
+      "mobility_note": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries.",
+      "income_quintile_mobility_bottom_to_top_pct": null
+    },
+    "cultural_production_accessibility": {
+      "public_library_branches_per_capita": null,
+      "cultural_spending_note": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible.",
+      "source": "National data",
+      "public_cultural_spending_pct_gdp": 0.03,
+      "public_broadcasting_budget_per_capita_usd": null,
+      "public_arts_funding_per_capita_usd": null,
+      "cultural_participation_rate_pct": null,
+      "museum_gallery_attendance_per_capita": null
+    },
+    "corporate_extraction_vs_public_benefit": {
+      "revolving_door_count": null,
+      "share_buybacks_pct_corporate_profits": null,
+      "lobbying_expenditure_total_usd": null,
+      "dividend_vs_reinvestment_ratio": null,
+      "source": "National economic accounts",
+      "ceo_to_worker_pay_ratio": null,
+      "corporate_profit_pct_gdp": null,
+      "lobbying_expenditure_per_capita_usd": null
+    }
+  },
+  "cross_cutting_rights": {
+    "integrity": {
+      "source": "HRW / Amnesty / CIRI",
+      "political_imprisonment": "minimal domestically, but documented cases (Jan 6 defendants, whistleblowers like Reality Winner)",
+      "bodily_autonomy": "severely restricted — Dobbs decision overturned federal abortion rights; state-level restrictions vary wildly",
+      "mass_incarceration": "highest incarceration rate in the world (~2M people)",
+      "racial_disparities_note": "Black Americans incarcerated at 5x rate of White Americans. This is a core integrity violation under GST framework."
+    },
+    "justice": {
+      "source": "WJP Rule of Law Index / national data",
+      "rule_of_law_rank": 26,
+      "judicial_independence": "declining — politicized Supreme Court appointments, erosion of public trust",
+      "due_process": "formally strong but structurally unequal — public defenders overworked, bail system criminalizes poverty, racial disparities at every stage",
+      "equal_access_note": "CRITICAL GST CONCERN: The Alabama example. A Black mother of 2 in rural Alabama and a Wall Street lawyer have vastly different access to justice. This is exactly the gap the GST measures."
+    },
+    "compassion": {
+      "source": "OECD / UNHCR",
+      "social_safety_net": "thin — unemployment benefits time-limited, no universal healthcare, no paid parental leave nationally, no guaranteed housing",
+      "refugee_policy": "declining — tightening asylum rules, 3.6M pending immigration cases, detention conditions criticized",
+      "healthcare_access": "NOT universal — this alone is a major compassion deficit"
+    },
+    "welfare": {
+      "source": "World Bank / OECD",
+      "poverty_rate": 11.5,
+      "housing_security": "CRISIS — record homelessness, severe rent burden, no right to housing",
+      "food_security": "~12% of households food insecure",
+      "education_access": "formally universal but severely unequal by district funding (property tax-based), student debt crisis"
+    },
+    "truth": {
+      "source": "RSF / V-Dem",
+      "press_freedom_rank": 57,
+      "press_freedom_score": 65.48,
+      "press_freedom_trend": "declining sharply",
+      "government_transparency": "mixed — strong FOIA law but extensive classification, corporate secrecy, and lobbying opacity",
+      "scientific_integrity": "declining — political interference in science agencies, corporate capture of research",
+      "censorship": "not state censorship but corporate platform moderation and algorithmic suppression"
+    },
+    "solidarity": {
+      "source": "ILO / national data",
+      "labor_protections": "weak — at-will employment in most states, no guaranteed paid leave, minimal collective bargaining",
+      "mutual_aid_networks": "present but fragile — grew during COVID, receding since",
+      "community_support": "varies enormously by geography and income"
+    }
+  },
+  "gst_specific_observations": {
+    "note": "GST analysis to be performed separately from data collection"
+  },
+  "last_updated": "2026-04-23",
+  "confidence_system": "three-tier: high (current/primary source), medium (2-5yr old or secondary), low (5+yr old or estimated)"
+}

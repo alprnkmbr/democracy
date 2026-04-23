@@ -21,10 +21,9 @@ A real-time, transparent, multi-source democracy index. Updates daily. Every sco
 - Norway, USA, Turkey, India, China (5 countries for pilot)
 
 ### Methodology Status
-- v0.1-draft: 6 dimensions defined (Electoral Integrity, Institutional Checks, Civil Liberties, Media & Info Freedom, Participation & Representation, Rule of Law & Accountability) — SUPERSEDED by GST framework
-- GST framework: 3 pillars (Integrated Will, Organic Ties, Social Capital Transformation) + 6 cross-cutting rights (Integrity, Justice, Compassion, Welfare, Truth, Solidarity)
-- Measurement dimensions mapped to existing data sources where available
-- Pipeline: sketched conceptually, not built
+- v0.2-draft: GST framework (3 pillars + 6 cross-cutting rights) with absolute rubric scoring, confidence system, data source hierarchy, robustness testing, distributional complement rule, HDI deconstruction rule, dimension inversion protocol
+- Pipeline: 7-step daily cycle defined (ingest → flag → score → aggregate → test → log → publish)
+- Pilot: Norway, Turkey, USA (v0.2 data); India, China not started
 
 ### Measurement Dimensions Structure
 - Full structure in `research/gst-foundation-v1.md` Section VIII
@@ -41,3 +40,9 @@ A real-time, transparent, multi-source democracy index. Updates daily. Every sco
 - Monitory democracy is normative model, NOT a measurement dimension
 - Existing index data categories are valid — GST reframes, doesn't reject
 - Gap analysis is core methodology across all dimensions
+- Absolute rubric scoring (0–10) as primary; relative ranking as secondary view
+- Deconstruct HDI into components — never use composite as input
+- Every macro indicator requires a distributional/functional complement
+- 7 robustness weight configurations defined (A–G)
+- Formal data source hierarchy per data type (3 tiers, 15 categories)
+- Confidence propagation: weakest-link principle (dimension confidence = lowest indicator confidence)

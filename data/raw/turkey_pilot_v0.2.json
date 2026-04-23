@@ -2,8 +2,8 @@
   "country": "Turkey",
   "country_code": "TR",
   "collection_date": "2026-04-19",
-  "data_version": "0.1-pilot",
-  "last_updated": "2026-04-21",
+  "data_version": "0.2-pilot",
+  "last_updated": "2026-04-23",
   "pillar_I_integrated_will": {
     "information_environment": {
       "social_media_journalism": {
@@ -61,17 +61,37 @@
       "average_wage_usd": null,
       "inflation_food_pct": 32.36,
       "inflation_producer_prices_pct": 28.08,
-      "unemployment_rate_pct": 8.5,
-      "gini_coefficient_pretax": 0.448,
+      "unemployment_rate_pct": {
+        "value": 8.5,
+        "source": "TÜİK / World Bank 2024",
+        "confidence": "high"
+      },
+      "gini_coefficient_pretax": {
+        "value": 0.448,
+        "source": "TÜİK 2024",
+        "confidence": "high"
+      },
       "food_cost_pct_of_household_expenditure": null,
-      "gdp_per_capita_nominal_usd": 19020,
-      "out_of_pocket_healthcare_pct": 16.5,
+      "gdp_per_capita_nominal_usd": {
+        "value": 19020,
+        "source": "IMF WEO 2026 proj.",
+        "confidence": "medium"
+      },
+      "out_of_pocket_healthcare_pct": {
+        "value": 16.5,
+        "source": "World Bank / OECD 2023",
+        "confidence": "medium"
+      },
       "youth_unemployment_pct": 16.3,
       "minimum_wage_net_local": 28075,
       "minimum_wage_gross_local": 33030,
       "labor_force_participation_pct": 52.6,
       "average_wage_local": 47346,
-      "poverty_rate_pct": 14.4,
+      "poverty_rate_pct": {
+        "value": 14.4,
+        "source": "World Bank / TÜİK",
+        "confidence": "medium"
+      },
       "workforce_on_minimum_wage_pct": 33,
       "gdp_per_capita_ppp_usd": 46670,
       "housing_cost_to_income_ratio": null,
@@ -81,14 +101,72 @@
       "union_density_pct": 11.5,
       "inflation_core_pct": 29.68,
       "inflation_cpi_pct": 30.87,
-      "source_notes": "GDP/capita and PPP updated to IMF 2026 projections; Gini pretax updated to TÜİK 2024 (0.448); youth unemployment from Wikipedia/Economy of Turkey (16.3%); AROPE 30.4% (2024); social welfare spending 10.4% of GDP (OECD)"
+      "source_notes": "GDP/capita and PPP updated to IMF 2026 projections; Gini pretax updated to TÜİK 2024 (0.448); youth unemployment from Wikipedia/Economy of Turkey (16.3%); AROPE 30.4% (2024); social welfare spending 10.4% of GDP (OECD); national poverty rate 13.0% (World Bank 2024)",
+      "poverty_rate_national_pct": 13.0,
+      "gini_coefficient_pretax_wb": {
+        "value": 0.437,
+        "source": "World Bank SI.POV.GINI 2023",
+        "confidence": "high",
+        "note": "WB Gini uses different methodology than TÜİK. Both included for comparability."
+      },
+      "gni_per_capita_atlas_usd": {
+        "value": 11980,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gni_per_capita_ppp_usd": {
+        "value": 42760,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gdp_gni_gap_usd": {
+        "value": 7040,
+        "source": "Computed: GDP 19020 - GNI(atlas) 11980",
+        "confidence": "high",
+        "note": "Large positive gap: GDP >> GNI signals significant foreign capital extraction. Domestic production far exceeds what residents actually earn."
+      },
+      "relative_poverty_rate_pct": {
+        "value": null,
+        "source": "Not in OECD IDD standard series",
+        "confidence": "low",
+        "note": "AROPE at-risk-of-poverty rate ~17.2% (Eurostat/TÜİK 2023). Turkey not in standard OECD relative poverty dataset."
+      }
     },
     "civic_education": {
       "civic_knowledge_score_iccs": null,
-      "voter_turnout_last_election_pct": 87.04,
+      "voter_turnout_last_election_pct": {
+        "value": 87.04,
+        "source": "Supreme Election Council 2023",
+        "confidence": "high"
+      },
       "political_efficacy_pct": null,
       "civic_education_mandatory_hours_per_year": null,
-      "source_notes": "Voter turnout 87.04% in 2023 presidential first round (84.15% second round); Turkey ranked second-lowest in media literacy in Europe per 2018 study"
+      "source_notes": "Voter turnout 87.04% in 2023 presidential first round (84.15% second round); Turkey ranked second-lowest in media literacy in Europe per 2018 study",
+      "hdi_value": {
+        "value": 0.838,
+        "source": "UNDP HDR 2025 (2023 data)",
+        "confidence": "high"
+      },
+      "hdi_life_expectancy": {
+        "value": 77.2,
+        "source": "World Bank 2023",
+        "confidence": "high"
+      },
+      "hdi_expected_years_schooling": {
+        "value": 17.3,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      },
+      "hdi_mean_years_schooling": {
+        "value": 9.2,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      },
+      "primary_enrollment_gross_pct": {
+        "value": 102.4,
+        "source": "World Bank 2023",
+        "confidence": "high"
+      }
     },
     "digital_rights": {
       "constitutional_right_to_internet": false,
@@ -110,14 +188,18 @@
     },
     "forced_substitution_coefficient": {
       "private_tutoring_enrollment_pct": null,
-      "private_healthcare_usage_pct": null,
+      "private_healthcare_usage_pct": 24.8,
       "privatization_revenue_pct_gdp": null,
       "out_of_pocket_core_services_pct_household_income": null,
       "public_vs_private_school_enrollment_pct": null,
       "public_vs_private_hospital_beds_ratio": null,
       "pension_coverage_public_pct": null,
       "pension_coverage_private_pct": null,
-      "source_notes": "Healthcare: 75.2% public funding, 16.5% out-of-pocket; compulsory education 12 years, 97% primary enrollment; private tutoring widespread but unquantified"
+      "source_notes": "Healthcare: 75.2% public funding, 16.5% out-of-pocket, 24.8% private (2023); hospital beds 3.05/1,000 (World Bank 2023); healthcare per capita $548 (World Bank 2023); primary enrollment 102.4% gross (World Bank 2023); NEET rate 22.9% (World Bank 2024); compulsory education 12 years; private tutoring widespread but unquantified",
+      "hospital_beds_per_1000": 3.05,
+      "healthcare_spending_per_capita_usd": 548,
+      "primary_enrollment_gross_pct": 102.4,
+      "neet_rate_pct": 22.9
     }
   },
   "pillar_II_organic_ties": {
@@ -126,20 +208,26 @@
       "community_organization": "polarized — strong within groups, near-zero bridging capital",
       "volunteer_rate_pct": null,
       "charitable_giving_pct_gdp": null,
-      "social_trust_pct": null,
+      "social_trust_pct": {
+        "value": null,
+        "source": "World Values Survey",
+        "confidence": "low",
+        "note": "No recent WVS wave for Turkey; last available 2011. Estimate: low (15-20%) based on regional patterns."
+      },
       "source": "World Values Survey / OECD"
     },
     "family_structure_health": {
       "withdrawal_year": 2021,
-      "maternal_mortality_per_100000": null,
-      "divorce_rate_per_1000": null,
+      "maternal_mortality_per_100000": 15,
+      "divorce_rate_per_1000": 2.0,
       "domestic_violence_severity": "one of highest rates in Europe",
       "istanbul_convention_withdrawn": true,
       "single_parent_household_pct": null,
       "source": "National statistics / qualitative",
       "elder_care_public_vs_family_ratio": null,
       "child_poverty_rate_pct": null,
-      "domestic_violence_incidents_per_1000": null
+      "domestic_violence_incidents_per_1000": null,
+      "source_notes": "Maternal mortality 15/100,000 (World Bank 2023); divorce rate 2.0/1,000 population (Eurostat 2023); hospital beds 3.05/1,000 (World Bank 2023)"
     },
     "civic_participation_beyond_voting": {
       "ngo_count_per_capita": null,
@@ -162,14 +250,15 @@
       "protest_permit_required": true
     },
     "social_isolation": {
-      "birth_rate_per_1000": null,
+      "birth_rate_per_1000": 11.0,
       "loneliness_rate_pct": null,
       "elderly_isolation_indicator": null,
       "atomization_level": "low — strong family/community networks",
-      "source": "Qualitative assessment",
+      "source": "Qualitative assessment / World Bank",
       "capture_level": "high — communities enforce conformity",
-      "suicide_rate_per_100000": null,
-      "living_alone_pct": null
+      "suicide_rate_per_100000": 2.69,
+      "living_alone_pct": null,
+      "source_notes": "Birth rate 11.0/1,000 (World Bank 2024); suicide rate 2.69/100,000 age-standardized (WHO 2021 via World Bank)"
     }
   },
   "pillar_III_social_capital_transformation": {
@@ -179,45 +268,47 @@
       "wealth_gini": null,
       "billionaire_wealth_pct_gdp": null,
       "corruption_perceptions_index_total": 180,
-      "gini_coefficient_posttax": null,
+      "gini_coefficient_posttax": 0.337,
       "gini_posttax": 0.337,
       "corruption_perceptions_index_score": 31,
       "corruption_perceptions_index_rank": 124,
       "source": "World Bank / OECD / TÜİK",
       "gini_pretax": 0.448,
       "top_1pct_income_share": null,
-      "top_10pct_wealth_share": null
+      "top_10pct_wealth_share": 34.4,
+      "source_notes": "Top 10% income share 34.4% (World Bank 2023); bottom 20% income share 5.5% (World Bank 2023); Bottom 50% living below median: 16.3% (World Bank 2023); Gini pretax 0.448 (TÜİK 2024)",
+      "bottom_20pct_income_share": 5.5
     },
     "taxation_progressivity": {
       "inheritance_estate_tax_exists": true,
-      "top_marginal_income_tax_rate_pct": 40.0,
-      "personal_income_tax_top_rate_pct": 40.0,
+      "top_marginal_income_tax_rate_pct": 35.0,
+      "personal_income_tax_top_rate_pct": 35.0,
       "tax_gap_estimate_pct": null,
       "property_tax_rate_pct": null,
       "corporate_tax_rate_pct": 20.0,
       "corporate_tax_pct": 20.0,
       "vat_pct": 20.0,
-      "capital_gains_tax_rate_pct": null,
+      "capital_gains_tax_rate_pct": "included in ordinary income (15-35%)",
       "tax_to_gdp_pct_estimated": "41.65%",
       "effective_tax_rate_by_decile": null,
-      "source": "OECD / World Bank",
+      "source": "OECD / World Bank / Wikipedia Taxation in Turkey",
       "inheritance_tax_threshold": null,
       "capital_gains_vs_income_tax_gap_pct": null,
-      "source_notes": "Tax-to-GDP ratio from Wikipedia/Taxation in Turkey citing 2021 data; individual income tax 15-35% (marginal rates); corporate tax flat 20%; VAT standard 20% (reduced rates 1%, 8%, 10%)"
+      "source_notes": "Tax-to-GDP ratio 41.65% (2021); individual income tax 15-35% (not 40%); corporate tax flat 20%; VAT standard 20% (reduced rates 1%, 8%, 10%); capital gains included in ordinary income tax for individuals"
     },
     "public_investment": {
       "healthcare_spending_public_pct": 75.2,
-      "education_spending_pct_gdp": null,
-      "r_and_d_spending_pct_gdp": null,
-      "healthcare_spending_pct_gdp": 4.4,
-      "military_spending_pct_gdp": null,
+      "education_spending_pct_gdp": 3.1,
+      "r_and_d_spending_pct_gdp": 1.42,
+      "healthcare_spending_pct_gdp": 6.3,
+      "military_spending_pct_gdp": 1.72,
       "social_protection_spending_pct_gdp": 10.4,
       "education_spending_public_pct": null,
-      "source": "OECD / WHO / UNESCO",
+      "source": "OECD / WHO / UNESCO / World Bank",
       "universal_healthcare_since": 2003,
       "infrastructure_spending_pct_gdp": null,
       "r_and_d_spending_public_pct": null,
-      "source_notes": "Public healthcare spending 75.2% of total (OECD); social protection 10.4% of GDP (OECD SOCX); healthcare 4.4% GDP (below OECD 9.3% avg)"
+      "source_notes": "Education spending 3.1% GDP (World Bank 2022); R&D 1.42% GDP (World Bank 2023); healthcare 6.3% GDP (OECD/Wikipedia — lowest among OECD); military 1.72% GDP (World Bank 2023); social protection 10.4% GDP (OECD SOCX)"
     },
     "social_mobility": {
       "source": "OECD / qualitative",
@@ -308,5 +399,6 @@
   },
   "gst_specific_observations": {
     "note": "GST analysis to be performed separately from data collection"
-  }
+  },
+  "confidence_system": "three-tier: high (current/primary source), medium (2-5yr old or secondary), low (5+yr old or estimated)"
 }

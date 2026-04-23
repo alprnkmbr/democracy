@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T07:24:55.927Z",
+  "updatedAt": "2026-04-23T09:14:50.545Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:23": {
       "key": "memory:memory/2026-04-19.md:1:23",
@@ -21,6 +21,68 @@
       ],
       "recallDays": [
         "2026-04-19"
+      ],
+      "conceptTags": [
+        "democracy-pulse",
+        "claudiusindex-bot",
+        "ollama/glm-5.1",
+        "config.patch",
+        "soul.md",
+        "transparency-first",
+        "agents.md",
+        "user.md"
+      ]
+    },
+    "memory:memory/2026-04-19.md:65:85": {
+      "key": "memory:memory/2026-04-19.md:65:85",
+      "path": "memory/2026-04-19.md",
+      "startLine": 65,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "- Equal weights for pilot, calibrate later - Pilot set: 5 countries — Norway, USA, Turkey, India, China - GitHub Pages for dashboard (static, JSON snapshots) - Maximum automation aim, flag confidence levels - Theory before methodology — building definition first, then measurement - Monitory democracy is a normative model, NOT a measurement dimension - Existing index data categories are valid and useful — GST reframes, doesn't reject - Measurement dimensions structured by three pillars + six rights - Gap analysis is a core methodology across all dimensions ### Measurement Dimensions Structure **Pillar I — Integrated Will:** Press freedom, information environment health, Forced Substitution",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.000001571914982154174,
+      "maxScore": 0.000001571914982154174,
+      "firstRecalledAt": "2026-04-23T09:14:50.545Z",
+      "lastRecalledAt": "2026-04-23T09:14:50.545Z",
+      "queryHashes": [
+        "ad3e61f21c05"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "equal",
+        "weights",
+        "pilot",
+        "calibrate",
+        "later",
+        "set",
+        "countries",
+        "norway"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:27": {
+      "key": "memory:memory/2026-04-19.md:1:27",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-04-19 Daily Log ## Democracy Pulse — Agent Created - **New OpenClaw agent:** `democracy-pulse` (id: democracy-pulse) - **Telegram bot:** @ClaudiusIndex_bot (account id: `index`) - **Workspace:** `/Users/claudius/clawd/democracy-pulse/` - **Model:** `ollama/glm-5.1:cloud` (same as main) - **Binding:** telegram accountId \"index\" → agent \"democracy-pulse\" - **Config applied** via `config.patch` — OpenClaw restarting ### Workspace files created: - `SOUL.md` — Academic research collaborator persona; challenges with evidence, transparency-first - `AGENTS.md` — Workflow: methodology development, data collection, scoring, reporting - `USER.md` — Alperen profile with democracy index context",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.0000010126250685168823,
+      "maxScore": 0.0000010126250685168823,
+      "firstRecalledAt": "2026-04-23T09:14:50.545Z",
+      "lastRecalledAt": "2026-04-23T09:14:50.545Z",
+      "queryHashes": [
+        "ad3e61f21c05"
+      ],
+      "recallDays": [
+        "2026-04-23"
       ],
       "conceptTags": [
         "democracy-pulse",
