@@ -28,6 +28,11 @@
             --tag-moderate: #da3;
             --tag-low: #d44;
             --tag-very-high: #d44;
+            --conf-high: #4a9;
+            --conf-medium: #da3;
+            --conf-low: #d44;
+            --extraction-positive: #d44;
+            --extraction-negative: #4a9;
         }
 
         [data-theme="light"] {
@@ -53,6 +58,11 @@
             --tag-moderate: #b82;
             --tag-low: #c33;
             --tag-very-high: #c33;
+            --conf-high: #2a7;
+            --conf-medium: #b82;
+            --conf-low: #c33;
+            --extraction-positive: #c33;
+            --extraction-negative: #2a7;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -148,6 +158,7 @@
         }
         .country-btn:hover { background: var(--bg-card-hover); border-color: var(--accent); color: var(--text-primary); }
         .country-btn.active { background: #4a9; border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+        .country-btn.disabled { opacity: 0.35; cursor: not-allowed; }
         #country-data {
             max-width: 900px;
             margin: 0 auto;
@@ -158,6 +169,11 @@
             margin: 2rem 0 1rem;
             padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--accent);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
         .country-header h2 {
             font-size: 1.8rem;
@@ -167,7 +183,36 @@
         .country-header .collection-date {
             font-size: 0.75rem;
             color: #666;
-            margin-top: 0.3rem;
+        }
+        /* Extraction highlight card */
+        .extraction-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-secondary);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .extraction-card .direction {
+            font-size: 1.8rem;
+            font-weight: 700;
+            min-width: 50px;
+            text-align: center;
+        }
+        .extraction-card .direction.negative { color: var(--extraction-negative); }
+        .extraction-card .direction.positive { color: var(--extraction-positive); }
+        .extraction-card .extraction-details .amount {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+        .extraction-card .extraction-details .note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+            line-height: 1.4;
         }
         .section {
             margin: 1.5rem 0;
@@ -197,51 +242,34 @@
             line-height: 1.5;
         }
         .dimension .dim-content strong { color: var(--text-tertiary); }
-        .gst-observations {
-            background: #1a1410;
-            border: 1px solid #3a2a1a;
-            border-radius: 8px;
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-        }
-        .gst-observations h3 {
-            color: #d4944a;
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-        }
-        .gst-deficit {
-            margin-bottom: 0.6rem;
-            font-size: 0.8rem;
-            color: #b88;
-        }
-        .gst-deficit strong { color: #daa; }
-        .score-card {
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-tertiary);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 0.8rem;
+        /* Data row with confidence */
+        .data-row {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
+            gap: 0.4rem;
+            margin-bottom: 0.15rem;
+            flex-wrap: wrap;
         }
-        .score-card .label { font-size: 0.85rem; color: var(--text-tertiary); }
-        .score-card .value { font-size: 1.1rem; color: var(--text-primary); font-weight: 500; }
-        .score-card .source { font-size: 0.7rem; color: var(--text-faint); }
-        .status-tag {
+        .data-row .label-part { color: var(--text-tertiary); font-weight: 500; }
+        .data-row .value-part { color: var(--text-secondary); font-weight: 400; }
+        .conf-badge {
             display: inline-block;
-            padding: 0.15rem 0.5rem;
-            border-radius: 3px;
-            font-size: 0.7rem;
-            font-weight: 600;
+            font-size: 0.6rem;
+            font-weight: 700;
             text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.1rem 0.35rem;
+            border-radius: 3px;
+            line-height: 1;
         }
-        .tag-low { background: color-mix(in srgb, var(--tag-low) 20%, var(--bg-card)); color: var(--tag-low); }
-        .tag-moderate { background: color-mix(in srgb, var(--tag-moderate) 20%, var(--bg-card)); color: var(--tag-moderate); }
-        .tag-high { background: color-mix(in srgb, var(--tag-high) 20%, var(--bg-card)); color: var(--tag-high); }
-        .tag-very-high { background: color-mix(in srgb, var(--tag-very-high) 20%, var(--bg-card)); color: var(--tag-very-high); }
-        .tag-polarized { background: color-mix(in srgb, #8040c0 20%, var(--bg-card)); color: #c8f; }
-        .tag-declining { background: color-mix(in srgb, #c06020 20%, var(--bg-card)); color: #fa8; }
+        .conf-high { background: color-mix(in srgb, var(--conf-high) 20%, var(--bg-card)); color: var(--conf-high); }
+        .conf-medium { background: color-mix(in srgb, var(--conf-medium) 20%, var(--bg-card)); color: var(--conf-medium); }
+        .conf-low { background: color-mix(in srgb, var(--conf-low) 20%, var(--bg-card)); color: var(--conf-low); }
+        .source-note {
+            font-size: 0.65rem;
+            color: var(--text-faint);
+            font-style: italic;
+        }
         .footer {
             text-align: center;
             padding: 2rem;
@@ -292,47 +320,60 @@
         <button class="country-btn" data-country="norway">🇳🇴 Norway</button>
         <button class="country-btn" data-country="usa">🇺🇸 United States</button>
         <button class="country-btn" data-country="turkey">🇹🇷 Turkey</button>
-        <button class="country-btn" data-country="india">🇮🇳 India</button>
-        <button class="country-btn" data-country="china">🇨🇳 China</button>
+        <button class="country-btn disabled" data-country="india" disabled>🇮🇳 India (soon)</button>
+        <button class="country-btn disabled" data-country="china" disabled>🇨🇳 China (soon)</button>
     </div>
 
     <div id="country-data"></div>
 
     <div class="footer">
-        <p>Democracy Pulse — GST Index v0.1-pilot | <a href="https://github.com/alprnkmbr/democracy">GitHub</a></p>
-        <p>Data is preliminary. Methodology under active development.</p>
+        <p>Democracy Pulse — GST Index v0.2-pilot | <a href="https://github.com/alprnkmbr/democracy">GitHub</a> | <a href="https://github.com/alprnkmbr/democracy/blob/main/METHODOLOGY.md">Methodology</a></p>
+        <p>Data is preliminary. Methodology under active development. Every score traceable to sources.</p>
     </div>
 
     <script>
-        const countries = {};
+        const countryCache = {};
+
+        // Available versions per country
+        const countryVersions = {
+            norway: 'v0.2',
+            usa: 'v0.2',
+            turkey: 'v0.2'
+        };
 
         async function loadCountry(name) {
-            if (countries[name]) return countries[name];
+            if (countryCache[name]) return countryCache[name];
+            const ver = countryVersions[name] || 'v0.1';
             try {
-                const res = await fetch(`data/raw/${name}_pilot_v0.1.json`);
-                countries[name] = await res.json();
-                return countries[name];
+                const res = await fetch(`data/raw/${name}_pilot_${ver}.json`);
+                if (!res.ok) {
+                    // fallback to v0.1
+                    const res2 = await fetch(`data/raw/${name}_pilot_v0.1.json`);
+                    if (!res2.ok) return null;
+                    countryCache[name] = await res2.json();
+                } else {
+                    countryCache[name] = await res.json();
+                }
+                return countryCache[name];
             } catch(e) {
                 console.error('Failed to load:', name, e);
                 return null;
             }
         }
 
-        // Human-readable labels for field keys
         const fieldLabels = {
-            // Government Type
             government_type: 'Government type',
             head_of_state_selection: 'Head of state selection',
             head_of_state_formal_powers: 'Head of state formal powers',
-            head_of_state: 'Head of state',
             sovereignty_origin: 'Sovereignty origin',
             hereditary_privilege_encoded: 'Hereditary privilege encoded',
             monarch_budget_per_capita_usd: 'Monarch budget per capita (USD)',
-            gst_assessment: 'GST assessment',
-            // Economic Precarity
             gini_coefficient_pretax: 'Gini (pre-tax)',
+            gini_coefficient_pretax_wb: 'Gini (WB SI.POV.GINI)',
             gini_coefficient_posttax: 'Gini (post-tax)',
             poverty_rate_pct: 'Poverty rate',
+            poverty_rate_national_pct: 'Poverty rate (national)',
+            relative_poverty_rate_pct: 'Relative poverty rate',
             unemployment_rate_pct: 'Unemployment',
             youth_unemployment_pct: 'Youth unemployment',
             labor_force_participation_pct: 'Labor force participation',
@@ -346,28 +387,29 @@
             minimum_wage_net_usd: 'Min. wage (net, USD)',
             average_wage_local: 'Average wage (local)',
             average_wage_usd: 'Average wage (USD)',
-            gdp_per_capita_nominal_usd: 'GDP per capita (nominal USD)',
-            gdp_per_capita_ppp_usd: 'GDP per capita (PPP USD)',
+            gdp_per_capita_nominal_usd: 'GDP per capita (nominal)',
+            gdp_per_capita_ppp_usd: 'GDP per capita (PPP)',
+            gni_per_capita_atlas_usd: 'GNI per capita (Atlas)',
+            gni_per_capita_ppp_usd: 'GNI per capita (PPP)',
+            gdp_gni_gap_usd: 'GDP–GNI gap',
             workforce_on_minimum_wage_pct: 'Workforce on minimum wage',
-            housing_cost_to_income_ratio: 'Housing cost to income ratio',
-            food_cost_pct_of_household_expenditure: 'Food cost share of household expenditure',
+            housing_cost_to_income_ratio: 'Housing cost to income',
+            food_cost_pct_of_household_expenditure: 'Food cost share of expenditure',
             out_of_pocket_healthcare_pct: 'Out-of-pocket healthcare',
             uninsured_population_pct: 'Uninsured population',
             real_wage_growth_5yr_pct: 'Real wage growth (5yr)',
             union_density_pct: 'Union density',
-            // Information Environment - Mainstream Media
             state_owned_broadcasters_count: 'State-owned broadcasters',
-            private_broadcasters_count: 'Private broadcasters (national reach)',
+            private_broadcasters_count: 'Private broadcasters (national)',
             top_5_owners_market_share_pct: 'Top 5 owners market share',
             daily_newspapers_circulation_per_1000: 'Newspapers per 1000',
-            journalists_imprisoned_current_year: 'Journalists imprisoned (current year)',
-            journalists_killed_current_year: 'Journalists killed (current year)',
+            journalists_imprisoned_current_year: 'Journalists imprisoned',
+            journalists_killed_current_year: 'Journalists killed',
             media_regulator_independence: 'Media regulator independence',
             broadcast_licensing_process: 'Broadcast licensing process',
             government_ad_spend_share_pct: 'Govt ad spend share',
-            defamation_prison_sentences_exists: 'Defamation carries prison sentences',
-            prior_restraint_orders_per_year: 'Prior restraint / publication bans per year',
-            // Digital Media
+            defamation_prison_sentences_exists: 'Defamation carries prison',
+            prior_restraint_orders_per_year: 'Prior restraint / bans per year',
             internet_penetration_pct: 'Internet penetration',
             social_media_usage_pct: 'Social media usage',
             internet_shutdowns_per_year: 'Internet shutdowns per year',
@@ -376,135 +418,122 @@
             vpn_usage_pct: 'VPN usage',
             independent_news_sites_blocked: 'Independent news sites blocked',
             encrypted_messaging_restrictions: 'Encrypted messaging restrictions',
-            government_content_removal_requests_per_year: 'Govt content removal requests per year',
+            government_content_removal_requests_per_year: 'Govt content removal requests/yr',
             digital_surveillance_legislation: 'Digital surveillance legislation',
-            // Economic Structure
             advertising_market_total_usd_m: 'Advertising market',
             media_subsidies_exist: 'Media subsidies',
-            cross_ownership_non_media_pct: 'Cross-ownership by non-media conglomerates',
+            cross_ownership_non_media_pct: 'Cross-ownership by non-media',
             foreign_ownership_restrictions: 'Foreign ownership restrictions',
             journalist_avg_salary_vs_national_avg_pct: 'Journalist salary vs national avg',
-            // Social Media Journalism
-            youtube_news_top10_subscribers_total: 'YouTube news (top 10 subscribers)',
+            youtube_news_top10_subscribers_total: 'YouTube news (top 10 subs)',
             twitter_x_journalist_followers_top10_total: 'X journalist followers (top 10)',
             tiktok_news_content_creators_count: 'TikTok news creators',
-            independent_youtube_news_avg_views: 'Independent YouTube news avg views',
-            social_media_as_primary_news_source_pct: 'Social media as primary news source',
-            government_social_media_censorship_cases_per_year: 'Govt social media censorship per year',
+            independent_youtube_news_avg_views: 'Indie YouTube news avg views',
+            social_media_as_primary_news_source_pct: 'Social media as primary news',
+            government_social_media_censorship_cases_per_year: 'Govt social media censorship/yr',
             platform_bans_or_restrictions: 'Platform bans/restrictions',
             crowdfunded_journalism_platforms_count: 'Crowdfunded journalism platforms',
             podcast_listenership_as_news_source_pct: 'Podcast as news source',
-            // Forced Substitution
             private_tutoring_enrollment_pct: 'Private tutoring enrollment',
             private_healthcare_usage_pct: 'Private healthcare usage',
             privatization_revenue_pct_gdp: 'Privatization revenue (% GDP)',
-            out_of_pocket_core_services_pct_household_income: 'Out-of-pocket core services (% household income)',
+            out_of_pocket_core_services_pct_household_income: 'OOP core services (% income)',
             public_vs_private_school_enrollment_pct: 'Public vs private school enrollment',
             public_vs_private_hospital_beds_ratio: 'Public vs private hospital beds',
             pension_coverage_public_pct: 'Public pension coverage',
             pension_coverage_private_pct: 'Private pension coverage',
-            // Civic Education
-            civic_knowledge_score_iccs: 'Civic knowledge score (ICCS)',
+            civic_knowledge_score_iccs: 'Civic knowledge (ICCS)',
             voter_turnout_last_election_pct: 'Voter turnout (last election)',
             political_efficacy_pct: 'Political efficacy',
-            civic_education_mandatory_hours_per_year: 'Civic education (mandatory hours/year)',
-            // Digital Rights
+            civic_education_mandatory_hours_per_year: 'Civic education (hrs/year)',
+            hdi_value: 'HDI',
+            hdi_life_expectancy: 'Life expectancy',
+            hdi_expected_years_schooling: 'Expected years schooling',
+            hdi_mean_years_schooling: 'Mean years schooling',
+            primary_enrollment_gross_pct: 'Primary enrollment (gross)',
             constitutional_right_to_internet: 'Constitutional right to internet',
             net_neutrality_legislation: 'Net neutrality legislation',
             digital_id_system_scope: 'Digital ID system scope',
             biometric_data_legislation: 'Biometric data legislation',
-            right_to_be_forgotten_legislation: 'Right to be forgotten legislation',
-            // Social Cohesion
+            right_to_be_forgotten_legislation: 'Right to be forgotten',
             social_trust_pct: 'Social trust',
-            community_organization_participation_pct: 'Community organization participation',
+            community_organization_participation_pct: 'Community org. participation',
             volunteer_rate_pct: 'Volunteer rate',
             charitable_giving_pct_gdp: 'Charitable giving (% GDP)',
-            // Family Structure Health
             domestic_violence_incidents_per_1000: 'Domestic violence (per 1000)',
             divorce_rate_per_1000: 'Divorce rate (per 1000)',
             single_parent_household_pct: 'Single-parent households',
             child_poverty_rate_pct: 'Child poverty rate',
             maternal_mortality_per_100000: 'Maternal mortality (per 100k)',
             elder_care_public_vs_family_ratio: 'Elder care: public vs family',
-            // Civic Participation
             ngo_count_per_capita: 'NGOs per capita',
             protest_participation_pct_5yr: 'Protest participation (5yr)',
-            petition_participation_pct: 'Petition/signature participation',
-            // Internal Dissent Capacity
+            petition_participation_pct: 'Petition participation',
             legal_right_to_protest: 'Legal right to protest',
             protest_permit_required: 'Protest permit required',
-            protest_permit_denial_rate_pct: 'Protest permit denial rate',
+            protest_permit_denial_rate_pct: 'Permit denial rate',
             assembly_law_restrictions: 'Assembly law restrictions',
             participatory_budgeting_exists: 'Participatory budgeting exists',
-            // Social Isolation
             loneliness_rate_pct: 'Loneliness rate',
             living_alone_pct: 'Living alone',
             elderly_isolation_indicator: 'Elderly isolation indicator',
             suicide_rate_per_100000: 'Suicide rate (per 100k)',
             birth_rate_per_1000: 'Birth rate (per 1000)',
-            // Wealth Distribution
             top_1pct_income_share: 'Top 1% income share',
             top_10pct_wealth_share: 'Top 10% wealth share',
+            top_10_pct_income_share: 'Top 10% income share',
             bottom_50pct_wealth_share: 'Bottom 50% wealth share',
+            bottom_50_pct_income_share: 'Bottom 50% income share',
             wealth_gini: 'Wealth Gini',
             billionaire_wealth_pct_gdp: 'Billionaire wealth (% GDP)',
-            // Taxation
-            top_marginal_income_tax_rate_pct: 'Top marginal income tax rate',
-            corporate_tax_rate_pct: 'Corporate tax rate',
-            capital_gains_tax_rate_pct: 'Capital gains tax rate',
+            top_marginal_income_tax_pct: 'Top marginal income tax',
+            corporate_tax_pct: 'Corporate tax',
+            capital_gains_tax_rate_pct: 'Capital gains tax',
             capital_gains_vs_income_tax_gap_pct: 'Capital gains vs income tax gap',
             effective_tax_rate_by_decile: 'Effective tax rate by decile',
             tax_gap_estimate_pct: 'Tax gap estimate',
             property_tax_rate_pct: 'Property tax rate',
             inheritance_estate_tax_exists: 'Inheritance/estate tax exists',
             inheritance_tax_threshold: 'Inheritance tax threshold',
-            // Public Investment
-            healthcare_spending_pct_gdp: 'Healthcare spending',
+            vat_pct: 'VAT',
+            healthcare_spending_pct_gdp: 'Healthcare spending (% GDP)',
             healthcare_spending_public_pct: 'Healthcare (public share)',
-            education_spending_pct_gdp: 'Education spending',
+            education_spending_pct_gdp: 'Education spending (% GDP)',
             education_spending_public_pct: 'Education (public share)',
             infrastructure_spending_pct_gdp: 'Infrastructure spending',
             r_and_d_spending_pct_gdp: 'R&D spending',
             r_and_d_spending_public_pct: 'R&D (public share)',
+            social_protection_pct_gdp: 'Social protection (% GDP)',
             social_protection_spending_pct_gdp: 'Social protection spending',
             military_spending_pct_gdp: 'Military spending',
-            // Social Mobility
-            intergenerational_income_elasticity: 'Intergenerational income elasticity',
-            education_attainment_by_parental_income_quartile: 'Education by parental income quartile',
-            income_quintile_mobility_bottom_to_top_pct: 'Income mobility (bottom → top)',
-            public_university_enrollment_by_income_quintile_pct: 'Public university enrollment by income quintile',
-            // Cultural Production
-            public_arts_funding_per_capita_usd: 'Public arts funding (per capita USD)',
-            museum_gallery_attendance_per_capita: 'Museum/gallery attendance (per capita)',
-            public_library_branches_per_capita: 'Public library branches (per capita)',
-            public_broadcasting_budget_per_capita_usd: 'Public broadcasting budget (per capita USD)',
-            cultural_participation_rate_pct: 'Cultural participation rate',
-            // Corporate Extraction
+            intergenerational_income_elasticity: 'Intergenerational elasticity',
+            education_attainment_by_parental_income_quartile: 'Education by parental income',
+            income_quintile_mobility_bottom_to_top_pct: 'Mobility (bottom → top)',
+            public_university_enrollment_by_income_quintile_pct: 'Public uni enrollment by income',
+            public_arts_funding_per_capita_usd: 'Public arts funding (per capita)',
+            museum_gallery_attendance_per_capita: 'Museum attendance (per capita)',
+            public_library_branches_per_capita: 'Library branches (per capita)',
+            public_broadcasting_budget_per_capita_usd: 'Public broadcasting (per capita)',
+            cultural_participation_rate_pct: 'Cultural participation',
+            public_cultural_spending_pct_gdp: 'Public cultural spending (% GDP)',
             corporate_profit_pct_gdp: 'Corporate profit (% GDP)',
             ceo_to_worker_pay_ratio: 'CEO-to-worker pay ratio',
-            share_buybacks_pct_corporate_profits: 'Share buybacks (% corporate profits)',
-            dividend_vs_reinvestment_ratio: 'Dividend vs reinvestment ratio',
-            lobbying_expenditure_total_usd: 'Lobbying expenditure (total USD)',
-            lobbying_expenditure_per_capita_usd: 'Lobbying expenditure (per capita USD)',
-            revolving_door_count: 'Revolving door instances'
-        };
-
-        // Unit suffixes for certain fields
-        const fieldUnits = {
-            _pct: '%',
-            _usd: 'USD',
-            _pct_gdp: '% GDP',
-            gini_coefficient_pretax: '',
-            gini_coefficient_posttax: '',
-            intergenerational_income_elasticity: ''
+            share_buybacks_pct_corporate_profits: 'Share buybacks (% profits)',
+            dividend_vs_reinvestment_ratio: 'Dividend vs reinvestment',
+            lobbying_expenditure_total_usd: 'Lobbying expenditure',
+            lobbying_expenditure_per_capita_usd: 'Lobbying (per capita)',
+            revolving_door_count: 'Revolving door instances',
+            sovereign_wealth_fund_usd: 'Sovereign wealth fund'
         };
 
         function getUnit(key) {
-            if (fieldUnits[key] !== undefined) return fieldUnits[key];
-            if (key.endsWith('_pct')) return '%';
+            if (key === 'intergenerational_income_elasticity') return '';
+            if (key === 'gini_coefficient_pretax' || key === 'gini_coefficient_pretax_wb' || key === 'gini_coefficient_posttax') return '';
+            if (key === 'hdi_value' || key === 'hdi_life_expectancy' || key === 'hdi_expected_years_schooling' || key === 'hdi_mean_years_schooling') return key === 'hdi_value' ? '' : key.includes('expectancy') ? ' yrs' : ' yrs';
             if (key.endsWith('_pct_gdp')) return '% GDP';
-            if (key.endsWith('_usd')) return 'USD';
-            if (key.endsWith('_per_1000')) return '/1000';
+            if (key.endsWith('_pct')) return '%';
+            if (key.endsWith('_usd')) return '$';
+            if (key.endsWith('_per_1000')) return '/1k';
             if (key.endsWith('_per_100000')) return '/100k';
             return '';
         }
@@ -514,11 +543,66 @@
             if (typeof val === 'boolean') return val ? 'Yes' : 'No';
             const unit = getUnit(key);
             if (typeof val === 'number') {
-                if (key.includes('_usd') && !key.includes('per_capita')) return '$' + val.toLocaleString() + (unit ? ' ' + unit : '');
-                if (key.includes('per_capita_usd')) return '$' + val.toLocaleString() + (unit ? ' ' + unit : '');
+                // Gini: show as decimal
+                if (key.includes('gini_coefficient') || key === 'wealth_gini') {
+                    return val.toFixed(3);
+                }
+                // Large USD amounts
+                if (key.includes('_usd') && !key.includes('per_capita')) {
+                    return '$' + val.toLocaleString();
+                }
+                if (key.includes('per_capita_usd') || key === 'gni_per_capita_atlas_usd' || key === 'gni_per_capita_ppp_usd' || key === 'gdp_gni_gap_usd') {
+                    const prefix = val < 0 ? '−$' : '$';
+                    return prefix + Math.abs(val).toLocaleString();
+                }
+                // HDI
+                if (key === 'hdi_value') return val.toFixed(3);
+                if (key.includes('hdi_') && key.includes('schooling')) return val.toFixed(1) + ' yrs';
+                if (key === 'hdi_life_expectancy') return val.toFixed(1) + ' yrs';
+                // Elasticity
+                if (key === 'intergenerational_income_elasticity') return val.toFixed(2);
+                // Percentages
+                if (unit === '%') return val.toLocaleString() + '%';
+                if (unit === '% GDP') return val.toLocaleString() + '% GDP';
                 return val.toLocaleString() + (unit ? ' ' + unit : '');
             }
-            return val + (unit ? ' ' + unit : '');
+            return String(val);
+        }
+
+        // Extract value from confidence-flagged object or plain value
+        function extractField(raw) {
+            if (raw === null || raw === undefined) return { value: null, confidence: null, source: null, note: null };
+            if (typeof raw === 'object' && !Array.isArray(raw) && ('value' in raw || 'confidence' in raw)) {
+                return {
+                    value: raw.value,
+                    confidence: raw.confidence || null,
+                    source: raw.source || null,
+                    note: raw.note || null
+                };
+            }
+            return { value: raw, confidence: null, source: null, note: null };
+        }
+
+        function confidenceBadge(conf) {
+            if (!conf) return '';
+            const cls = conf === 'high' ? 'conf-high' : conf === 'medium' ? 'conf-medium' : 'conf-low';
+            const symbol = conf === 'high' ? '●' : conf === 'medium' ? '◐' : '○';
+            return `<span class="conf-badge ${cls}">${symbol} ${conf}</span>`;
+        }
+
+        function renderFieldRow(key, raw) {
+            const f = extractField(raw);
+            if (f.value === null && f.confidence === null) return '';
+            const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            const valStr = formatValue(f.value, key);
+            let html = `<div class="data-row">`;
+            html += `<span class="label-part">${label}:</span> `;
+            html += `<span class="value-part">${valStr}</span>`;
+            if (f.confidence) html += ' ' + confidenceBadge(f.confidence);
+            html += `</div>`;
+            if (f.source) html += `<div class="source-note">${f.source}</div>`;
+            if (f.note) html += `<div class="source-note" style="color:var(--text-dim)">${f.note}</div>`;
+            return html;
         }
 
         function renderDimension(title, data) {
@@ -527,54 +611,92 @@
             html += `<div class="dim-title">${title}</div>`;
             html += '<div class="dim-content">';
             for (const [key, val] of Object.entries(data)) {
-                if (val === null || val === undefined || key === 'source') continue;
-                if (typeof val === 'object' && !Array.isArray(val)) continue; // sub-sections handled separately
-                const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(val, key)}\u003cbr\u003e`;
+                if (key === 'source' || key === 'source_notes' || key === 'note' || key === 'gst_assessment') {
+                    // Render source/note as italic
+                    if (typeof val === 'string') html += `<div class="source-note">${val}</div>`;
+                    continue;
+                }
+                if (val === null || val === undefined) continue;
+                // Sub-objects that are NOT confidence-flagged (they're sub-sections)
+                if (typeof val === 'object' && !Array.isArray(val) && !('value' in val) && !('confidence' in val)) continue;
+                html += renderFieldRow(key, val);
             }
-            html += '\u003c/div\u003e\u003c/div\u003e';
+            html += '</div></div>';
             return html;
         }
 
         function renderDimensionWithSubsections(title, data, sectionOrder) {
             if (!data) return '';
-            let html = '\u003cdiv class="dimension"\u003e';
-            html += `\u003cdiv class="dim-title"\u003e${title}\u003c/div\u003e`;
-            html += '\u003cdiv class="dim-content"\u003e';
-            const subKeys = Object.keys(data).filter(k => typeof data[k] === 'object' && data[k] !== null && !Array.isArray(data[k]));
-            const topKeys = Object.keys(data).filter(k => typeof data[k] !== 'object' || data[k] === null || Array.isArray(data[k]));
-            // Render top-level non-object fields first
+            let html = '<div class="dimension">';
+            html += `<div class="dim-title">${title}</div>`;
+            html += '<div class="dim-content">';
+            const subKeys = Object.keys(data).filter(k => typeof data[k] === 'object' && data[k] !== null && !Array.isArray(data[k]) && !('value' in data[k]) && !('confidence' in data[k]));
+            const topKeys = Object.keys(data).filter(k => typeof data[k] !== 'object' || data[k] === null || Array.isArray(data[k]) || ('value' in data[k]) || ('confidence' in data[k]));
             for (const key of topKeys) {
-                if (data[key] === null || data[key] === undefined || key === 'source') continue;
-                const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(data[key], key)}\u003cbr\u003e`;
+                if (key === 'source' || key === 'source_notes' || key === 'note') {
+                    if (typeof data[key] === 'string') html += `<div class="source-note">${data[key]}</div>`;
+                    continue;
+                }
+                html += renderFieldRow(key, data[key]);
             }
-            // Render sub-sections in specified order
             const order = sectionOrder || subKeys;
             for (const secName of order) {
                 const sec = data[secName];
                 if (!sec || typeof sec !== 'object') continue;
-                if (topKeys.length > 0 || order.indexOf(secName) > 0) html += '\u003cbr\u003e';
-                html += `\u003cstrong\u003e${secName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}\u003c/strong\u003e\u003cbr\u003e`;
+                if (topKeys.length > 0 || order.indexOf(secName) > 0) html += '<br>';
+                html += `<strong>${secName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</strong><br>`;
                 for (const [key, val] of Object.entries(sec)) {
-                    const label = fieldLabels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                    html += `\u003cstrong\u003e${label}:\u003c/strong\u003e ${formatValue(val, key)}\u003cbr\u003e`;
+                    if (key === 'source') {
+                        if (typeof val === 'string') html += `<div class="source-note">${val}</div>`;
+                        continue;
+                    }
+                    html += renderFieldRow(key, val);
                 }
             }
-            html += '\u003c/div\u003e\u003c/div\u003e';
+            html += '</div></div>';
+            return html;
+        }
+
+        function renderExtractionCard(data) {
+            const ep = data.pillar_I_integrated_will?.economic_precarity;
+            if (!ep) return '';
+            const gdp = extractField(ep.gdp_per_capita_nominal_usd);
+            const gni = extractField(ep.gni_per_capita_atlas_usd);
+            const gap = extractField(ep.gdp_gni_gap_usd);
+            if (gap.value === null) return '';
+
+            const isNegative = gap.value < 0;
+            const direction = isNegative ? 'negative' : 'positive';
+            const arrow = isNegative ? '↓' : '↑';
+            const interpretation = isNegative
+                ? 'GNI exceeds GDP — residents earn more from abroad than foreign capital extracts. Favorable extraction indicator.'
+                : 'GDP exceeds GNI — foreign capital extracts more than residents earn from abroad. Extraction indicator.';
+
+            let html = '<div class="extraction-card">';
+            html += `<div class="direction ${direction}">${arrow}</div>`;
+            html += '<div class="extraction-details">';
+            html += `<div class="amount">GDP–GNI Gap: ${isNegative ? '−' : ''}$${Math.abs(gap.value).toLocaleString()}/capita</div>`;
+            html += `<div class="note">${interpretation}</div>`;
+            if (gap.note) html += `<div class="note">${gap.note}</div>`;
+            html += '</div></div>';
             return html;
         }
 
         function renderCountry(d) {
             let html = `
-                \u003cdiv class="country-header"\u003e
-                    \u003ch2\u003e${d.country}\u003c/h2\u003e
-                    \u003cdiv class="collection-date"\u003eData collected: ${d.collection_date} | Version: ${d.data_version}\u003c/div\u003e
-                \u003c/div\u003e
+                <div class="country-header">
+                    <div>
+                        <h2>${d.country}</h2>
+                        <div class="collection-date">Data: ${d.collection_date} | Version: ${d.data_version}${d.last_updated && d.last_updated !== d.collection_date ? ' | Updated: ' + d.last_updated : ''}</div>
+                    </div>
+                </div>
             `;
 
+            // Extraction card
+            html += renderExtractionCard(d);
+
             // Pillar I
-            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar I — Integrated Will\u003c/h3\u003e';
+            html += '<div class="section"><h3>Pillar I — Integrated Will</h3>';
             const p1 = d.pillar_I_integrated_will || {};
             html += renderDimension('Government Type', p1.government_type);
             html += renderDimensionWithSubsections('Information Environment', p1.information_environment, ['mainstream_media', 'digital_media', 'economic_structure', 'social_media_journalism']);
@@ -582,20 +704,20 @@
             html += renderDimension('Forced Substitution Coefficient', p1.forced_substitution_coefficient);
             html += renderDimension('Civic Education', p1.civic_education);
             html += renderDimension('Digital Rights', p1.digital_rights);
-            html += '\u003c/div\u003e';
+            html += '</div>';
 
             // Pillar II
-            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar II — Organic Ties\u003c/h3\u003e';
+            html += '<div class="section"><h3>Pillar II — Organic Ties</h3>';
             const p2 = d.pillar_II_organic_ties || {};
             html += renderDimension('Social Cohesion', p2.social_cohesion);
             html += renderDimension('Family Structure Health', p2.family_structure_health);
             html += renderDimension('Civic Participation', p2.civic_participation_beyond_voting);
             html += renderDimension('Internal Dissent Capacity', p2.internal_dissent_capacity);
             html += renderDimension('Social Isolation', p2.social_isolation);
-            html += '\u003c/div\u003e';
+            html += '</div>';
 
             // Pillar III
-            html += '\u003cdiv class="section"\u003e\u003ch3\u003ePillar III — Social Capital Transformation\u003c/h3\u003e';
+            html += '<div class="section"><h3>Pillar III — Social Capital Transformation</h3>';
             const p3 = d.pillar_III_social_capital_transformation || {};
             html += renderDimension('Wealth Distribution', p3.wealth_distribution);
             html += renderDimension('Taxation Progressivity', p3.taxation_progressivity);
@@ -603,15 +725,33 @@
             html += renderDimension('Social Mobility', p3.social_mobility);
             html += renderDimension('Cultural Production Accessibility', p3.cultural_production_accessibility);
             html += renderDimension('Corporate Extraction vs Public Benefit', p3.corporate_extraction_vs_public_benefit);
-            html += '\u003c/div\u003e';
+            html += '</div>';
 
-            html += `\u003cdiv class="data-note"\u003eAll data is preliminary (v0.1-pilot). Methodology under active development.\u003c/div\u003e`;
+            // Cross-cutting rights
+            const cr = d.cross_cutting_rights || {};
+            if (Object.keys(cr).length > 0) {
+                html += '<div class="section"><h3>Cross-Cutting Rights</h3>';
+                const rightsLabels = {
+                    integrity: 'Integrity',
+                    justice: 'Justice',
+                    compassion: 'Compassion',
+                    welfare: 'Welfare',
+                    truth: 'Truth',
+                    solidarity: 'Solidarity'
+                };
+                for (const [key, label] of Object.entries(rightsLabels)) {
+                    if (cr[key]) html += renderDimension(label, cr[key]);
+                }
+                html += '</div>';
+            }
+
+            html += `<div class="data-note">Data version ${d.data_version}. Methodology: <a href="https://github.com/alprnkmbr/democracy/blob/main/METHODOLOGY.md" style="color:var(--accent)">METHODOLOGY.md</a>. Confidence: <span class="conf-badge conf-high">● high</span> <span class="conf-badge conf-medium">◐ medium</span> <span class="conf-badge conf-low">○ low</span></div>`;
 
             return html;
         }
 
         // Button handlers
-        document.querySelectorAll('.country-btn').forEach(btn => {
+        document.querySelectorAll('.country-btn:not(.disabled)').forEach(btn => {
             btn.addEventListener('click', async () => {
                 document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
@@ -637,7 +777,6 @@
                 localStorage.setItem('theme', 'light');
             }
         }
-        // Restore saved theme
         (function() {
             const saved = localStorage.getItem('theme');
             if (saved === 'light') {

@@ -1,0 +1,368 @@
+{
+  "country": "Norway",
+  "country_code": "NO",
+  "collection_date": "2026-04-19",
+  "data_version": "0.2-pilot",
+  "pillar_I_integrated_will": {
+    "information_environment": {
+      "social_media_journalism": {
+        "platform_bans_or_restrictions": null,
+        "social_media_as_primary_news_source_pct": null,
+        "youtube_news_top10_subscribers_total": null,
+        "podcast_listenership_as_news_source_pct": null,
+        "tiktok_news_content_creators_count": null,
+        "crowdfunded_journalism_platforms_count": null,
+        "independent_youtube_news_avg_views": null,
+        "twitter_x_journalist_followers_top10_total": null,
+        "government_social_media_censorship_cases_per_year": null
+      },
+      "economic_structure": {
+        "journalist_avg_salary_vs_national_avg_pct": null,
+        "cross_ownership_non_media_pct": null,
+        "government_ad_spend_share_pct": null,
+        "advertising_market_total_usd_m": null,
+        "media_subsidies_exist": null,
+        "foreign_ownership_restrictions": null
+      },
+      "mainstream_media": {
+        "top_5_owners_market_share_pct": null,
+        "prior_restraint_orders_per_year": null,
+        "journalists_killed_current_year": 0,
+        "defamation_prison_sentences_exists": null,
+        "private_broadcasters_count": null,
+        "journalists_imprisoned_current_year": 0,
+        "government_ad_spend_share_pct": null,
+        "broadcast_licensing_process": null,
+        "daily_newspapers_circulation_per_1000": null,
+        "media_regulator_independence": null,
+        "state_owned_broadcasters_count": 1
+      },
+      "digital_media": {
+        "social_media_usage_pct": null,
+        "encrypted_messaging_restrictions": null,
+        "vpn_usage_pct": null,
+        "internet_shutdowns_per_year": null,
+        "digital_surveillance_legislation": null,
+        "data_retention_laws": null,
+        "independent_news_sites_blocked": null,
+        "internet_penetration_pct": 99,
+        "government_content_removal_requests_per_year": null,
+        "online_censorship_laws_count": null
+      }
+    },
+    "economic_precarity": {
+      "employment_rate_pct": null,
+      "uninsured_population_pct": null,
+      "average_wage_usd": null,
+      "inflation_food_pct": null,
+      "inflation_producer_prices_pct": null,
+      "unemployment_rate_pct": {
+        "value": 3.7,
+        "source": "Eurostat 2024",
+        "confidence": "high"
+      },
+      "gini_coefficient_pretax": {
+        "value": 0.356,
+        "source": "World Bank PIP 2023",
+        "confidence": "high"
+      },
+      "food_cost_pct_of_household_expenditure": null,
+      "gdp_per_capita_nominal_usd": {
+        "value": 82236,
+        "source": "IMF WEO 2024 est.",
+        "confidence": "medium"
+      },
+      "out_of_pocket_healthcare_pct": null,
+      "youth_unemployment_pct": null,
+      "minimum_wage_net_local": null,
+      "minimum_wage_gross_local": null,
+      "labor_force_participation_pct": null,
+      "average_wage_local": null,
+      "poverty_rate_pct": {
+        "value": 0.5,
+        "source": "Statistics Norway / OECD",
+        "confidence": "medium"
+      },
+      "workforce_on_minimum_wage_pct": null,
+      "gdp_per_capita_ppp_usd": 78128,
+      "housing_cost_to_income_ratio": null,
+      "gini_coefficient_posttax": {
+        "value": 0.267,
+        "source": "Eurostat ilc_di12 2024",
+        "confidence": "high"
+      },
+      "minimum_wage_net_usd": null,
+      "real_wage_growth_5yr_pct": null,
+      "union_density_pct": {
+        "value": 50.4,
+        "source": "ILO / national data",
+        "confidence": "medium"
+      },
+      "inflation_core_pct": null,
+      "inflation_cpi_pct": null,
+      "gini_coefficient_pretax_wb": {
+        "value": 0.265,
+        "source": "World Bank SI.POV.GINI 2023",
+        "confidence": "high",
+        "note": "WB Gini uses post-tax/transfers methodology; our 0.356 is pre-tax. Both included for comparability."
+      },
+      "gni_per_capita_atlas_usd": {
+        "value": 101640,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gni_per_capita_ppp_usd": {
+        "value": 108980,
+        "source": "World Bank WDI 2023",
+        "confidence": "high"
+      },
+      "gdp_gni_gap_usd": {
+        "value": -19404,
+        "source": "Computed: GDP 82236 - GNI(atlas) 101640",
+        "confidence": "high",
+        "note": "Negative gap: GNI > GDP means residents earn more from abroad than foreign entities extract. Extraction indicator is favorable."
+      },
+      "poverty_rate_national_pct": {
+        "value": 0.5,
+        "source": "Statistics Norway",
+        "confidence": "medium"
+      },
+      "relative_poverty_rate_pct": {
+        "value": null,
+        "source": "OECD IDD (not available for NO in standard dataset)",
+        "confidence": "low",
+        "note": "Norway does not report to OECD IDD standard series; Eurostat at-risk-of-poverty rate ~14% (2023). Use as estimate."
+      }
+    },
+    "civic_education": {
+      "civic_knowledge_score_iccs": null,
+      "voter_turnout_last_election_pct": null,
+      "political_efficacy_pct": null,
+      "civic_education_mandatory_hours_per_year": null,
+      "hdi_value": {
+        "value": 0.966,
+        "source": "UNDP HDR 2025 (2023 data)",
+        "confidence": "high"
+      },
+      "hdi_life_expectancy": {
+        "value": 83.0,
+        "source": "World Bank 2023",
+        "confidence": "high"
+      },
+      "hdi_expected_years_schooling": {
+        "value": 18.2,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      },
+      "hdi_mean_years_schooling": {
+        "value": 12.6,
+        "source": "UNDP HDR 2025",
+        "confidence": "high"
+      },
+      "primary_enrollment_gross_pct": {
+        "value": 98.6,
+        "source": "World Bank 2023",
+        "confidence": "high"
+      }
+    },
+    "digital_rights": {
+      "constitutional_right_to_internet": null,
+      "net_neutrality_legislation": null,
+      "digital_id_system_scope": null,
+      "biometric_data_legislation": null,
+      "right_to_be_forgotten_legislation": null
+    },
+    "government_type": {
+      "head_of_state_formal_powers": "limited but real — formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
+      "sovereignty_origin": "mixed — constitution derives from the people in practice, but the monarch retains formal sovereignty",
+      "monarch_budget_per_capita_usd": null,
+      "head_of_state_selection": "hereditary",
+      "hereditary_privilege_encoded": true,
+      "government_type": "constitutional_monarchy"
+    },
+    "forced_substitution_coefficient": {
+      "private_tutoring_enrollment_pct": null,
+      "private_healthcare_usage_pct": null,
+      "privatization_revenue_pct_gdp": null,
+      "out_of_pocket_core_services_pct_household_income": null,
+      "public_vs_private_school_enrollment_pct": null,
+      "public_vs_private_hospital_beds_ratio": null,
+      "pension_coverage_public_pct": null,
+      "pension_coverage_private_pct": null
+    }
+  },
+  "pillar_II_organic_ties": {
+    "social_cohesion": {
+      "community_organization_participation_pct": null,
+      "community_organization": "strong",
+      "volunteer_rate_pct": null,
+      "charitable_giving_pct_gdp": null,
+      "social_trust_pct": {
+        "value": 74,
+        "source": "OECD / World Values Survey",
+        "confidence": "medium"
+      },
+      "source": "OECD / World Values Survey"
+    },
+    "family_structure_health": {
+      "maternal_mortality_per_100000": null,
+      "divorce_rate_per_1000": null,
+      "family_stability": "moderate-high",
+      "domestic_violence_severity": "Exists but robust legal framework and support systems",
+      "single_parent_household_pct": null,
+      "source": "WHO / national statistics",
+      "elder_care_public_vs_family_ratio": null,
+      "child_poverty_rate_pct": null,
+      "domestic_violence_incidents_per_1000": null
+    },
+    "civic_participation_beyond_voting": {
+      "ngo_count_per_capita": null,
+      "volunteering_rate": "high",
+      "volunteer_rate_pct": null,
+      "protest_participation_pct_5yr": null,
+      "union_density_pct": 50.4,
+      "source": "Johns Hopkins / national data",
+      "petition_participation_pct": null
+    },
+    "internal_dissent_capacity": {
+      "participatory_budgeting_exists": null,
+      "assembly_law_restrictions": null,
+      "score": "high",
+      "legal_right_to_protest": null,
+      "protest_permit_denial_rate_pct": null,
+      "source": "V-Dem deliberation index / qualitative",
+      "protest_permit_required": null
+    },
+    "social_isolation": {
+      "birth_rate_per_1000": null,
+      "loneliness_rate_pct": 6,
+      "elderly_isolation_indicator": null,
+      "source": "OECD well-being data",
+      "suicide_rate_per_100000": null,
+      "living_alone_pct": null
+    }
+  },
+  "pillar_III_social_capital_transformation": {
+    "wealth_distribution": {
+      "bottom_50pct_wealth_share": null,
+      "gini_coefficient_pretax": null,
+      "wealth_gini": null,
+      "billionaire_wealth_pct_gdp": null,
+      "gini_coefficient_posttax": null,
+      "gini_posttax": 0.258,
+      "top_10_pct_income_share": 24.7,
+      "bottom_50_pct_income_share": 19.4,
+      "source": "World Inequality Database / OECD",
+      "gini_pretax": 0.386,
+      "top_1pct_income_share": null,
+      "top_10pct_wealth_share": null
+    },
+    "taxation_progressivity": {
+      "inheritance_estate_tax_exists": null,
+      "top_marginal_income_tax_rate_pct": null,
+      "tax_to_gdp_note": "High tax burden with significant redistribution",
+      "tax_gap_estimate_pct": null,
+      "property_tax_rate_pct": null,
+      "corporate_tax_rate_pct": null,
+      "tax_to_gdp_pct": 42.6,
+      "corporate_tax_pct": 22.0,
+      "top_marginal_income_tax_pct": 47.8,
+      "vat_pct": 25.0,
+      "capital_gains_tax_rate_pct": null,
+      "effective_tax_rate_by_decile": null,
+      "source": "OECD tax statistics",
+      "inheritance_tax_threshold": null,
+      "capital_gains_vs_income_tax_gap_pct": null
+    },
+    "public_investment": {
+      "social_protection_note": "Among highest in OECD",
+      "healthcare_spending_public_pct": null,
+      "education_spending_pct_gdp": 6.6,
+      "social_protection_pct_gdp": 24.2,
+      "r_and_d_spending_pct_gdp": null,
+      "infrastructure_note": "Strong public infrastructure investment, particularly from oil revenue fund",
+      "healthcare_spending_pct_gdp": 7.9,
+      "military_spending_pct_gdp": null,
+      "social_protection_spending_pct_gdp": null,
+      "education_spending_public_pct": null,
+      "source": "OECD / WHO / UNESCO",
+      "infrastructure_spending_pct_gdp": null,
+      "r_and_d_spending_public_pct": null
+    },
+    "social_mobility": {
+      "source": "OECD social mobility indices",
+      "public_university_enrollment_by_income_quintile_pct": null,
+      "education_attainment_by_parental_income_quartile": null,
+      "intergenerational_income_elasticity": 0.17,
+      "mobility_note": "Among highest social mobility in the world. Low correlation between parent and child income.",
+      "income_quintile_mobility_bottom_to_top_pct": null
+    },
+    "cultural_production_accessibility": {
+      "public_library_branches_per_capita": null,
+      "source": "UNESCO / national budgets",
+      "public_cultural_spending_pct_gdp": 1.3,
+      "public_broadcasting_budget_per_capita_usd": null,
+      "public_arts_funding_per_capita_usd": null,
+      "cultural_participation_rate_pct": null,
+      "museum_gallery_attendance_per_capita": null
+    },
+    "corporate_extraction_vs_public_benefit": {
+      "revolving_door_count": null,
+      "sovereign_wealth_fund_usd": 1700000000000,
+      "swf_note": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations.",
+      "share_buybacks_pct_corporate_profits": null,
+      "lobbying_expenditure_total_usd": null,
+      "dividend_vs_reinvestment_ratio": null,
+      "source": "National economic accounts",
+      "ceo_to_worker_pay_ratio": null,
+      "corporate_profit_pct_gdp": null,
+      "lobbying_expenditure_per_capita_usd": null
+    }
+  },
+  "cross_cutting_rights": {
+    "integrity": {
+      "source": "HRW / Amnesty / CIRI",
+      "political_imprisonment": "none",
+      "bodily_autonomy": "strong",
+      "sami_rights_note": "Ongoing tensions with Sámi communities over land use and cultural rights (Fosen wind turbine case). Freedom House upgraded Norway's score on equal treatment after the 2024 agreement."
+    },
+    "justice": {
+      "source": "WJP Rule of Law Index",
+      "rule_of_law_rank": 1,
+      "judicial_independence": "very strong",
+      "due_process": "robust",
+      "equal_access_note": "Generally strong but access to justice for marginalized communities (immigrants, Sámi) has documented gaps."
+    },
+    "compassion": {
+      "source": "OECD / UNHCR",
+      "social_safety_net": "comprehensive",
+      "refugee_policy": "generous by international standards",
+      "healthcare_access": "universal"
+    },
+    "welfare": {
+      "source": "World Bank / OECD",
+      "poverty_rate": 0.5,
+      "housing_security": "strong public support but affordability crisis in cities",
+      "food_security": "high",
+      "education_access": "universal free education including university"
+    },
+    "truth": {
+      "source": "RSF / V-Dem transparency",
+      "press_freedom_rank": 1,
+      "government_transparency": "very high",
+      "scientific_integrity": "strong",
+      "censorship": "minimal"
+    },
+    "solidarity": {
+      "source": "ILO / national data",
+      "labor_protections": "strong",
+      "mutual_aid_networks": "strong institutionalized",
+      "community_support": "high"
+    }
+  },
+  "gst_specific_observations": {
+    "note": "GST analysis to be performed separately from data collection"
+  },
+  "last_updated": "2026-04-23",
+  "confidence_system": "three-tier: high (current/primary source), medium (2-5yr old or secondary), low (5+yr old or estimated)"
+}
