@@ -1,0 +1,169 @@
+{
+  "country": "Norway",
+  "cleaned_date": "2026-04-24",
+  "note": "Commentary and evaluative labels removed from raw data. This content is interpretive and belongs in analysis, not in raw data inputs.",
+  "removed_items": [
+    {
+      "path": "pillar_I_integrated_will.economic_precarity.gdp_gni_gap_usd",
+      "field": "gdp_gni_gap_usd.note",
+      "original_value": "Negative gap: GNI > GDP means residents earn more from abroad than foreign entities extract. Extraction indicator is favorable."
+    },
+    {
+      "path": "pillar_I_integrated_will.government_type.head_of_state_formal_powers",
+      "field": "head_of_state_formal_powers",
+      "original_value": "EVALUATIVE STRIPPED: 'limited but real'"
+    },
+    {
+      "path": "pillar_I_integrated_will.government_type.sovereignty_origin",
+      "field": "sovereignty_origin",
+      "original_value": "EVALUATIVE STRIPPED: 'mixed'"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.community_organization",
+      "field": "community_organization",
+      "original_value": "strong"
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.family_stability",
+      "field": "family_stability",
+      "original_value": "moderate-high"
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.domestic_violence_severity",
+      "field": "domestic_violence_severity",
+      "original_value": "Exists but robust legal framework and support systems"
+    },
+    {
+      "path": "pillar_II_organic_ties.civic_participation_beyond_voting.volunteering_rate",
+      "field": "volunteering_rate",
+      "original_value": "high"
+    },
+    {
+      "path": "pillar_II_organic_ties.internal_dissent_capacity.score",
+      "field": "score",
+      "original_value": "high"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.taxation_progressivity.tax_to_gdp_note",
+      "field": "tax_to_gdp_note",
+      "original_value": "High tax burden with significant redistribution"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.public_investment.social_protection_note",
+      "field": "social_protection_note",
+      "original_value": "Among highest in OECD"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.public_investment.infrastructure_note",
+      "field": "infrastructure_note",
+      "original_value": "Strong public infrastructure investment, particularly from oil revenue fund"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.social_mobility.mobility_note",
+      "field": "mobility_note",
+      "original_value": "Among highest social mobility in the world. Low correlation between parent and child income."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.corporate_extraction_vs_public_benefit.swf_note",
+      "field": "swf_note",
+      "original_value": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations."
+    },
+    {
+      "path": "cross_cutting_rights.integrity.political_imprisonment",
+      "field": "political_imprisonment",
+      "original_value": "none"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.bodily_autonomy",
+      "field": "bodily_autonomy",
+      "original_value": "strong"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.sami_rights_note",
+      "field": "sami_rights_note",
+      "original_value": "Ongoing tensions with Sámi communities over land use and cultural rights (Fosen wind turbine case). Freedom House upgraded Norway's score on equal treatment after the 2024 agreement."
+    },
+    {
+      "path": "cross_cutting_rights.justice.judicial_independence",
+      "field": "judicial_independence",
+      "original_value": "very strong"
+    },
+    {
+      "path": "cross_cutting_rights.justice.due_process",
+      "field": "due_process",
+      "original_value": "robust"
+    },
+    {
+      "path": "cross_cutting_rights.justice.equal_access_note",
+      "field": "equal_access_note",
+      "original_value": "Generally strong but access to justice for marginalized communities (immigrants, Sámi) has documented gaps."
+    },
+    {
+      "path": "cross_cutting_rights.compassion.social_safety_net",
+      "field": "social_safety_net",
+      "original_value": "comprehensive"
+    },
+    {
+      "path": "cross_cutting_rights.compassion.refugee_policy",
+      "field": "refugee_policy",
+      "original_value": "generous by international standards"
+    },
+    {
+      "path": "cross_cutting_rights.compassion.healthcare_access",
+      "field": "healthcare_access",
+      "original_value": "universal"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.housing_security",
+      "field": "housing_security",
+      "original_value": "strong public support but affordability crisis in cities"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.food_security",
+      "field": "food_security",
+      "original_value": "high"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.education_access",
+      "field": "education_access",
+      "original_value": "universal free education including university"
+    },
+    {
+      "path": "cross_cutting_rights.truth.government_transparency",
+      "field": "government_transparency",
+      "original_value": "very high"
+    },
+    {
+      "path": "cross_cutting_rights.truth.scientific_integrity",
+      "field": "scientific_integrity",
+      "original_value": "strong"
+    },
+    {
+      "path": "cross_cutting_rights.truth.censorship",
+      "field": "censorship",
+      "original_value": "minimal"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.labor_protections",
+      "field": "labor_protections",
+      "original_value": "strong"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.mutual_aid_networks",
+      "field": "mutual_aid_networks",
+      "original_value": "strong institutionalized"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.community_support",
+      "field": "community_support",
+      "original_value": "high"
+    },
+    {
+      "path": "gst_specific_observations",
+      "field": "gst_specific_observations",
+      "original_value": {
+        "note": "GST analysis to be performed separately from data collection"
+      }
+    }
+  ]
+}

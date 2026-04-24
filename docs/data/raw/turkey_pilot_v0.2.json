@@ -15,8 +15,7 @@
         "crowdfunded_journalism_platforms_count": null,
         "independent_youtube_news_avg_views": null,
         "twitter_x_journalist_followers_top10_total": null,
-        "government_social_media_censorship_cases_per_year": null,
-        "source_notes": "Since 2020, government forces social media companies to maintain local offices and comply with takedown demands; companies refusing face fines and ad bans"
+        "government_social_media_censorship_cases_per_year": null
       },
       "economic_structure": {
         "journalist_avg_salary_vs_national_avg_pct": null,
@@ -24,8 +23,7 @@
         "government_ad_spend_share_pct": null,
         "advertising_market_total_usd_m": null,
         "media_subsidies_exist": true,
-        "foreign_ownership_restrictions": true,
-        "source_notes": "90% media ownership concentrated in pro-government groups (RSF 2025); foreign online media required to obtain local licenses since 2019"
+        "foreign_ownership_restrictions": true
       },
       "mainstream_media": {
         "top_5_owners_market_share_pct": null,
@@ -37,9 +35,8 @@
         "government_ad_spend_share_pct": null,
         "broadcast_licensing_process": "government-appointed regulator (RTÜK)",
         "daily_newspapers_circulation_per_1000": null,
-        "media_regulator_independence": "low — RTÜK members appointed by AKP-controlled parliament",
-        "state_owned_broadcasters_count": 1,
-        "source_notes": "CPJ reports 11 journalists imprisoned as of Dec 2024; Bianet reported 57 journalists detained and 36 convicted in 2024; RTÜK revoked license of Açık Radio July 2024"
+        "media_regulator_independence": "RTÜK members appointed by AKP-controlled parliament",
+        "state_owned_broadcasters_count": 1
       },
       "digital_media": {
         "social_media_usage_pct": 66.7,
@@ -51,8 +48,7 @@
         "independent_news_sites_blocked": 14000,
         "internet_penetration_pct": 88.3,
         "government_content_removal_requests_per_year": null,
-        "online_censorship_laws_count": null,
-        "source_notes": "Internet penetration from DataReportal 2025 (77.3M users, 88.3%); social media 66.7% of population; Free Web Turkey reported ~14,000 online news articles blocked in 2023 plus 197,000 websites; 2022 disinformation law mandates up to 3 years prison"
+        "online_censorship_laws_count": null
       }
     },
     "economic_precarity": {
@@ -101,7 +97,6 @@
       "union_density_pct": 11.5,
       "inflation_core_pct": 29.68,
       "inflation_cpi_pct": 30.87,
-      "source_notes": "GDP/capita and PPP updated to IMF 2026 projections; Gini pretax updated to TÜİK 2024 (0.448); youth unemployment from Wikipedia/Economy of Turkey (16.3%); AROPE 30.4% (2024); social welfare spending 10.4% of GDP (OECD); national poverty rate 13.0% (World Bank 2024)",
       "poverty_rate_national_pct": 13.0,
       "gini_coefficient_pretax_wb": {
         "value": 0.437,
@@ -122,8 +117,7 @@
       "gdp_gni_gap_usd": {
         "value": 7040,
         "source": "Computed: GDP 19020 - GNI(atlas) 11980",
-        "confidence": "high",
-        "note": "Large positive gap: GDP >> GNI signals significant foreign capital extraction. Domestic production far exceeds what residents actually earn."
+        "confidence": "high"
       },
       "relative_poverty_rate_pct": {
         "value": null,
@@ -141,7 +135,6 @@
       },
       "political_efficacy_pct": null,
       "civic_education_mandatory_hours_per_year": null,
-      "source_notes": "Voter turnout 87.04% in 2023 presidential first round (84.15% second round); Turkey ranked second-lowest in media literacy in Europe per 2018 study",
       "hdi_value": {
         "value": 0.838,
         "source": "UNDP HDR 2025 (2023 data)",
@@ -173,18 +166,16 @@
       "net_neutrality_legislation": false,
       "digital_id_system_scope": "national — e-Devlet digital identity portal",
       "biometric_data_legislation": true,
-      "right_to_be_forgotten_legislation": true,
-      "source_notes": "No constitutional right to internet; no net neutrality law; biometric data covered under KVKK (data protection law); right to be forgotten recognized via court rulings"
+      "right_to_be_forgotten_legislation": true
     },
     "government_type": {
-      "head_of_state_formal_powers": "extensive — executive decree authority, appoints judges and central bank governor, dissolution power via 2017 constitutional changes",
+      "head_of_state_formal_powers": "executive decree authority, appoints judges and central bank governor, dissolution power via 2017 constitutional changes",
       "sovereignty_origin": "the people — constitutional sovereignty of the nation",
       "head_of_state": "elected president",
       "monarch_budget_per_capita_usd": null,
       "head_of_state_selection": "elected",
       "hereditary_privilege_encoded": false,
-      "government_type": "presidential_republic",
-      "source_notes": "2017 constitutional referendum expanded presidential powers significantly; 7% electoral threshold; president appoints constitutional court members"
+      "government_type": "presidential_republic"
     },
     "forced_substitution_coefficient": {
       "private_tutoring_enrollment_pct": null,
@@ -195,7 +186,6 @@
       "public_vs_private_hospital_beds_ratio": null,
       "pension_coverage_public_pct": null,
       "pension_coverage_private_pct": null,
-      "source_notes": "Healthcare: 75.2% public funding, 16.5% out-of-pocket, 24.8% private (2023); hospital beds 3.05/1,000 (World Bank 2023); healthcare per capita $548 (World Bank 2023); primary enrollment 102.4% gross (World Bank 2023); NEET rate 22.9% (World Bank 2024); compulsory education 12 years; private tutoring widespread but unquantified",
       "hospital_beds_per_1000": 3.05,
       "healthcare_spending_per_capita_usd": 548,
       "primary_enrollment_gross_pct": 102.4,
@@ -205,14 +195,12 @@
   "pillar_II_organic_ties": {
     "social_cohesion": {
       "community_organization_participation_pct": null,
-      "community_organization": "polarized — strong within groups, near-zero bridging capital",
       "volunteer_rate_pct": null,
       "charitable_giving_pct_gdp": null,
       "social_trust_pct": {
         "value": null,
         "source": "World Values Survey",
-        "confidence": "low",
-        "note": "No recent WVS wave for Turkey; last available 2011. Estimate: low (15-20%) based on regional patterns."
+        "confidence": "low"
       },
       "source": "World Values Survey / OECD"
     },
@@ -220,14 +208,12 @@
       "withdrawal_year": 2021,
       "maternal_mortality_per_100000": 15,
       "divorce_rate_per_1000": 2.0,
-      "domestic_violence_severity": "one of highest rates in Europe",
       "istanbul_convention_withdrawn": true,
       "single_parent_household_pct": null,
       "source": "National statistics / qualitative",
       "elder_care_public_vs_family_ratio": null,
       "child_poverty_rate_pct": null,
-      "domestic_violence_incidents_per_1000": null,
-      "source_notes": "Maternal mortality 15/100,000 (World Bank 2023); divorce rate 2.0/1,000 population (Eurostat 2023); hospital beds 3.05/1,000 (World Bank 2023)"
+      "domestic_violence_incidents_per_1000": null
     },
     "civic_participation_beyond_voting": {
       "ngo_count_per_capita": null,
@@ -236,15 +222,14 @@
       "protest_participation_pct_5yr": null,
       "union_density_pct": 12.6,
       "source": "ITUC / national statistics",
-      "petition_participation_pct": null,
-      "source_notes": "Four national confederations: TÜRK-İŞ (1.75M), DİSK (327K), HAK-İŞ (340K), KESK (300K); total ~2.7M members across all unions"
+      "petition_participation_pct": null
     },
     "internal_dissent_capacity": {
       "constitutional_court_rulings_routinely_ignored": true,
       "participatory_budgeting_exists": false,
-      "assembly_law_restrictions": "severe — Law 2911 on Meetings and Demonstrations requires governor approval; arbitrary denial common",
+      "assembly_law_restrictions": "Law 2911 on Meetings and Demonstrations requires governor approval; arbitrary denial common",
       "insulting_president_criminal_offense": true,
-      "legal_right_to_protest": "nominal — constitution guarantees assembly but heavily restricted in practice",
+      "legal_right_to_protest": "constitution guarantees assembly but heavily restricted in practice",
       "protest_permit_denial_rate_pct": null,
       "source": "Freedom House / qualitative",
       "protest_permit_required": true
@@ -253,12 +238,9 @@
       "birth_rate_per_1000": 11.0,
       "loneliness_rate_pct": null,
       "elderly_isolation_indicator": null,
-      "atomization_level": "low — strong family/community networks",
       "source": "Qualitative assessment / World Bank",
-      "capture_level": "high — communities enforce conformity",
       "suicide_rate_per_100000": 2.69,
-      "living_alone_pct": null,
-      "source_notes": "Birth rate 11.0/1,000 (World Bank 2024); suicide rate 2.69/100,000 age-standardized (WHO 2021 via World Bank)"
+      "living_alone_pct": null
     }
   },
   "pillar_III_social_capital_transformation": {
@@ -276,7 +258,6 @@
       "gini_pretax": 0.448,
       "top_1pct_income_share": null,
       "top_10pct_wealth_share": 34.4,
-      "source_notes": "Top 10% income share 34.4% (World Bank 2023); bottom 20% income share 5.5% (World Bank 2023); Bottom 50% living below median: 16.3% (World Bank 2023); Gini pretax 0.448 (TÜİK 2024)",
       "bottom_20pct_income_share": 5.5
     },
     "taxation_progressivity": {
@@ -293,8 +274,7 @@
       "effective_tax_rate_by_decile": null,
       "source": "OECD / World Bank / Wikipedia Taxation in Turkey",
       "inheritance_tax_threshold": null,
-      "capital_gains_vs_income_tax_gap_pct": null,
-      "source_notes": "Tax-to-GDP ratio 41.65% (2021); individual income tax 15-35% (not 40%); corporate tax flat 20%; VAT standard 20% (reduced rates 1%, 8%, 10%); capital gains included in ordinary income tax for individuals"
+      "capital_gains_vs_income_tax_gap_pct": null
     },
     "public_investment": {
       "healthcare_spending_public_pct": 75.2,
@@ -307,13 +287,11 @@
       "source": "OECD / WHO / UNESCO / World Bank",
       "universal_healthcare_since": 2003,
       "infrastructure_spending_pct_gdp": null,
-      "r_and_d_spending_public_pct": null,
-      "source_notes": "Education spending 3.1% GDP (World Bank 2022); R&D 1.42% GDP (World Bank 2023); healthcare 6.3% GDP (OECD/Wikipedia — lowest among OECD); military 1.72% GDP (World Bank 2023); social protection 10.4% GDP (OECD SOCX)"
+      "r_and_d_spending_public_pct": null
     },
     "social_mobility": {
       "source": "OECD / qualitative",
       "public_university_enrollment_by_income_quintile_pct": null,
-      "regional_disparity": "high — Western Turkey vs. Southeast",
       "education_attainment_by_parental_income_quartile": null,
       "intergenerational_income_elasticity": null,
       "income_quintile_mobility_bottom_to_top_pct": null
@@ -344,7 +322,6 @@
   "cross_cutting_rights": {
     "integrity": {
       "source": "HRW / Amnesty / CIRI / national data",
-      "political_imprisonment": "severe — thousands",
       "istanbul_convention_withdrawn": true,
       "withdrawal_year": 2021,
       "abortion_legal": true,
@@ -357,7 +334,6 @@
     },
     "justice": {
       "source": "WJP / Freedom House / ECtHR",
-      "judicial_independence": "effectively none post-2016",
       "judges_prosecutors_purged_post_2016": "thousands",
       "insulting_president_criminal_offense": true,
       "constitutional_court_rulings_routinely_ignored": true
@@ -396,9 +372,6 @@
       "right_to_strike_exists": true,
       "right_to_strike_heavily_regulated": true
     }
-  },
-  "gst_specific_observations": {
-    "note": "GST analysis to be performed separately from data collection"
   },
   "confidence_system": "three-tier: high (current/primary source), medium (2-5yr old or secondary), low (5+yr old or estimated)"
 }

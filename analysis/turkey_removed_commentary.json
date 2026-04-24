@@ -1,0 +1,154 @@
+{
+  "country": "Turkey",
+  "cleaned_date": "2026-04-24",
+  "note": "Commentary and evaluative labels removed from raw data. This content is interpretive and belongs in analysis, not in raw data inputs.",
+  "removed_items": [
+    {
+      "path": "pillar_I_integrated_will.information_environment.social_media_journalism.source_notes",
+      "field": "source_notes",
+      "original_value": "Since 2020, government forces social media companies to maintain local offices and comply with takedown demands; companies refusing face fines and ad bans"
+    },
+    {
+      "path": "pillar_I_integrated_will.information_environment.economic_structure.source_notes",
+      "field": "source_notes",
+      "original_value": "90% media ownership concentrated in pro-government groups (RSF 2025); foreign online media required to obtain local licenses since 2019"
+    },
+    {
+      "path": "pillar_I_integrated_will.information_environment.mainstream_media.media_regulator_independence",
+      "field": "media_regulator_independence",
+      "original_value": "EVALUATIVE STRIPPED: 'low'"
+    },
+    {
+      "path": "pillar_I_integrated_will.information_environment.mainstream_media.source_notes",
+      "field": "source_notes",
+      "original_value": "CPJ reports 11 journalists imprisoned as of Dec 2024; Bianet reported 57 journalists detained and 36 convicted in 2024; RTÜK revoked license of Açık Radio July 2024"
+    },
+    {
+      "path": "pillar_I_integrated_will.information_environment.digital_media.source_notes",
+      "field": "source_notes",
+      "original_value": "Internet penetration from DataReportal 2025 (77.3M users, 88.3%); social media 66.7% of population; Free Web Turkey reported ~14,000 online news articles blocked in 2023 plus 197,000 websites; 2022 disinformation law mandates up to 3 years prison"
+    },
+    {
+      "path": "pillar_I_integrated_will.economic_precarity.source_notes",
+      "field": "source_notes",
+      "original_value": "GDP/capita and PPP updated to IMF 2026 projections; Gini pretax updated to TÜİK 2024 (0.448); youth unemployment from Wikipedia/Economy of Turkey (16.3%); AROPE 30.4% (2024); social welfare spending 10.4% of GDP (OECD); national poverty rate 13.0% (World Bank 2024)"
+    },
+    {
+      "path": "pillar_I_integrated_will.economic_precarity.gdp_gni_gap_usd",
+      "field": "gdp_gni_gap_usd.note",
+      "original_value": "Large positive gap: GDP >> GNI signals significant foreign capital extraction. Domestic production far exceeds what residents actually earn."
+    },
+    {
+      "path": "pillar_I_integrated_will.civic_education.source_notes",
+      "field": "source_notes",
+      "original_value": "Voter turnout 87.04% in 2023 presidential first round (84.15% second round); Turkey ranked second-lowest in media literacy in Europe per 2018 study"
+    },
+    {
+      "path": "pillar_I_integrated_will.digital_rights.source_notes",
+      "field": "source_notes",
+      "original_value": "No constitutional right to internet; no net neutrality law; biometric data covered under KVKK (data protection law); right to be forgotten recognized via court rulings"
+    },
+    {
+      "path": "pillar_I_integrated_will.government_type.head_of_state_formal_powers",
+      "field": "head_of_state_formal_powers",
+      "original_value": "EVALUATIVE STRIPPED: 'extensive'"
+    },
+    {
+      "path": "pillar_I_integrated_will.government_type.source_notes",
+      "field": "source_notes",
+      "original_value": "2017 constitutional referendum expanded presidential powers significantly; 7% electoral threshold; president appoints constitutional court members"
+    },
+    {
+      "path": "pillar_I_integrated_will.forced_substitution_coefficient.source_notes",
+      "field": "source_notes",
+      "original_value": "Healthcare: 75.2% public funding, 16.5% out-of-pocket, 24.8% private (2023); hospital beds 3.05/1,000 (World Bank 2023); healthcare per capita $548 (World Bank 2023); primary enrollment 102.4% gross (World Bank 2023); NEET rate 22.9% (World Bank 2024); compulsory education 12 years; private tutoring widespread but unquantified"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.community_organization",
+      "field": "community_organization",
+      "original_value": "polarized — strong within groups, near-zero bridging capital"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.social_trust_pct",
+      "field": "social_trust_pct.note",
+      "original_value": "No recent WVS wave for Turkey; last available 2011. Estimate: low (15-20%) based on regional patterns."
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.domestic_violence_severity",
+      "field": "domestic_violence_severity",
+      "original_value": "one of highest rates in Europe"
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.source_notes",
+      "field": "source_notes",
+      "original_value": "Maternal mortality 15/100,000 (World Bank 2023); divorce rate 2.0/1,000 population (Eurostat 2023); hospital beds 3.05/1,000 (World Bank 2023)"
+    },
+    {
+      "path": "pillar_II_organic_ties.civic_participation_beyond_voting.source_notes",
+      "field": "source_notes",
+      "original_value": "Four national confederations: TÜRK-İŞ (1.75M), DİSK (327K), HAK-İŞ (340K), KESK (300K); total ~2.7M members across all unions"
+    },
+    {
+      "path": "pillar_II_organic_ties.internal_dissent_capacity.assembly_law_restrictions",
+      "field": "assembly_law_restrictions",
+      "original_value": "EVALUATIVE STRIPPED: 'severe'"
+    },
+    {
+      "path": "pillar_II_organic_ties.internal_dissent_capacity.legal_right_to_protest",
+      "field": "legal_right_to_protest",
+      "original_value": "EVALUATIVE STRIPPED: 'nominal'"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_isolation.atomization_level",
+      "field": "atomization_level",
+      "original_value": "low — strong family/community networks"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_isolation.capture_level",
+      "field": "capture_level",
+      "original_value": "high — communities enforce conformity"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_isolation.source_notes",
+      "field": "source_notes",
+      "original_value": "Birth rate 11.0/1,000 (World Bank 2024); suicide rate 2.69/100,000 age-standardized (WHO 2021 via World Bank)"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.wealth_distribution.source_notes",
+      "field": "source_notes",
+      "original_value": "Top 10% income share 34.4% (World Bank 2023); bottom 20% income share 5.5% (World Bank 2023); Bottom 50% living below median: 16.3% (World Bank 2023); Gini pretax 0.448 (TÜİK 2024)"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.taxation_progressivity.source_notes",
+      "field": "source_notes",
+      "original_value": "Tax-to-GDP ratio 41.65% (2021); individual income tax 15-35% (not 40%); corporate tax flat 20%; VAT standard 20% (reduced rates 1%, 8%, 10%); capital gains included in ordinary income tax for individuals"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.public_investment.source_notes",
+      "field": "source_notes",
+      "original_value": "Education spending 3.1% GDP (World Bank 2022); R&D 1.42% GDP (World Bank 2023); healthcare 6.3% GDP (OECD/Wikipedia — lowest among OECD); military 1.72% GDP (World Bank 2023); social protection 10.4% GDP (OECD SOCX)"
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.social_mobility.regional_disparity",
+      "field": "regional_disparity",
+      "original_value": "high — Western Turkey vs. Southeast"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.political_imprisonment",
+      "field": "political_imprisonment",
+      "original_value": "severe — thousands"
+    },
+    {
+      "path": "cross_cutting_rights.justice.judicial_independence",
+      "field": "judicial_independence",
+      "original_value": "effectively none post-2016"
+    },
+    {
+      "path": "gst_specific_observations",
+      "field": "gst_specific_observations",
+      "original_value": {
+        "note": "GST analysis to be performed separately from data collection"
+      }
+    }
+  ]
+}

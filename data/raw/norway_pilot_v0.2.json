@@ -119,8 +119,7 @@
       "gdp_gni_gap_usd": {
         "value": -19404,
         "source": "Computed: GDP 82236 - GNI(atlas) 101640",
-        "confidence": "high",
-        "note": "Negative gap: GNI > GDP means residents earn more from abroad than foreign entities extract. Extraction indicator is favorable."
+        "confidence": "high"
       },
       "poverty_rate_national_pct": {
         "value": 0.5,
@@ -173,8 +172,8 @@
       "right_to_be_forgotten_legislation": null
     },
     "government_type": {
-      "head_of_state_formal_powers": "limited but real — formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
-      "sovereignty_origin": "mixed — constitution derives from the people in practice, but the monarch retains formal sovereignty",
+      "head_of_state_formal_powers": "formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
+      "sovereignty_origin": "constitution derives from the people in practice, but the monarch retains formal sovereignty",
       "monarch_budget_per_capita_usd": null,
       "head_of_state_selection": "hereditary",
       "hereditary_privilege_encoded": true,
@@ -194,7 +193,6 @@
   "pillar_II_organic_ties": {
     "social_cohesion": {
       "community_organization_participation_pct": null,
-      "community_organization": "strong",
       "volunteer_rate_pct": null,
       "charitable_giving_pct_gdp": null,
       "social_trust_pct": {
@@ -207,8 +205,6 @@
     "family_structure_health": {
       "maternal_mortality_per_100000": null,
       "divorce_rate_per_1000": null,
-      "family_stability": "moderate-high",
-      "domestic_violence_severity": "Exists but robust legal framework and support systems",
       "single_parent_household_pct": null,
       "source": "WHO / national statistics",
       "elder_care_public_vs_family_ratio": null,
@@ -217,7 +213,6 @@
     },
     "civic_participation_beyond_voting": {
       "ngo_count_per_capita": null,
-      "volunteering_rate": "high",
       "volunteer_rate_pct": null,
       "protest_participation_pct_5yr": null,
       "union_density_pct": 50.4,
@@ -227,7 +222,6 @@
     "internal_dissent_capacity": {
       "participatory_budgeting_exists": null,
       "assembly_law_restrictions": null,
-      "score": "high",
       "legal_right_to_protest": null,
       "protest_permit_denial_rate_pct": null,
       "source": "V-Dem deliberation index / qualitative",
@@ -260,7 +254,6 @@
     "taxation_progressivity": {
       "inheritance_estate_tax_exists": null,
       "top_marginal_income_tax_rate_pct": null,
-      "tax_to_gdp_note": "High tax burden with significant redistribution",
       "tax_gap_estimate_pct": null,
       "property_tax_rate_pct": null,
       "corporate_tax_rate_pct": null,
@@ -275,12 +268,10 @@
       "capital_gains_vs_income_tax_gap_pct": null
     },
     "public_investment": {
-      "social_protection_note": "Among highest in OECD",
       "healthcare_spending_public_pct": null,
       "education_spending_pct_gdp": 6.6,
       "social_protection_pct_gdp": 24.2,
       "r_and_d_spending_pct_gdp": null,
-      "infrastructure_note": "Strong public infrastructure investment, particularly from oil revenue fund",
       "healthcare_spending_pct_gdp": 7.9,
       "military_spending_pct_gdp": null,
       "social_protection_spending_pct_gdp": null,
@@ -294,7 +285,6 @@
       "public_university_enrollment_by_income_quintile_pct": null,
       "education_attainment_by_parental_income_quartile": null,
       "intergenerational_income_elasticity": 0.17,
-      "mobility_note": "Among highest social mobility in the world. Low correlation between parent and child income.",
       "income_quintile_mobility_bottom_to_top_pct": null
     },
     "cultural_production_accessibility": {
@@ -309,7 +299,6 @@
     "corporate_extraction_vs_public_benefit": {
       "revolving_door_count": null,
       "sovereign_wealth_fund_usd": 1700000000000,
-      "swf_note": "Government Pension Fund Global — world's largest sovereign wealth fund. Oil profits transformed into public benefit and global investment for future generations.",
       "share_buybacks_pct_corporate_profits": null,
       "lobbying_expenditure_total_usd": null,
       "dividend_vs_reinvestment_ratio": null,
@@ -321,47 +310,26 @@
   },
   "cross_cutting_rights": {
     "integrity": {
-      "source": "HRW / Amnesty / CIRI",
-      "political_imprisonment": "none",
-      "bodily_autonomy": "strong",
-      "sami_rights_note": "Ongoing tensions with Sámi communities over land use and cultural rights (Fosen wind turbine case). Freedom House upgraded Norway's score on equal treatment after the 2024 agreement."
+      "source": "HRW / Amnesty / CIRI"
     },
     "justice": {
       "source": "WJP Rule of Law Index",
-      "rule_of_law_rank": 1,
-      "judicial_independence": "very strong",
-      "due_process": "robust",
-      "equal_access_note": "Generally strong but access to justice for marginalized communities (immigrants, Sámi) has documented gaps."
+      "rule_of_law_rank": 1
     },
     "compassion": {
-      "source": "OECD / UNHCR",
-      "social_safety_net": "comprehensive",
-      "refugee_policy": "generous by international standards",
-      "healthcare_access": "universal"
+      "source": "OECD / UNHCR"
     },
     "welfare": {
       "source": "World Bank / OECD",
-      "poverty_rate": 0.5,
-      "housing_security": "strong public support but affordability crisis in cities",
-      "food_security": "high",
-      "education_access": "universal free education including university"
+      "poverty_rate": 0.5
     },
     "truth": {
       "source": "RSF / V-Dem transparency",
-      "press_freedom_rank": 1,
-      "government_transparency": "very high",
-      "scientific_integrity": "strong",
-      "censorship": "minimal"
+      "press_freedom_rank": 1
     },
     "solidarity": {
-      "source": "ILO / national data",
-      "labor_protections": "strong",
-      "mutual_aid_networks": "strong institutionalized",
-      "community_support": "high"
+      "source": "ILO / national data"
     }
-  },
-  "gst_specific_observations": {
-    "note": "GST analysis to be performed separately from data collection"
   },
   "last_updated": "2026-04-23",
   "confidence_system": "three-tier: high (current/primary source), medium (2-5yr old or secondary), low (5+yr old or estimated)"

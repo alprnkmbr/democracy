@@ -1,0 +1,209 @@
+{
+  "country": "United States",
+  "cleaned_date": "2026-04-24",
+  "note": "Commentary and evaluative labels removed from raw data. This content is interpretive and belongs in analysis, not in raw data inputs.",
+  "removed_items": [
+    {
+      "path": "pillar_I_integrated_will.economic_precarity.gdp_gni_gap_usd",
+      "field": "gdp_gni_gap_usd.note",
+      "original_value": "Small gap: GDP slightly exceeds GNI, indicating modest net foreign capital presence. Much smaller than Ireland or Luxembourg distortions."
+    },
+    {
+      "path": "pillar_I_integrated_will.economic_precarity.relative_poverty_rate_pct",
+      "field": "relative_poverty_rate_pct.note",
+      "original_value": "Relative poverty = share below 50% of median equivalised disposable income."
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.community_organization",
+      "field": "community_organization",
+      "original_value": "fragmented — strong in some areas, nearly absent in others"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.social_trust_pct",
+      "field": "social_trust_pct.note",
+      "original_value": "Well below OECD average. Declining for decades. Most recent WVS wave estimate."
+    },
+    {
+      "path": "pillar_II_organic_ties.social_cohesion.social_trust_note",
+      "field": "social_trust_note",
+      "original_value": "Well below OECD average. Declining for decades. 'Most people can be trusted' response has fallen from ~50% in 1970s."
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.domestic_violence_note",
+      "field": "domestic_violence_note",
+      "original_value": "~1 in 4 women experience intimate partner violence. ~1 in 9 men. Gun violence in domestic contexts is uniquely American problem."
+    },
+    {
+      "path": "pillar_II_organic_ties.family_structure_health.family_stability",
+      "field": "family_stability",
+      "original_value": "mixed — high divorce rate, high single-parent household rate (particularly in Black and Hispanic communities, reflecting structural economic pressures)"
+    },
+    {
+      "path": "pillar_II_organic_ties.civic_participation_beyond_voting.volunteering_rate",
+      "field": "volunteering_rate",
+      "original_value": "moderate — formal volunteering declining, informal mutual aid rose during COVID but receded"
+    },
+    {
+      "path": "pillar_II_organic_ties.civic_participation_beyond_voting.mutual_aid",
+      "field": "mutual_aid",
+      "original_value": "growing in crisis moments but not institutionalized"
+    },
+    {
+      "path": "pillar_II_organic_ties.civic_participation_beyond_voting.union_note",
+      "field": "union_note",
+      "original_value": "Catastrophic decline from ~35% in 1950s. Private sector unionization ~6%. Collective bargaining coverage ~12%."
+    },
+    {
+      "path": "pillar_II_organic_ties.internal_dissent_capacity.score",
+      "field": "score",
+      "original_value": "moderate but declining"
+    },
+    {
+      "path": "pillar_II_organic_ties.social_isolation.loneliness_note",
+      "field": "loneliness_note",
+      "original_value": "US Surgeon General declared loneliness an epidemic in 2023. ~50% of adults report measurable loneliness."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.wealth_distribution.wealth_concentration_note",
+      "field": "wealth_concentration_note",
+      "original_value": "Top 1% holds 30.5% of wealth. Bottom 50% holds 2.5%. The ratio is ~12:1 between median and mean wealth — extreme inequality. During COVID, billionaire wealth increased 70%."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.taxation_progressivity.tax_to_gdp_note",
+      "field": "tax_to_gdp_note",
+      "original_value": "Among lowest in OECD (average ~34%). The US collects far less in taxes than peer nations, limiting redistribution capacity."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.taxation_progressivity.sales_tax_note",
+      "field": "sales_tax_note",
+      "original_value": "No national VAT. State sales taxes range 0-10.25%. Regressive by nature."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.public_investment.healthcare_note",
+      "field": "healthcare_note",
+      "original_value": "HIGHEST in world by GDP share but with worst outcomes among developed nations. Most spending is private, not public."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.public_investment.social_protection_note",
+      "field": "social_protection_note",
+      "original_value": "Well below OECD average (~18%). Minimal public investment in social protection relative to peers."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.social_mobility.mobility_note",
+      "field": "mobility_note",
+      "original_value": "Among lowest social mobility in developed world. Parent income is highly predictive of child income. The 'American Dream' is statistically more achievable in most European countries."
+    },
+    {
+      "path": "pillar_III_social_capital_transformation.cultural_production_accessibility.cultural_spending_note",
+      "field": "cultural_spending_note",
+      "original_value": "Virtually zero public cultural spending at federal level. National Endowment for the Arts budget is ~$200M — negligible."
+    },
+    {
+      "path": "cross_cutting_rights.integrity.political_imprisonment",
+      "field": "political_imprisonment",
+      "original_value": "minimal domestically, but documented cases (Jan 6 defendants, whistleblowers like Reality Winner)"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.bodily_autonomy",
+      "field": "bodily_autonomy",
+      "original_value": "severely restricted — Dobbs decision overturned federal abortion rights; state-level restrictions vary wildly"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.mass_incarceration",
+      "field": "mass_incarceration",
+      "original_value": "highest incarceration rate in the world (~2M people)"
+    },
+    {
+      "path": "cross_cutting_rights.integrity.racial_disparities_note",
+      "field": "racial_disparities_note",
+      "original_value": "Black Americans incarcerated at 5x rate of White Americans. This is a core integrity violation under GST framework."
+    },
+    {
+      "path": "cross_cutting_rights.justice.judicial_independence",
+      "field": "judicial_independence",
+      "original_value": "declining — politicized Supreme Court appointments, erosion of public trust"
+    },
+    {
+      "path": "cross_cutting_rights.justice.due_process",
+      "field": "due_process",
+      "original_value": "formally strong but structurally unequal — public defenders overworked, bail system criminalizes poverty, racial disparities at every stage"
+    },
+    {
+      "path": "cross_cutting_rights.justice.equal_access_note",
+      "field": "equal_access_note",
+      "original_value": "CRITICAL GST CONCERN: The Alabama example. A Black mother of 2 in rural Alabama and a Wall Street lawyer have vastly different access to justice. This is exactly the gap the GST measures."
+    },
+    {
+      "path": "cross_cutting_rights.compassion.social_safety_net",
+      "field": "social_safety_net",
+      "original_value": "thin — unemployment benefits time-limited, no universal healthcare, no paid parental leave nationally, no guaranteed housing"
+    },
+    {
+      "path": "cross_cutting_rights.compassion.refugee_policy",
+      "field": "refugee_policy",
+      "original_value": "declining — tightening asylum rules, 3.6M pending immigration cases, detention conditions criticized"
+    },
+    {
+      "path": "cross_cutting_rights.compassion.healthcare_access",
+      "field": "healthcare_access",
+      "original_value": "NOT universal — this alone is a major compassion deficit"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.housing_security",
+      "field": "housing_security",
+      "original_value": "CRISIS — record homelessness, severe rent burden, no right to housing"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.food_security",
+      "field": "food_security",
+      "original_value": "~12% of households food insecure"
+    },
+    {
+      "path": "cross_cutting_rights.welfare.education_access",
+      "field": "education_access",
+      "original_value": "formally universal but severely unequal by district funding (property tax-based), student debt crisis"
+    },
+    {
+      "path": "cross_cutting_rights.truth.press_freedom_trend",
+      "field": "press_freedom_trend",
+      "original_value": "declining sharply"
+    },
+    {
+      "path": "cross_cutting_rights.truth.government_transparency",
+      "field": "government_transparency",
+      "original_value": "mixed — strong FOIA law but extensive classification, corporate secrecy, and lobbying opacity"
+    },
+    {
+      "path": "cross_cutting_rights.truth.scientific_integrity",
+      "field": "scientific_integrity",
+      "original_value": "declining — political interference in science agencies, corporate capture of research"
+    },
+    {
+      "path": "cross_cutting_rights.truth.censorship",
+      "field": "censorship",
+      "original_value": "not state censorship but corporate platform moderation and algorithmic suppression"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.labor_protections",
+      "field": "labor_protections",
+      "original_value": "weak — at-will employment in most states, no guaranteed paid leave, minimal collective bargaining"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.mutual_aid_networks",
+      "field": "mutual_aid_networks",
+      "original_value": "present but fragile — grew during COVID, receding since"
+    },
+    {
+      "path": "cross_cutting_rights.solidarity.community_support",
+      "field": "community_support",
+      "original_value": "varies enormously by geography and income"
+    },
+    {
+      "path": "gst_specific_observations",
+      "field": "gst_specific_observations",
+      "original_value": {
+        "note": "GST analysis to be performed separately from data collection"
+      }
+    }
+  ]
+}
