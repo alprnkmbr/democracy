@@ -172,8 +172,8 @@
       "right_to_be_forgotten_legislation": null
     },
     "government_type": {
-      "head_of_state_formal_powers": "formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
-      "sovereignty_origin": "constitution derives from the people in practice, but the monarch retains formal sovereignty",
+      "head_of_state_formal_powers": "formally appoints government, commands military, can veto legislation",
+      "sovereignty_origin": "constitution derives sovereignty from the people; monarch retains formal sovereignty",
       "monarch_budget_per_capita_usd": null,
       "head_of_state_selection": "hereditary",
       "hereditary_privilege_encoded": true,

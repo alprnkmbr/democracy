@@ -164,6 +164,12 @@
       "original_value": {
         "note": "GST analysis to be performed separately from data collection"
       }
+    },
+    {
+      "path": "(second pass)",
+      "field": "head_of_state_formal_powers",
+      "original_value": "formally appoints government, commands military, can veto legislation (though convention-bound not to exercise most powers)",
+      "reason": "Stripped: \"convention-bound not to exercise most powers\" is interpretive — convention, not law"
     }
   ]
 }

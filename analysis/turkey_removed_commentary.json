@@ -149,6 +149,30 @@
       "original_value": {
         "note": "GST analysis to be performed separately from data collection"
       }
+    },
+    {
+      "path": "(second pass)",
+      "field": "media_regulator_independence",
+      "original_value": "RTÜK members appointed by AKP-controlled parliament",
+      "reason": "Stripped: party name (AKP) and control characterization. Mechanism: parliament appoints. Algorithm determines independence implication."
+    },
+    {
+      "path": "(second pass)",
+      "field": "assembly_law_restrictions",
+      "original_value": "Law 2911 on Meetings and Demonstrations requires governor approval; arbitrary denial common",
+      "reason": "Stripped: \"arbitrary denial common\" is an inference about application patterns"
+    },
+    {
+      "path": "(second pass)",
+      "field": "legal_right_to_protest",
+      "original_value": "constitution guarantees assembly but heavily restricted in practice",
+      "reason": "Stripped: \"heavily restricted in practice\" is evaluative inference"
+    },
+    {
+      "path": "(second pass)",
+      "field": "judges_prosecutors_purged_post_2016",
+      "original_value": "thousands",
+      "reason": "Not a verifiable number — set to null"
     }
   ]
 }

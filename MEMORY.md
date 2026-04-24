@@ -25,6 +25,15 @@ A real-time, transparent, multi-source democracy index. Updates daily. Every sco
 - Pipeline: 7-step daily cycle defined (ingest → flag → score → aggregate → test → log → publish)
 - Pilot: Norway, Turkey, USA (v0.2 data); India, China not started
 
+### Data Purity Principle (2026-04-24)
+- **Raw data = algorithm inputs only. No inferences until the algorithm runs.**
+- Stripped all 101 evaluative/adjective labels from 3 country files
+- Kept only: numbers, booleans, verifiable institutional descriptors
+- Removed evaluative prefixes (e.g. "low — RTÜK appointed" → "RTÜK appointed")
+- Removed interpretive notes from confidence-flagged fields
+- Commentary moved to `analysis/` directory for future use when scoring
+- Test: can two researchers independently given the same source produce the same value? If yes → data. If no → analysis.
+
 ### Measurement Dimensions Structure
 - Full structure in `research/gst-foundation-v1.md` Section VIII
 - Pillar I: Press freedom, information environment, Forced Substitution Coefficient, economic precarity, civic education, digital rights

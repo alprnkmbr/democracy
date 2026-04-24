@@ -204,6 +204,12 @@
       "original_value": {
         "note": "GST analysis to be performed separately from data collection"
       }
+    },
+    {
+      "path": "(second pass)",
+      "field": "sovereignty_origin",
+      "original_value": "the people — \"We the People\" constitutional preamble",
+      "reason": "Stripped editorial dash framing; kept factual content"
     }
   ]
 }

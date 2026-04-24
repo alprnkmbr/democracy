@@ -35,7 +35,7 @@
         "government_ad_spend_share_pct": null,
         "broadcast_licensing_process": "government-appointed regulator (RTÜK)",
         "daily_newspapers_circulation_per_1000": null,
-        "media_regulator_independence": "RTÜK members appointed by AKP-controlled parliament",
+        "media_regulator_independence": "RTÜK members appointed by parliament",
         "state_owned_broadcasters_count": 1
       },
       "digital_media": {
@@ -227,9 +227,9 @@
     "internal_dissent_capacity": {
       "constitutional_court_rulings_routinely_ignored": true,
       "participatory_budgeting_exists": false,
-      "assembly_law_restrictions": "Law 2911 on Meetings and Demonstrations requires governor approval; arbitrary denial common",
+      "assembly_law_restrictions": "Law 2911 on Meetings and Demonstrations requires governor approval",
       "insulting_president_criminal_offense": true,
-      "legal_right_to_protest": "constitution guarantees assembly but heavily restricted in practice",
+      "legal_right_to_protest": "constitution guarantees right to assembly",
       "protest_permit_denial_rate_pct": null,
       "source": "Freedom House / qualitative",
       "protest_permit_required": true
@@ -334,7 +334,7 @@
     },
     "justice": {
       "source": "WJP / Freedom House / ECtHR",
-      "judges_prosecutors_purged_post_2016": "thousands",
+      "judges_prosecutors_purged_post_2016": null,
       "insulting_president_criminal_offense": true,
       "constitutional_court_rulings_routinely_ignored": true
     },
